@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dao.dart';
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -15,6 +17,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
+
+      DAO().insertTest(_counter);
     });
   }
 
