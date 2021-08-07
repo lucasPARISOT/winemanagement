@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'dao.dart';
+
+import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -12,7 +12,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   int _counter = 0;
+
+  String image_wine = 'assets/images/wine_bottle.png';
 
   void _incrementCounter() {
     setState(() {
@@ -24,51 +27,68 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      initialIndex: 1,
-      length: 3,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-          bottom: const TabBar(
-            tabs: <Widget>[
-              Tab(
-                icon: Icon(Icons.cloud_outlined),
-              ),
-              Tab(
-                icon: Icon(Icons.beach_access_sharp),
-              ),
-              Tab(
-                icon: Icon(Icons.brightness_5_sharp),
-              ),
-            ],
-          ),
-        ),
-        body: new TabBarView(
-          children: <Widget>[
-            Center(
-              child: new Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  new Text("It's cloudy here"),
-                  new Text('$_counter',
-                    style: Theme.of(context).textTheme.headline4,
+    return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+            appBar: AppBar(
+              title: Text("Wine Management"),
+              bottom: TabBar(
+                tabs: <Widget>[
+                  Tab(
+                    icon: Icon(Icons.home),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.liquor),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.photo_camera),
                   ),
                 ],
               ),
             ),
-            Center(
-              child: new Text("It's rainy here"),
+            body: new TabBarView(
+              children: <Widget>[
+                Center(
+                  child: new Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      new Text("Gestion de cave à vin"),
+                      Image(image: AssetImage(image_wine)),
+                    ],
+                  ),
+                ),
+                Center(
+                  child: new Text("List"),
+                ),
+                Center(
+                  child: new Text("Photo"),
+                ),
+              ],
             ),
-            Center(
-              child: new Text("It's sunny here"),
-            ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _incrementCounter,
-            tooltip: 'Increment',
-            child: Icon(Icons.add),
+            floatingActionButton: Stack(
+              children: <Widget> [
+                Align(
+                  alignment: Alignment(1.0, -0.5),
+                  child: FloatingActionButton(
+                    onPressed: _incrementCounter,
+                    tooltip: 'Parameter',
+                    child: Icon(Icons.settings),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: FloatingActionButton(
+                    onPressed: _incrementCounter,
+                    tooltip: 'Add new bottle',
+                    child: Icon(Icons.add),
+                  ),
+                )
+              ],
+            )
         ),
       ),
     );
