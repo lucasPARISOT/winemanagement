@@ -24,28 +24,52 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return DefaultTabController(
+      initialIndex: 1,
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(widget.title),
+          bottom: const TabBar(
+            tabs: <Widget>[
+              Tab(
+                icon: Icon(Icons.cloud_outlined),
+              ),
+              Tab(
+                icon: Icon(Icons.beach_access_sharp),
+              ),
+              Tab(
+                icon: Icon(Icons.brightness_5_sharp),
+              ),
+            ],
+          ),
+        ),
+        body: new TabBarView(
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Center(
+              child: new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  new Text("It's cloudy here"),
+                  new Text('$_counter',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                ],
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Center(
+              child: new Text("It's rainy here"),
+            ),
+            Center(
+              child: new Text("It's sunny here"),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: Icon(Icons.add),
+        ),
       ),
     );
   }
