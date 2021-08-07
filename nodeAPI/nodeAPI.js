@@ -1,27 +1,46 @@
-const http = require("http")
+const http = require('http');
+const mongoClient = require('mongodb').MongoClient;
 
-let body = JSON.stringify({
-    title: "Make a request with Node's http module"
-})
+const port = 3000
+const host = '127.0.0.1'
+const serverUrl = '/test'
+
+const mongoUrl = 'mongodb://localhost:27017/';
+const mongoDb = 'test';
+const mongoCollection = 'test';
+
 
 const server = http.createServer((request, response) => {
     let data = []
+
     request
-        .on("data", d => {
+        .on('data', d => {
             data.push(d)
         })
-        .on("end", () => {
+        .on('end', () => {
             data = Buffer.concat(data).toString()
             const json = JSON.parse(data);
-            console.log(json.test)
+
+            mongoClient.connect(mongoUrl, function(err, client) {
+
+                // TODO: Remove db test and associated collections
+                const db = client.db(mongoDb);
+                const collection = db.collection(mongoCollection);
+
+                const result = collection.insertOne(json);
+
+                console.log(`le document a été ajouté à la collection '${mongoCollection}' de la base de données '${mongoDb}'`);
+            });
+
+            console.log(json)
 
             response.statusCode = 201
+            response.setHeader('Access-Control-Allow-Origin','*');
+            response.setHeader('Access-Control-Allow-Methods','GET, POST');
+            response.setHeader('Access-Control-Allow-Headers','X-Requested-With, Access-Control-Allow-Origin, Accept');
             response.end()
         })
 })
 
-const port = 3000
-const host = '127.0.0.1'
-const url = '/test'
 server.listen(port, host)
-console.log(`Listening at http://${host}:${port}${url}`)
+console.log(`Listening at http://${host}:${port}${serverUrl}`)
