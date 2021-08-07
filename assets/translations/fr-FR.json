@@ -1,5 +1,6 @@
 {
   "wineManagement": "Wine Management!",
-  "parameters": "paramètres",
-  "new_bottle": "Ajouter une nouvelle bouteille"
+  "parameters": "Paramètres",
+  "new_bottle": "Ajouter une nouvelle bouteille",
+  "back": "Retour"
 }

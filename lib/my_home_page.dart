@@ -3,6 +3,8 @@ import 'dao.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
+import 'parameters_page.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage() : super();
 
@@ -22,6 +24,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
       DAO().insertTest(_counter);
     });
+  }
+
+  void _navigateParameters() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ParametersPage()),
+    );
   }
 
   PreferredSizeWidget appBar(BuildContext context) {
@@ -67,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Align(
           alignment: Alignment(1.0, -0.5),
           child: FloatingActionButton(
-            onPressed: _incrementCounter,
+            onPressed: _navigateParameters,
             tooltip: tr('parameters'),
             child: Icon(Icons.settings),
           ),

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         const Locale('en', 'US'),
         const Locale('es','ES'),
       ],
-      title: 'Flutter Demo',
+      title: tr('wineManagement'),
       home: MyHomePage(),
     );
   }
