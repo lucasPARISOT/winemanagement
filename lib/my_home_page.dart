@@ -1,11 +1,10 @@
 import 'dao.dart';
 
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  const MyHomePage() : super();
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -15,7 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   int _counter = 0;
 
-  String image_wine = 'assets/images/wine_bottle.png';
+  String imageWine = 'assets/images/wine_bottle.png';
 
   void _incrementCounter() {
     setState(() {
@@ -25,10 +24,11 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  PreferredSizeWidget appBar() {
+  PreferredSizeWidget appBar(BuildContext context) {
+
     return AppBar(
       centerTitle: true,
-      title: Text(widget.title),
+      title: Text(tr('wineManagement')),
       bottom: TabBar(
         tabs: <Widget>[
           Tab(
@@ -45,11 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget body() {
+  Widget body(BuildContext context) {
     return new TabBarView(
       children: <Widget>[
         Center(
-          child: mainPage(),
+          child: mainPage(context),
         ),
         Center(
           child: new Text("List"),
@@ -61,14 +61,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget floatingActionButtons() {
+  Widget floatingActionButtons(BuildContext context) {
     return Stack(
       children: <Widget> [
         Align(
           alignment: Alignment(1.0, -0.5),
           child: FloatingActionButton(
             onPressed: _incrementCounter,
-            tooltip: 'Parameter',
+            tooltip: tr('parameters'),
             child: Icon(Icons.settings),
           ),
         ),
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
           alignment: Alignment.bottomRight,
           child: FloatingActionButton(
             onPressed: _incrementCounter,
-            tooltip: 'Add new bottle',
+            tooltip: tr('new_bottle'),
             child: Icon(Icons.add),
           ),
         ),
@@ -84,18 +84,23 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget mainPage() {
+  Widget mainPage(BuildContext context) {
     return new Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        new Text("Gestion de cave à vin"),
-        Image(image: AssetImage(image_wine)),
+        Text(tr('wineManagement')),
+        Image(image: AssetImage(imageWine)),
       ],
     );
   }
 
   @override
   Widget build(BuildContext context) {
+
+    print(Localizations.localeOf(context));
+    context.resetLocale();
+    print(Localizations.localeOf(context));
+
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -103,9 +108,9 @@ class _MyHomePageState extends State<MyHomePage> {
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
-            appBar: appBar(),
-            body: body(),
-            floatingActionButton: floatingActionButtons(),
+            appBar: appBar(context),
+            body: body(context),
+            floatingActionButton: floatingActionButtons(context),
         ),
       ),
     );

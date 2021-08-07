@@ -1,7 +1,17 @@
-import 'package:flutter/material.dart';
-
 import 'app.dart';
 
-void main() {
-  runApp(MyApp());
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(
+    EasyLocalization(
+        supportedLocales: [Locale('en', 'US'), Locale('fr', 'FR'), Locale('es','ES')],
+        path: 'assets/translations',
+        fallbackLocale: Locale('fr', ''),
+        child:  MyApp(),
+    )
+  );
 }
