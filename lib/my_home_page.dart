@@ -1,12 +1,14 @@
-import 'dao.dart';
-
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
+import 'dao.dart';
 import 'parameters_page.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage() : super();
+
+  final ThemeData theme;
+
+  MyHomePage({Key? key, required this.theme}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -29,15 +31,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void _navigateParameters() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ParametersPage()),
+      MaterialPageRoute(builder: (context) => ParametersPage(theme: widget.theme)),
     );
   }
 
   PreferredSizeWidget appBar(BuildContext context) {
-
     return AppBar(
       centerTitle: true,
-      title: Text(tr('wineManagement')),
+      title: Text(tr('wine_management')),
       bottom: TabBar(
         tabs: <Widget>[
           Tab(
@@ -76,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Align(
           alignment: Alignment(1.0, -0.5),
           child: FloatingActionButton(
+            heroTag: "btn1",
             onPressed: _navigateParameters,
             tooltip: tr('parameters'),
             child: Icon(Icons.settings),
@@ -84,6 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Align(
           alignment: Alignment.bottomRight,
           child: FloatingActionButton(
+            heroTag: "btn2",
             onPressed: _incrementCounter,
             tooltip: tr('new_bottle'),
             child: Icon(Icons.add),
@@ -97,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(tr('wineManagement')),
+        Text(tr('wine_management')),
         Image(image: AssetImage(imageWine)),
       ],
     );
@@ -105,15 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
-    print(Localizations.localeOf(context));
-    context.resetLocale();
-    print(Localizations.localeOf(context));
-
     return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: widget.theme,
       home: DefaultTabController(
         length: 3,
         child: Scaffold(

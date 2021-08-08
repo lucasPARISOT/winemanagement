@@ -1,9 +1,15 @@
-import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:winemanagement/my_home_page.dart';
+import 'package:flutter/material.dart';
+
+import 'custom_themes.dart';
+import 'my_home_page.dart';
+import 'my_themes.dart';
 
 class ParametersPage extends StatefulWidget {
-  const ParametersPage() : super();
+
+  final ThemeData theme;
+
+  ParametersPage({Key? key, required this.theme}) : super(key: key);
 
   @override
   _ParametersPage createState() => _ParametersPage();
@@ -14,8 +20,12 @@ class _ParametersPage extends State<ParametersPage> {
   void _navigateHomePage() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => MyHomePage()),
+      MaterialPageRoute(builder: (context) => MyHomePage(theme: widget.theme)),
     );
+  }
+
+  void _changeTheme(BuildContext buildContext, MyThemeKeys key) {
+    CustomTheme.instanceOf(buildContext).changeTheme(key);
   }
 
   Widget floatingButton() {
@@ -43,13 +53,45 @@ class _ParametersPage extends State<ParametersPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: widget.theme,
       home: Scaffold(
         appBar: appBar(),
-        //body: Center(
-        //),
+          body: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {
+                      _changeTheme(context, MyThemeKeys.LIGHT);
+                    },
+                    child: Text(tr("light_mode")),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _changeTheme(context, MyThemeKeys.DARK);
+                    },
+                    child: Text(tr("dark_mode")),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _changeTheme(context, MyThemeKeys.DARKER);
+                    },
+                    child: Text("Darker!"),
+                  ),
+                  Divider(height: 100,),
+                  AnimatedContainer(
+                    duration: Duration(milliseconds: 500),
+                    color: Theme.of(context).primaryColor,
+                    width: 100,
+                    height: 100,
+                  ),
+                ],
+              ),
+            ),
+          ),
         floatingActionButton: floatingButton()
       ),
     );

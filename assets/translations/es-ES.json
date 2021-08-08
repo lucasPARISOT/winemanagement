@@ -1,6 +1,8 @@
 {
-  "wineManagement": "Wine Management!",
-  "parameters": "parámetros",
+  "wine_management": "Wine Management!",
+  "parameters": "Parámetros",
   "new_bottle": "Añadir una nueva botella",
-  "back": "Volver"
+  "back": "Volver",
+  "light_mode": "Modo de luz",
+  "dark_mode": "Modo oscuro"
 }
