@@ -27,16 +27,6 @@ void main() async{
         break;
       case 'MyThemeKeys.CUSTOM':
         theme = MyThemeKeys.CUSTOM;
-
-
-        int? bgColor = prefs.getInt('backgroundColor');
-
-        ThemeData(
-          scaffoldBackgroundColor: Color(bgColor!),
-          primaryColor: Colors.black,
-          brightness: Brightness.dark,
-        );
-
         break;
     }
   }

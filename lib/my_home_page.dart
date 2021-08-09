@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:winemanagement/custom_themes.dart';
 
 import 'dao.dart';
 import 'parameters_page.dart';
@@ -19,6 +21,40 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   String imageWine = 'assets/images/wine_bottle.png';
+
+  @override
+  void initState() {
+    super.initState();
+    new Future.delayed(Duration.zero,() {
+      showDialog(
+        context: context, builder: (context) {
+          setCustomTheme(context);
+          return Container();
+        }
+      );
+      new Future.delayed(Duration(milliseconds: 10),() {
+        Navigator.pop(context);
+      });
+    });
+  }
+
+  void setCustomTheme(BuildContext buildContext) async {
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    if(prefs.containsKey('theme')) {
+      if(prefs.getString('theme') == 'MyThemeKeys.CUSTOM'){
+        int? bgColor = prefs.getInt('backgroundColor');
+
+        CustomTheme.instanceOf(buildContext).newCustomTheme(
+          ThemeData(
+            scaffoldBackgroundColor: Color(bgColor!),
+            primaryColor: Colors.black,
+            brightness: Brightness.dark,
+          )
+        );
+      }
+    }
+  }
 
   void _incrementCounter() {
     setState(() {

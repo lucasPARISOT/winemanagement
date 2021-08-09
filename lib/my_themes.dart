@@ -13,13 +13,7 @@ class MyThemes {
   );
 
   ThemeData getCustomTheme() {
-    print('GETTING !');
     return customTheme;
-  }
-
-  void setCustomTheme(ThemeData theme) {
-    this.customTheme = theme;
-    print('UPDATED !');
   }
 
   ThemeData getThemeFromKey(MyThemeKeys themeKey) {
