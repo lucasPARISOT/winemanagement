@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return Container();
         }
       );
-      new Future.delayed(Duration(milliseconds: 10),() {
+      new Future.delayed(Duration(microseconds: 1),() {
         Navigator.pop(context);
       });
     });
