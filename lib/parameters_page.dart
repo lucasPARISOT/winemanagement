@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'custom_themes.dart';
 import 'my_home_page.dart';
@@ -24,7 +25,10 @@ class _ParametersPage extends State<ParametersPage> {
     );
   }
 
-  void _changeTheme(BuildContext buildContext, MyThemeKeys key) {
+  Future<void> _changeTheme(BuildContext buildContext, MyThemeKeys key) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    debugPrint(key.toString());
+    prefs.setString('theme', key.toString());
     CustomTheme.instanceOf(buildContext).changeTheme(key);
   }
 
@@ -77,9 +81,9 @@ class _ParametersPage extends State<ParametersPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _changeTheme(context, MyThemeKeys.DARKER);
+                      _changeTheme(context, MyThemeKeys.CUSTOM);
                     },
-                    child: Text("Darker!"),
+                    child: Text("Custom!"),
                   ),
                   Divider(height: 100,),
                   AnimatedContainer(

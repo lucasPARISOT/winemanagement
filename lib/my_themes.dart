@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-enum MyThemeKeys { LIGHT, DARK, DARKER }
+enum MyThemeKeys { LIGHT, DARK, CUSTOM }
 
 class MyThemes {
   static final ThemeData lightTheme = ThemeData.light();
 
   static final ThemeData darkTheme = ThemeData.dark();
 
-  static final ThemeData darkerTheme = ThemeData(
+  static final ThemeData customTheme = ThemeData(
     primaryColor: Colors.black,
     brightness: Brightness.dark,
   );
@@ -18,10 +18,10 @@ class MyThemes {
         return lightTheme;
       case MyThemeKeys.DARK:
         return darkTheme;
-      case MyThemeKeys.DARKER:
-        return darkerTheme;
+      case MyThemeKeys.CUSTOM:
+        return customTheme;
       default:
-        return lightTheme;
+        return darkTheme;
     }
   }
 }
