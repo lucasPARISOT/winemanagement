@@ -7,19 +7,29 @@ class MyThemes {
 
   static final ThemeData darkTheme = ThemeData.dark();
 
-  static final ThemeData customTheme = ThemeData(
+  ThemeData customTheme = ThemeData(
     primaryColor: Colors.black,
     brightness: Brightness.dark,
   );
 
-  static ThemeData getThemeFromKey(MyThemeKeys themeKey) {
+  ThemeData getCustomTheme() {
+    print('GETTING !');
+    return customTheme;
+  }
+
+  void setCustomTheme(ThemeData theme) {
+    this.customTheme = theme;
+    print('UPDATED !');
+  }
+
+  ThemeData getThemeFromKey(MyThemeKeys themeKey) {
     switch (themeKey) {
       case MyThemeKeys.LIGHT:
         return lightTheme;
       case MyThemeKeys.DARK:
         return darkTheme;
       case MyThemeKeys.CUSTOM:
-        return customTheme;
+        return getCustomTheme();
       default:
         return darkTheme;
     }

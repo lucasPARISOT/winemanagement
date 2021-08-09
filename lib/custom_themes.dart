@@ -51,13 +51,21 @@ class CustomThemeState extends State<CustomTheme> {
 
   @override
   void initState() {
-    _theme = MyThemes.getThemeFromKey(widget.initialThemeKey);
+    MyThemes myThemes = new MyThemes();
+    _theme = myThemes.getThemeFromKey(widget.initialThemeKey);
     super.initState();
   }
 
   void changeTheme(MyThemeKeys themeKey) {
     setState(() {
-      _theme = MyThemes.getThemeFromKey(themeKey);
+      MyThemes myThemes = new MyThemes();
+      _theme = myThemes.getThemeFromKey(themeKey);
+    });
+  }
+
+  void newCustomTheme(ThemeData themeData) {
+    setState(() {
+      _theme = themeData;
     });
   }
 

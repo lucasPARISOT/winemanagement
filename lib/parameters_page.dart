@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'custom_themes.dart';
@@ -18,6 +19,37 @@ class ParametersPage extends StatefulWidget {
 
 class _ParametersPage extends State<ParametersPage> {
 
+  Color currentBackgroundColor = Colors.limeAccent;
+  List<Color> currentColors = [Colors.limeAccent, Colors.green];
+
+  _ParametersPage() {
+    getCurrentColor().then((value) => setState(() {
+      currentBackgroundColor = value;
+    }));
+  }
+
+  Future<Color> getCurrentColor() async{
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    if(!prefs.containsKey('backgroundColor')){
+      return Colors.black;
+    }
+    else {
+      int? colorCode = prefs.getInt('backgroundColor');
+      return Color(colorCode!);
+    }
+  }
+
+  void changeBackgroundColor(Color color) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setInt('backgroundColor', color.value);
+
+    setState(() {
+      currentBackgroundColor = color;
+    });
+  }
+
+  void changeColors(List<Color> colors) => setState(() => currentColors = colors);
+
   void _navigateHomePage() {
     Navigator.push(
       context,
@@ -27,9 +59,26 @@ class _ParametersPage extends State<ParametersPage> {
 
   Future<void> _changeTheme(BuildContext buildContext, MyThemeKeys key) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    debugPrint(key.toString());
     prefs.setString('theme', key.toString());
     CustomTheme.instanceOf(buildContext).changeTheme(key);
+  }
+
+  Future<void> _applyTheme(BuildContext buildContext) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    int? colorCode = prefs.getInt('backgroundColor');
+
+    prefs.setString('theme', 'MyThemeKeys.CUSTOM');
+
+    ThemeData oldTheme = CustomTheme.of(context);
+
+    ThemeData theme = ThemeData(
+      scaffoldBackgroundColor: Color(colorCode!),
+      primaryColor: oldTheme.primaryColor,
+      brightness: oldTheme.brightness,
+    );
+
+    CustomTheme.instanceOf(buildContext).newCustomTheme(theme);
   }
 
   Widget floatingButton() {
@@ -85,12 +134,41 @@ class _ParametersPage extends State<ParametersPage> {
                     },
                     child: Text("Custom!"),
                   ),
-                  Divider(height: 100,),
-                  AnimatedContainer(
-                    duration: Duration(milliseconds: 500),
-                    color: Theme.of(context).primaryColor,
-                    width: 100,
-                    height: 100,
+                  ElevatedButton(
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            titlePadding: const EdgeInsets.all(0.0),
+                            contentPadding: const EdgeInsets.all(0.0),
+                            content: SingleChildScrollView(
+                              child: ColorPicker(
+                                pickerColor: currentBackgroundColor,
+                                onColorChanged: changeBackgroundColor,
+                                colorPickerWidth: 300.0,
+                                pickerAreaHeightPercent: 0.7,
+                                enableAlpha: true,
+                                displayThumbColor: true,
+                                showLabel: true,
+                                paletteType: PaletteType.hsv,
+                                pickerAreaBorderRadius: const BorderRadius.only(
+                                  topLeft: const Radius.circular(2.0),
+                                  topRight: const Radius.circular(2.0),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Text("background color!"),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _applyTheme(context);
+                    },
+                    child: Text("Apply background color!"),
                   ),
                 ],
               ),
