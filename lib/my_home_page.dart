@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:winemanagement/custom_themes.dart';
 
+import 'custom_themes.dart';
 import 'dao.dart';
 import 'parameters_page.dart';
 
@@ -45,11 +45,22 @@ class _MyHomePageState extends State<MyHomePage> {
       if(prefs.getString('theme') == 'MyThemeKeys.CUSTOM'){
         int? bgColor = prefs.getInt('backgroundColor');
 
+        Color? primaryColor = Colors.black;
+        Brightness? brightness = Brightness.dark;
+        if(prefs.containsKey('appBarTheme')) {
+
+          if(prefs.getString('appBarTheme') == 'MyThemeKeys.LIGHT') {
+            primaryColor = Colors.lightBlue;
+            brightness = Brightness.light;
+          }
+        }
+
         CustomTheme.instanceOf(buildContext).newCustomTheme(
           ThemeData(
             scaffoldBackgroundColor: Color(bgColor!),
-            primaryColor: Colors.black,
-            brightness: Brightness.dark,
+            primaryColor: primaryColor,
+            brightness: brightness,
+            backgroundColor: primaryColor,
           )
         );
       }

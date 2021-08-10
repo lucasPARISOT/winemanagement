@@ -60,6 +60,7 @@ class _ParametersPage extends State<ParametersPage> {
   Future<void> _changeTheme(BuildContext buildContext, MyThemeKeys key) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString('theme', key.toString());
+    prefs.setString('appBarTheme', key.toString());
     CustomTheme.instanceOf(buildContext).changeTheme(key);
   }
 
@@ -127,12 +128,6 @@ class _ParametersPage extends State<ParametersPage> {
                       _changeTheme(context, MyThemeKeys.DARK);
                     },
                     child: Text(tr("dark_mode")),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      _changeTheme(context, MyThemeKeys.CUSTOM);
-                    },
-                    child: Text("Custom!"),
                   ),
                   ElevatedButton(
                     onPressed: () {
