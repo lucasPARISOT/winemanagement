@@ -157,13 +157,13 @@ class _ParametersPage extends State<ParametersPage> {
                         },
                       );
                     },
-                    child: Text("background color!"),
+                    child: Text(tr("select_bg_color")),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       _applyTheme(context);
                     },
-                    child: Text("Apply background color!"),
+                    child: Text(tr("apply_bg_color")),
                   ),
                 ],
               ),

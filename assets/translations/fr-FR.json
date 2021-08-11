@@ -4,5 +4,7 @@
   "new_bottle": "Ajouter une nouvelle bouteille",
   "back": "Retour",
   "light_mode": "Mode lumineux",
-  "dark_mode": "Mode sombre"
+  "dark_mode": "Mode sombre",
+  "select_bg_color": "Choisir la couleur de fond",
+  "apply_bg_color": "Appliquer la couleur de fond!"
 }
