@@ -6,5 +6,6 @@
   "light_mode": "Light mode",
   "dark_mode": "Dark mode",
   "select_bg_color": "Select background color",
-  "apply_bg_color": "Apply background color!"
+  "apply_theme": "Apply theme!",
+  "select_second_color": "Select secondary color"
 }

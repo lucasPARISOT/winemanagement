@@ -6,5 +6,6 @@
   "light_mode": "Modo de luz",
   "dark_mode": "Modo oscuro",
   "select_bg_color": "Seleccionar el color de fondo",
-  "apply_bg_color": "Aplicar el color de fondo!"
+  "apply_theme": "Aplicar el tema!",
+  "select_second_color": "Seleccionar el color secundario"
 }

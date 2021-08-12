@@ -20,6 +20,7 @@ class ParametersPage extends StatefulWidget {
 class _ParametersPage extends State<ParametersPage> {
 
   Color currentBackgroundColor = Colors.limeAccent;
+  Color currentAccentColor = Colors.white;
   List<Color> currentColors = [Colors.limeAccent, Colors.green];
 
   _ParametersPage() {
@@ -48,6 +49,15 @@ class _ParametersPage extends State<ParametersPage> {
     });
   }
 
+  void changeAccentColor(Color color) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setInt('accentColor', color.value);
+
+    setState(() {
+      currentAccentColor = color;
+    });
+  }
+
   void changeColors(List<Color> colors) => setState(() => currentColors = colors);
 
   void _navigateHomePage() {
@@ -67,14 +77,31 @@ class _ParametersPage extends State<ParametersPage> {
   Future<void> _applyTheme(BuildContext buildContext) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    int? colorCode = prefs.getInt('backgroundColor');
-
     prefs.setString('theme', 'MyThemeKeys.CUSTOM');
+
+    Color? backgroundColor;
+    if(prefs.containsKey('backgroundColor')){
+      int ?backgroundColorCode = prefs.getInt('backgroundColor');
+      backgroundColor = Color(backgroundColorCode!);
+    }
+    else {
+      backgroundColor = Colors.teal;
+    }
+
+    Color? accentColor;
+    if(prefs.containsKey('accentColor')){
+      int ?accentColorCode = prefs.getInt('accentColor');
+      accentColor = Color(accentColorCode!);
+    }
+    else {
+      accentColor = Colors.teal;
+    }
 
     ThemeData oldTheme = CustomTheme.of(context);
 
     ThemeData theme = ThemeData(
-      scaffoldBackgroundColor: Color(colorCode!),
+      scaffoldBackgroundColor: backgroundColor,
+      accentColor: accentColor,
       primaryColor: oldTheme.primaryColor,
       brightness: oldTheme.brightness,
     );
@@ -161,9 +188,39 @@ class _ParametersPage extends State<ParametersPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            titlePadding: const EdgeInsets.all(0.0),
+                            contentPadding: const EdgeInsets.all(0.0),
+                            content: SingleChildScrollView(
+                              child: ColorPicker(
+                                pickerColor: currentAccentColor,
+                                onColorChanged: changeAccentColor,
+                                colorPickerWidth: 300.0,
+                                pickerAreaHeightPercent: 0.7,
+                                enableAlpha: true,
+                                displayThumbColor: true,
+                                showLabel: true,
+                                paletteType: PaletteType.hsv,
+                                pickerAreaBorderRadius: const BorderRadius.only(
+                                  topLeft: const Radius.circular(2.0),
+                                  topRight: const Radius.circular(2.0),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Text(tr("select_second_color")),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
                       _applyTheme(context);
                     },
-                    child: Text(tr("apply_bg_color")),
+                    child: Text(tr("apply_theme")),
                   ),
                 ],
               ),

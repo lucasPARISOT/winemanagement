@@ -45,6 +45,15 @@ class _MyHomePageState extends State<MyHomePage> {
       if(prefs.getString('theme') == 'MyThemeKeys.CUSTOM'){
         int? bgColor = prefs.getInt('backgroundColor');
 
+        Color? accentColor;
+        if(prefs.containsKey('accentColor')){
+          int ?accentColorCode = prefs.getInt('accentColor');
+          accentColor = Color(accentColorCode!);
+        }
+        else {
+          accentColor = Colors.teal;
+        }
+
         Color? primaryColor = Colors.black;
         Brightness? brightness = Brightness.dark;
         if(prefs.containsKey('appBarTheme')) {
@@ -58,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
         CustomTheme.instanceOf(buildContext).newCustomTheme(
           ThemeData(
             scaffoldBackgroundColor: Color(bgColor!),
+            accentColor: accentColor,
             primaryColor: primaryColor,
             brightness: brightness,
             backgroundColor: primaryColor,
