@@ -23,10 +23,13 @@ class _ParametersPage extends State<ParametersPage> {
   Color currentAccentColor = Colors.white;
   List<Color> currentColors = [Colors.limeAccent, Colors.green];
 
+  Padding? body;
+
   _ParametersPage() {
     getCurrentColor().then((value) => setState(() {
       currentBackgroundColor = value;
     }));
+    body = this.bodyDefault();
   }
 
   Future<Color> getCurrentColor() async{
@@ -131,101 +134,157 @@ class _ParametersPage extends State<ParametersPage> {
     );
   }
 
+  Widget drawer() {
+    return Drawer(
+      child: ListView (
+        padding: EdgeInsets.zero,
+        children: [
+          ListTile(
+            title: Center(
+              child: Text('menu'),
+            ),
+            onTap: () {
+              setState(() {
+                body = bodyDefault();
+              });
+            },
+          ),
+          ListTile(
+            title: Text('display'),
+            onTap: () {
+              setState(() {
+                body = bodyDisplay();
+              });
+            },
+          ),
+          ListTile(
+            title: Text('advanced'),
+            onTap: () {
+              // Update the state of the app.
+              // ...
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Padding bodyDefault() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Text('Changelog: Nothing yet'),
+            Text('Twitter integration ?'),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Padding bodyDisplay() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                _changeTheme(context, MyThemeKeys.LIGHT);
+              },
+              child: Text(tr("light_mode")),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _changeTheme(context, MyThemeKeys.DARK);
+              },
+              child: Text(tr("dark_mode")),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      titlePadding: const EdgeInsets.all(0.0),
+                      contentPadding: const EdgeInsets.all(0.0),
+                      content: SingleChildScrollView(
+                        child: ColorPicker(
+                          pickerColor: currentBackgroundColor,
+                          onColorChanged: changeBackgroundColor,
+                          colorPickerWidth: 300.0,
+                          pickerAreaHeightPercent: 0.7,
+                          enableAlpha: true,
+                          displayThumbColor: true,
+                          showLabel: true,
+                          paletteType: PaletteType.hsv,
+                          pickerAreaBorderRadius: const BorderRadius.only(
+                            topLeft: const Radius.circular(2.0),
+                            topRight: const Radius.circular(2.0),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
+              child: Text(tr("select_bg_color")),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      titlePadding: const EdgeInsets.all(0.0),
+                      contentPadding: const EdgeInsets.all(0.0),
+                      content: SingleChildScrollView(
+                        child: ColorPicker(
+                          pickerColor: currentAccentColor,
+                          onColorChanged: changeAccentColor,
+                          colorPickerWidth: 300.0,
+                          pickerAreaHeightPercent: 0.7,
+                          enableAlpha: true,
+                          displayThumbColor: true,
+                          showLabel: true,
+                          paletteType: PaletteType.hsv,
+                          pickerAreaBorderRadius: const BorderRadius.only(
+                            topLeft: const Radius.circular(2.0),
+                            topRight: const Radius.circular(2.0),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
+              child: Text(tr("select_second_color")),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _applyTheme(context);
+              },
+              child: Text(tr("apply_theme")),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: widget.theme,
       home: Scaffold(
+        drawer: drawer(),
         appBar: appBar(),
-          body: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: <Widget>[
-                  ElevatedButton(
-                    onPressed: () {
-                      _changeTheme(context, MyThemeKeys.LIGHT);
-                    },
-                    child: Text(tr("light_mode")),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      _changeTheme(context, MyThemeKeys.DARK);
-                    },
-                    child: Text(tr("dark_mode")),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            titlePadding: const EdgeInsets.all(0.0),
-                            contentPadding: const EdgeInsets.all(0.0),
-                            content: SingleChildScrollView(
-                              child: ColorPicker(
-                                pickerColor: currentBackgroundColor,
-                                onColorChanged: changeBackgroundColor,
-                                colorPickerWidth: 300.0,
-                                pickerAreaHeightPercent: 0.7,
-                                enableAlpha: true,
-                                displayThumbColor: true,
-                                showLabel: true,
-                                paletteType: PaletteType.hsv,
-                                pickerAreaBorderRadius: const BorderRadius.only(
-                                  topLeft: const Radius.circular(2.0),
-                                  topRight: const Radius.circular(2.0),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      );
-                    },
-                    child: Text(tr("select_bg_color")),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            titlePadding: const EdgeInsets.all(0.0),
-                            contentPadding: const EdgeInsets.all(0.0),
-                            content: SingleChildScrollView(
-                              child: ColorPicker(
-                                pickerColor: currentAccentColor,
-                                onColorChanged: changeAccentColor,
-                                colorPickerWidth: 300.0,
-                                pickerAreaHeightPercent: 0.7,
-                                enableAlpha: true,
-                                displayThumbColor: true,
-                                showLabel: true,
-                                paletteType: PaletteType.hsv,
-                                pickerAreaBorderRadius: const BorderRadius.only(
-                                  topLeft: const Radius.circular(2.0),
-                                  topRight: const Radius.circular(2.0),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      );
-                    },
-                    child: Text(tr("select_second_color")),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      _applyTheme(context);
-                    },
-                    child: Text(tr("apply_theme")),
-                  ),
-                ],
-              ),
-            ),
-          ),
+        body: body,
         floatingActionButton: floatingButton()
       ),
     );
