@@ -131,6 +131,17 @@ class _ParametersPage extends State<ParametersPage> {
     return AppBar(
       centerTitle: true,
       title: Text(tr('parameters')),
+      leading: Builder(
+        builder: (BuildContext context) {
+          return IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            tooltip: tr('open_navigation_menu'),
+          );
+        },
+      ),
     );
   }
 
@@ -141,7 +152,7 @@ class _ParametersPage extends State<ParametersPage> {
         children: [
           ListTile(
             title: Center(
-              child: Text('menu'),
+              child: Text(tr('parameters')),
             ),
             onTap: () {
               setState(() {
@@ -150,7 +161,7 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
-            title: Text('display'),
+            title: Text(tr('display')),
             onTap: () {
               setState(() {
                 body = bodyDisplay();
@@ -158,10 +169,11 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
-            title: Text('advanced'),
+            title: Text(tr('advanced')),
             onTap: () {
-              // Update the state of the app.
-              // ...
+              setState(() {
+                body = bodyAdvanced();
+              });
             },
           ),
         ],
@@ -179,6 +191,21 @@ class _ParametersPage extends State<ParametersPage> {
           children: <Widget>[
             Text('Changelog: Nothing yet'),
             Text('Twitter integration ?'),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Padding bodyAdvanced() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Text('Nothing yet, Coming soon'),
           ],
         ),
       ),

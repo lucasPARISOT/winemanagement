@@ -1,11 +1,14 @@
 {
   "wine_management": "Wine Management!",
-  "parameters": "parameters",
+  "parameters": "Parameters",
   "new_bottle": "Add new bottle",
   "back": "Back",
   "light_mode": "Light mode",
   "dark_mode": "Dark mode",
   "select_bg_color": "Select background color",
   "apply_theme": "Apply theme!",
-  "select_second_color": "Select secondary color"
+  "select_second_color": "Select secondary color",
+  "display": "Display",
+  "advanced": "Advanced settings",
+  "open_navigation_menu": "Open navigation menu"
 }

@@ -7,5 +7,8 @@
   "dark_mode": "Modo oscuro",
   "select_bg_color": "Seleccionar el color de fondo",
   "apply_theme": "Aplicar el tema!",
-  "select_second_color": "Seleccionar el color secundario"
+  "select_second_color": "Seleccionar el color secundario",
+  "display": "Pantalla",
+  "advanced": "Configuración avanzada",
+  "open_navigation_menu": "Abrir el menú de navegación"
 }
