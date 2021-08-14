@@ -35,7 +35,7 @@ void main() async{
     CustomTheme(
       initialThemeKey: theme,
       child: EasyLocalization(
-        supportedLocales: [Locale('en', 'US'), Locale('fr', 'FR'), Locale('es','ES')],
+        supportedLocales: [Locale('en', 'US'), Locale('fr', 'FR'), Locale('es','ES'), Locale('pt','PT')],
         path: 'assets/translations',
         fallbackLocale: Locale('fr', 'FR'),
         child:  MyApp(),

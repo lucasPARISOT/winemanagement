@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         const Locale('fr', 'FR'),
         const Locale('en', 'US'),
         const Locale('es', 'ES'),
+        const Locale('pt', 'PT'),
       ],
       title: tr('wine_management'),
       theme: CustomTheme.of(context),
