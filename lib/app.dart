@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: [
-        const Locale('fr', 'FR'),
         const Locale('en', 'US'),
+        const Locale('fr', 'FR'),
         const Locale('es', 'ES'),
-        const Locale('pt', 'PT'),
+        const Locale('pt', 'PT')
       ],
+      locale: null,
       title: tr('wine_management'),
       theme: CustomTheme.of(context),
       home: MyHomePage(theme: CustomTheme.of(context)),
