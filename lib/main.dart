@@ -42,7 +42,7 @@ void main() async{
           Locale('pt', 'PT')
         ],
         path: 'assets/translations',
-        fallbackLocale: Locale('fr', 'FR'),
+        fallbackLocale: Locale('en', 'US'),
         child:  MyApp(),
       ),
     )

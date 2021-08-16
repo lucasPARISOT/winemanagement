@@ -22,8 +22,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String imageWine = 'assets/images/wine_bottle.png';
 
-  Locale? _locale;
-
   @override
   void initState() {
     super.initState();
@@ -35,27 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
         }
       );
       new Future.delayed(Duration(microseconds: 1),() {
-        setAppLocale(context);
         Navigator.pop(context);
       });
-    });
-  }
-
-  Locale? locale() {
-    return this._locale;
-  }
-
-  changeLanguage(Locale locale) {
-    setState(() {
-      _locale = locale;
-    });
-  }
-
-  void setAppLocale(BuildContext buildContext) async {
-    setState(() {
-      // TODO: locale from prefs
-      // buildContext.setLocale(Localizations.localeOf(buildContext));
-      // print(Localizations.localeOf(buildContext));
     });
   }
 
@@ -187,7 +166,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: locale(),
       theme: widget.theme,
       home: DefaultTabController(
         length: 3,

@@ -43,6 +43,26 @@ class _ParametersPage extends State<ParametersPage> {
     }
   }
 
+  void changeLocale(String localeString, BuildContext buildContext) {
+    int supportedLocaleIndex = 0;
+    switch(localeString) {
+      case 'FR':
+        supportedLocaleIndex = 1;
+        break;
+      case 'ES':
+        supportedLocaleIndex = 2;
+        break;
+      case 'PT':
+        supportedLocaleIndex = 3;
+        break;
+    }
+    Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
+    setState(() {
+      //buildContext.setLocale(locale);
+      EasyLocalization.of(buildContext)!.setLocale(locale);
+    });
+  }
+
   void changeBackgroundColor(Color color) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('backgroundColor', color.value);
@@ -145,7 +165,7 @@ class _ParametersPage extends State<ParametersPage> {
     );
   }
 
-  Widget drawer() {
+  Widget drawer(BuildContext buildContext) {
     return Drawer(
       child: ListView (
         padding: EdgeInsets.zero,
@@ -165,6 +185,14 @@ class _ParametersPage extends State<ParametersPage> {
             onTap: () {
               setState(() {
                 body = bodyDisplay();
+              });
+            },
+          ),
+          ListTile(
+            title: Text('Language'),
+            onTap: () {
+              setState(() {
+                body = bodyLanguage(buildContext);
               });
             },
           ),
@@ -208,6 +236,72 @@ class _ParametersPage extends State<ParametersPage> {
             Text('Nothing yet, Coming soon'),
           ],
         ),
+      ),
+    );
+  }
+
+  Padding bodyLanguage(BuildContext buildContext) {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Container(
+              height: 35,
+              child: Text('Language'),
+            ),
+            Container(
+              height: 35,
+              child: Tooltip(
+                message: 'English',
+                child: TextButton(
+                  onPressed: () {
+                    changeLocale('EN', buildContext);
+                  },
+                  child: Image(image: AssetImage('assets/images/flags/English.png'))
+                )
+              ),
+            ),
+            Container(
+              height: 35,
+              child: Tooltip(
+                message: 'French',
+                child: TextButton(
+                    onPressed: () {
+                      changeLocale('FR', buildContext);
+                    },
+                  child: Image(image: AssetImage('assets/images/flags/French.png'))
+                )
+              ),
+            ),
+            Container(
+              height: 35,
+              child: Tooltip(
+                message: 'Spanish',
+                child: TextButton(
+                    onPressed: () {
+                      changeLocale('ES', buildContext);
+                    },
+                  child: Image(image: AssetImage('assets/images/flags/Spanish.png'))
+                )
+              ),
+            ),
+            Container(
+              height: 35,
+              child: Tooltip(
+                message: 'Portuguese',
+                child: TextButton(
+                    onPressed: () {
+                      changeLocale('PT', buildContext);
+                    },
+                  child: Image(image: AssetImage('assets/images/flags/Portuguese.jpg'))
+                )
+              ),
+            ),
+          ]
+        )
       ),
     );
   }
@@ -309,7 +403,7 @@ class _ParametersPage extends State<ParametersPage> {
     return MaterialApp(
       theme: widget.theme,
       home: Scaffold(
-        drawer: drawer(),
+        drawer: drawer(context),
         appBar: appBar(),
         body: body,
         floatingActionButton: floatingButton()
