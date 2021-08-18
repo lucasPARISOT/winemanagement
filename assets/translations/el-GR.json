@@ -1,0 +1,14 @@
+{
+  "wine_management": "Wine Management!",
+  "parameters": "Παράμετροι",
+  "new_bottle": "Προσθέστε ένα νέο μπουκάλι",
+  "back": "Πίσω",
+  "light_mode": "Λειτουργία φωτός",
+  "dark_mode": "Σκοτεινή λειτουργία",
+  "select_bg_color": "Επιλέξτε το χρώμα φόντου",
+  "apply_theme": "Εφαρμόστε το θέμα!",
+  "select_second_color": "Επιλέξτε το δευτερεύον χρώμα",
+  "display": "Εμφάνιση",
+  "advanced": "Προηγμένες ρυθμίσεις",
+  "open_navigation_menu": "Ανοίξτε το μενού πλοήγησης"
+}

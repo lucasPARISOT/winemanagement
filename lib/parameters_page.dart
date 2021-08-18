@@ -58,6 +58,9 @@ class _ParametersPage extends State<ParametersPage> {
       case 'IT':
         supportedLocaleIndex = 4;
         break;
+      case 'GR':
+        supportedLocaleIndex = 5;
+        break;
     }
     Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
     setState(() {
@@ -312,6 +315,18 @@ class _ParametersPage extends State<ParametersPage> {
                         changeLocale('IT', buildContext);
                       },
                       child: Image(image: AssetImage('assets/images/flags/Italian.png'))
+                  )
+              ),
+            ),
+            Container(
+              height: 35,
+              child: Tooltip(
+                  message: 'Greek',
+                  child: TextButton(
+                      onPressed: () {
+                        changeLocale('GR', buildContext);
+                      },
+                      child: Image(image: AssetImage('assets/images/flags/Greek.png'))
                   )
               ),
             ),
