@@ -302,7 +302,7 @@ class _ParametersPage extends State<ParametersPage> {
                     onPressed: () {
                       changeLocale('PT', buildContext);
                     },
-                  child: Image(image: AssetImage('assets/images/flags/Portuguese.jpg'))
+                  child: Image(image: AssetImage('assets/images/flags/Portuguese.png'))
                 )
               ),
             ),
