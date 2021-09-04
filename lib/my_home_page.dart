@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: mainPage(context),
         ),
         Center(
-          child: new Text("List"),
+          child: listPage(context),
         ),
         Center(
           child: new Text("Photo"),
@@ -160,6 +160,29 @@ class _MyHomePageState extends State<MyHomePage> {
         Text(tr('wine_management')),
         Image(image: AssetImage(imageWine)),
       ],
+    );
+  }
+
+  Widget listPage(BuildContext context) {
+    var titles = ['Test 1', 'Test 2', 'Test 3', 'Test 4', 'Title 5'];
+    var subtitles = ['Subtitle 1', 'Subtitle 2', 'Subtitle 3', 'Subtitle 4', 'Subitle 5'];
+    return ListView.builder(
+      itemCount: titles.length,
+      itemBuilder: (context, index) {
+        return Card(
+          child: ListTile(
+            onTap: () {
+              // Actions
+            },
+            title: Text(titles[index]),
+            subtitle: Text(subtitles[index]),
+            leading: CircleAvatar(
+              backgroundColor: Colors.white,
+              foregroundImage: AssetImage(imageWine),
+            ),
+          )
+        );
+      }
     );
   }
 
