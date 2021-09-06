@@ -7,7 +7,7 @@ class DAO {
     const Map<String, String> _JSON_HEADERS = {
       "content-type": "application/json",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods" : "GET, POST"
+      "Access-Control-Allow-Methods" : "POST"
     };
 
     var uri = Uri.http("localhost:3000", "test");

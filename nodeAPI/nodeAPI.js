@@ -10,36 +10,43 @@ const mongoCollection = 'test';
 
 const server = http.createServer((request, response) => {
 
-    if(request.url === '/test') {
-        let data = []
+    const urlTemp = request.url.split('?');
+    const url = urlTemp[0];
 
-        request
-            .on('data', d => {
-                data.push(d)
-            })
-            .on('end', () => {
-                data = Buffer.concat(data).toString()
-                const json = JSON.parse(data);
+    if (request.method === 'POST') {
 
-                mongoClient.connect(mongoUrl, function(err, client) {
+        if(url === '/test' || url ==='/test/') {
+            let data = []
 
-                    // TODO: Remove db test and associated collections
-                    const db = client.db(mongoDb);
-                    const collection = db.collection(mongoCollection);
+            request
+                .on('data', d => {
+                    data.push(d)
+                })
+                .on('end', () => {
+                    data = Buffer.concat(data).toString()
+                    const json = JSON.parse(data);
 
-                    const result = collection.insertOne(json);
+                    mongoClient.connect(mongoUrl, function(err, client) {
 
-                    console.log(`le document a été ajouté à la collection '${mongoCollection}' de la base de données '${mongoDb}'`);
-                });
+                        // TODO: Remove db test and associated collections
+                        const db = client.db(mongoDb);
+                        const collection = db.collection(mongoCollection);
 
-                console.log(json)
+                        const result = collection.insertOne(json);
 
-                response.statusCode = 201
-                response.setHeader('Access-Control-Allow-Origin','*');
-                response.setHeader('Access-Control-Allow-Methods','GET, POST');
-                response.setHeader('Access-Control-Allow-Headers','X-Requested-With, Access-Control-Allow-Origin, Accept');
-                response.end()
-            })
+                        console.log(`le document a été ajouté à la collection '${mongoCollection}' de la base de données '${mongoDb}'`);
+                    });
+
+                    console.log(json)
+
+                    response.statusCode = 201
+                    response.setHeader('Access-Control-Allow-Origin','*');
+                    response.setHeader('Access-Control-Allow-Methods','GET, POST');
+                    response.setHeader('Access-Control-Allow-Headers','X-Requested-With, Access-Control-Allow-Origin, Accept');
+                    response.end()
+                })
+        }
+        
     }
 })
 
