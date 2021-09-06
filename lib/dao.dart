@@ -10,9 +10,20 @@ class DAO {
       "Access-Control-Allow-Methods" : "POST"
     };
 
-    var uri = Uri.http("localhost:3000", "test");
+    var uri = Uri.http("localhost:3000", "wine");
 
-    String data = '''{"test":"YES IT IS WORKING !","counter":$number}''';
+    String data = '''
+      {
+        "image":"none",
+        "desc":"Un bon vin",
+        "cepage":"Un cepage",
+        "millesime":"1998",
+        "type":"Vin blanc",
+        "domaine":"Domaine du Vin",
+        "lieu":"Un lieu",
+        "quantite":"1"
+      }
+      ''';
 
     http.Client client = new http.Client();
     client.post(uri, body: data, headers: _JSON_HEADERS);
