@@ -1,12 +1,7 @@
 const http = require('http');
 const mongoClient = require('mongodb').MongoClient;
 
-const port = 3000
-const host = '127.0.0.1'
-
-const mongoUrl = 'mongodb://localhost:27017/';
-const mongoDb = 'test';
-const mongoCollection = 'test';
+const connection = require('./connection');
 
 const server = http.createServer((request, response) => {
 
@@ -24,32 +19,22 @@ const server = http.createServer((request, response) => {
 
                     let result = 'no data';
 
-                    try {
-                        mongoClient.connect(mongoUrl, async function (err, client) {
+                    mongoClient.connect(connection.mongoUrl, async function (err, client) {
 
-                            // TODO: Remove db test and associated collections
-                            const db = client.db(mongoDb);
-                            const collection = db.collection(mongoCollection);
+                        // TODO: Remove db test and associated collections
+                        const db = client.db(connection.mongoDb);
+                        const collection = db.collection(connection.mongoCollection);
 
-                            result = await collection.find({}).toArray().catch(function () {
-                                console.log('error');
-                            });
+                        result = await collection.find({quantite: {$exists: true, $gt: 0}}).toArray();
 
-                            console.log(result);
+                        response.statusCode = 200;
+                        response.setHeader('Access-Control-Allow-Origin','*');
+                        response.setHeader('Access-Control-Allow-Methods','GET');
+                        response.setHeader('Access-Control-Allow-Headers','X-Requested-With, Access-Control-Allow-Origin, Accept');
+                        response.write(JSON.stringify(result));
+                        response.end();
 
-                            response.statusCode = 200;
-                            response.setHeader('Access-Control-Allow-Origin','*');
-                            response.setHeader('Access-Control-Allow-Methods','GET');
-                            response.setHeader('Access-Control-Allow-Headers','X-Requested-With, Access-Control-Allow-Origin, Accept');
-                            response.write(JSON.stringify(result));
-                            response.end();
-
-                        });
-                    } catch (exception) {
-
-                    }
-
-
+                    });
                 })
         }
     }
@@ -67,18 +52,15 @@ const server = http.createServer((request, response) => {
                     data = Buffer.concat(data).toString()
                     const json = JSON.parse(data);
 
-                    mongoClient.connect(mongoUrl, function(err, client) {
+                    mongoClient.connect(connection.mongoUrl, function(err, client) {
 
                         // TODO: Remove db test and associated collections
-                        const db = client.db(mongoDb);
-                        const collection = db.collection(mongoCollection);
+                        const db = client.db(connection.mongoDb);
+                        const collection = db.collection(connection.mongoCollection);
 
-                        const result = collection.insertOne(json);
+                        collection.insertOne(json);
 
-                        console.log(`le document a été ajouté à la collection '${mongoCollection}' de la base de données '${mongoDb}'`);
                     });
-
-                    console.log(json);
 
                     response.statusCode = 201;
                     response.setHeader('Access-Control-Allow-Origin','*');
@@ -92,5 +74,5 @@ const server = http.createServer((request, response) => {
 
 })
 
-server.listen(port, host)
-console.log(`Listening at http://${host}:${port}`)
+server.listen(connection.port, connection.host)
+console.log(`Listening at http://${connection.host}:${connection.port}`)
