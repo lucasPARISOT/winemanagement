@@ -40,7 +40,7 @@ class DAO {
 
     if (response.statusCode == 200) {
       List<dynamic> jsonResponse = convert.jsonDecode(response.body);
-      var desc = jsonResponse[0];
+      var desc = jsonResponse;
 
       //print(desc);
 
