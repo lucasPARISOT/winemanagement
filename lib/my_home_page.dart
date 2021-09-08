@@ -77,12 +77,14 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
+  void _getWine() async {
+    final response = await DAO().getAllWines();
+    print(response.toString());
+  }
 
-      DAO().insertTest(_counter);
-    });
+  void _setWine() {
+    // Auto generated data
+    DAO().addWine();
   }
 
   void _navigateParameters() {
@@ -144,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
           alignment: Alignment.bottomRight,
           child: FloatingActionButton(
             heroTag: "btn2",
-            onPressed: _incrementCounter,
+            onPressed: _getWine,
             tooltip: tr('new_bottle'),
             child: Icon(Icons.add),
           ),
