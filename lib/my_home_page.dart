@@ -18,8 +18,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  int _counter = 0;
-
   String imageWine = 'assets/images/wine_bottle.png';
 
   @override
@@ -180,6 +178,7 @@ class _MyHomePageState extends State<MyHomePage> {
             );
           }
           else {
+            print(snapshot.data);
             return ListView.builder(
               itemCount: snapshot.data.length,
               itemBuilder: (context, index) {
