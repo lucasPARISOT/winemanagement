@@ -8,16 +8,21 @@ import 'my_home_page.dart';
 import 'my_themes.dart';
 
 class ParametersPage extends StatefulWidget {
+  const ParametersPage({Key? key, required this.theme}) : super(key: key);
 
   final ThemeData theme;
-
-  ParametersPage({Key? key, required this.theme}) : super(key: key);
 
   @override
   _ParametersPage createState() => _ParametersPage();
 }
 
 class _ParametersPage extends State<ParametersPage> {
+  _ParametersPage() {
+    getCurrentColor().then((value) => setState(() {
+      currentBackgroundColor = value;
+    }));
+    body = bodyDefault();
+  }
 
   Color currentBackgroundColor = Colors.limeAccent;
   Color currentAccentColor = Colors.white;
@@ -25,20 +30,13 @@ class _ParametersPage extends State<ParametersPage> {
 
   Padding? body;
 
-  _ParametersPage() {
-    getCurrentColor().then((value) => setState(() {
-      currentBackgroundColor = value;
-    }));
-    body = this.bodyDefault();
-  }
-
   Future<Color> getCurrentColor() async{
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     if(!prefs.containsKey('backgroundColor')){
       return Colors.black;
     }
     else {
-      int? colorCode = prefs.getInt('backgroundColor');
+      final int? colorCode = prefs.getInt('backgroundColor');
       return Color(colorCode!);
     }
   }
@@ -62,15 +60,15 @@ class _ParametersPage extends State<ParametersPage> {
         supportedLocaleIndex = 5;
         break;
     }
-    Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
+    final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
     setState(() {
       //buildContext.setLocale(locale);
       EasyLocalization.of(buildContext)!.setLocale(locale);
     });
   }
 
-  void changeBackgroundColor(Color color) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+  Future<void> changeBackgroundColor(Color color) async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('backgroundColor', color.value);
 
     setState(() {
@@ -78,8 +76,8 @@ class _ParametersPage extends State<ParametersPage> {
     });
   }
 
-  void changeAccentColor(Color color) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+  Future<void> changeAccentColor(Color color) async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('accentColor', color.value);
 
     setState(() {
@@ -97,20 +95,20 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   Future<void> _changeTheme(BuildContext buildContext, MyThemeKeys key) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString('theme', key.toString());
     prefs.setString('appBarTheme', key.toString());
     CustomTheme.instanceOf(buildContext).changeTheme(key);
   }
 
   Future<void> _applyTheme(BuildContext buildContext) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     prefs.setString('theme', 'MyThemeKeys.CUSTOM');
 
     Color? backgroundColor;
     if(prefs.containsKey('backgroundColor')){
-      int ?backgroundColorCode = prefs.getInt('backgroundColor');
+      final int ?backgroundColorCode = prefs.getInt('backgroundColor');
       backgroundColor = Color(backgroundColorCode!);
     }
     else {
@@ -119,16 +117,16 @@ class _ParametersPage extends State<ParametersPage> {
 
     Color? accentColor;
     if(prefs.containsKey('accentColor')){
-      int ?accentColorCode = prefs.getInt('accentColor');
+      final int ?accentColorCode = prefs.getInt('accentColor');
       accentColor = Color(accentColorCode!);
     }
     else {
       accentColor = Colors.teal;
     }
 
-    ThemeData oldTheme = CustomTheme.of(context);
+    final ThemeData oldTheme = CustomTheme.of(context);
 
-    ThemeData theme = ThemeData(
+    final ThemeData theme = ThemeData(
       scaffoldBackgroundColor: backgroundColor,
       accentColor: accentColor,
       primaryColor: oldTheme.primaryColor,
@@ -142,11 +140,11 @@ class _ParametersPage extends State<ParametersPage> {
     return Stack(
       children: [
         Align(
-          alignment: Alignment(1.0, -0.5),
+          alignment: const Alignment(1.0, -0.5),
           child: FloatingActionButton(
             onPressed: _navigateHomePage,
             tooltip: tr('back'),
-            child: Icon(Icons.keyboard_return),
+            child: const Icon(Icons.keyboard_return),
           ),
         ),
       ],
@@ -160,7 +158,7 @@ class _ParametersPage extends State<ParametersPage> {
       leading: Builder(
         builder: (BuildContext context) {
           return IconButton(
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             onPressed: () {
               Scaffold.of(context).openDrawer();
             },
@@ -195,7 +193,7 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
-            title: Text('Language'),
+            title: const Text('Language'),
             onTap: () {
               setState(() {
                 body = bodyLanguage(buildContext);
@@ -222,7 +220,7 @@ class _ParametersPage extends State<ParametersPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
+          children: const <Widget>[
             Text('Changelog: Nothing yet'),
             Text('Twitter integration ?'),
           ],
@@ -238,7 +236,7 @@ class _ParametersPage extends State<ParametersPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
+          children: const <Widget>[
             Text('Nothing yet, Coming soon'),
           ],
         ),
@@ -254,11 +252,11 @@ class _ParametersPage extends State<ParametersPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
-            Container(
+            const SizedBox(
               height: 35,
               child: Text('Language'),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                 message: 'English',
@@ -266,11 +264,11 @@ class _ParametersPage extends State<ParametersPage> {
                   onPressed: () {
                     changeLocale('EN', buildContext);
                   },
-                  child: Image(image: AssetImage('assets/images/flags/English.png'))
+                  child: const Image(image: AssetImage('assets/images/flags/English.png'))
                 )
               ),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                 message: 'French',
@@ -278,11 +276,11 @@ class _ParametersPage extends State<ParametersPage> {
                     onPressed: () {
                       changeLocale('FR', buildContext);
                     },
-                  child: Image(image: AssetImage('assets/images/flags/French.png'))
+                  child: const Image(image: AssetImage('assets/images/flags/French.png'))
                 )
               ),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                 message: 'Spanish',
@@ -290,11 +288,11 @@ class _ParametersPage extends State<ParametersPage> {
                     onPressed: () {
                       changeLocale('ES', buildContext);
                     },
-                  child: Image(image: AssetImage('assets/images/flags/Spanish.png'))
+                  child: const Image(image: AssetImage('assets/images/flags/Spanish.png'))
                 )
               ),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                 message: 'Portuguese',
@@ -302,11 +300,11 @@ class _ParametersPage extends State<ParametersPage> {
                     onPressed: () {
                       changeLocale('PT', buildContext);
                     },
-                  child: Image(image: AssetImage('assets/images/flags/Portuguese.png'))
+                  child: const Image(image: AssetImage('assets/images/flags/Portuguese.png'))
                 )
               ),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                   message: 'Italian',
@@ -314,11 +312,11 @@ class _ParametersPage extends State<ParametersPage> {
                       onPressed: () {
                         changeLocale('IT', buildContext);
                       },
-                      child: Image(image: AssetImage('assets/images/flags/Italian.png'))
+                      child: const Image(image: AssetImage('assets/images/flags/Italian.png'))
                   )
               ),
             ),
-            Container(
+            SizedBox(
               height: 35,
               child: Tooltip(
                   message: 'Greek',
@@ -326,7 +324,7 @@ class _ParametersPage extends State<ParametersPage> {
                       onPressed: () {
                         changeLocale('GR', buildContext);
                       },
-                      child: Image(image: AssetImage('assets/images/flags/Greek.png'))
+                      child: const Image(image: AssetImage('assets/images/flags/Greek.png'))
                   )
               ),
             ),
@@ -348,13 +346,13 @@ class _ParametersPage extends State<ParametersPage> {
               onPressed: () {
                 _changeTheme(context, MyThemeKeys.LIGHT);
               },
-              child: Text(tr("light_mode")),
+              child: Text(tr('light_mode')),
             ),
             ElevatedButton(
               onPressed: () {
                 _changeTheme(context, MyThemeKeys.DARK);
               },
-              child: Text(tr("dark_mode")),
+              child: Text(tr('dark_mode')),
             ),
             ElevatedButton(
               onPressed: () {
@@ -362,8 +360,8 @@ class _ParametersPage extends State<ParametersPage> {
                   context: context,
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      titlePadding: const EdgeInsets.all(0.0),
-                      contentPadding: const EdgeInsets.all(0.0),
+                      titlePadding: EdgeInsets.zero,
+                      contentPadding: EdgeInsets.zero,
                       content: SingleChildScrollView(
                         child: ColorPicker(
                           pickerColor: currentBackgroundColor,
@@ -375,8 +373,8 @@ class _ParametersPage extends State<ParametersPage> {
                           showLabel: true,
                           paletteType: PaletteType.hsv,
                           pickerAreaBorderRadius: const BorderRadius.only(
-                            topLeft: const Radius.circular(2.0),
-                            topRight: const Radius.circular(2.0),
+                            topLeft: Radius.circular(2.0),
+                            topRight: Radius.circular(2.0),
                           ),
                         ),
                       ),
@@ -384,7 +382,7 @@ class _ParametersPage extends State<ParametersPage> {
                   },
                 );
               },
-              child: Text(tr("select_bg_color")),
+              child: Text(tr('select_bg_color')),
             ),
             ElevatedButton(
               onPressed: () {
@@ -392,8 +390,8 @@ class _ParametersPage extends State<ParametersPage> {
                   context: context,
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      titlePadding: const EdgeInsets.all(0.0),
-                      contentPadding: const EdgeInsets.all(0.0),
+                      titlePadding: EdgeInsets.zero,
+                      contentPadding: EdgeInsets.zero,
                       content: SingleChildScrollView(
                         child: ColorPicker(
                           pickerColor: currentAccentColor,
@@ -405,8 +403,8 @@ class _ParametersPage extends State<ParametersPage> {
                           showLabel: true,
                           paletteType: PaletteType.hsv,
                           pickerAreaBorderRadius: const BorderRadius.only(
-                            topLeft: const Radius.circular(2.0),
-                            topRight: const Radius.circular(2.0),
+                            topLeft: Radius.circular(2.0),
+                            topRight: Radius.circular(2.0),
                           ),
                         ),
                       ),
@@ -414,13 +412,13 @@ class _ParametersPage extends State<ParametersPage> {
                   },
                 );
               },
-              child: Text(tr("select_second_color")),
+              child: Text(tr('select_second_color')),
             ),
             ElevatedButton(
               onPressed: () {
                 _applyTheme(context);
               },
-              child: Text(tr("apply_theme")),
+              child: Text(tr('apply_theme')),
             ),
           ],
         ),

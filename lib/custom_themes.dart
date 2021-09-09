@@ -4,13 +4,14 @@ import 'package:flutter/widgets.dart';
 import 'my_themes.dart';
 
 class _CustomTheme extends InheritedWidget {
-  final CustomThemeState data;
 
-  _CustomTheme({
+  const _CustomTheme({
     required this.data,
     Key? key,
     required Widget child,
   }) : super(key: key, child: child);
+
+  final CustomThemeState data;
 
   @override
   bool updateShouldNotify(_CustomTheme oldWidget) {
@@ -19,27 +20,27 @@ class _CustomTheme extends InheritedWidget {
 }
 
 class CustomTheme extends StatefulWidget {
-  final Widget child;
-  final MyThemeKeys initialThemeKey;
-
   const CustomTheme({
     Key? key,
     required this.initialThemeKey,
     required this.child,
   }) : super(key: key);
 
+  final Widget child;
+  final MyThemeKeys initialThemeKey;
+
   @override
-  CustomThemeState createState() => new CustomThemeState();
+  CustomThemeState createState() => CustomThemeState();
 
   static ThemeData of(BuildContext context) {
-    _CustomTheme? inherited =
-    (context.dependOnInheritedWidgetOfExactType<_CustomTheme>());
+    final _CustomTheme? inherited =
+    context.dependOnInheritedWidgetOfExactType<_CustomTheme>();
     return inherited!.data.theme;
   }
 
   static CustomThemeState instanceOf(BuildContext context) {
-    _CustomTheme? inherited =
-    (context.dependOnInheritedWidgetOfExactType<_CustomTheme>());
+    final _CustomTheme? inherited =
+    context.dependOnInheritedWidgetOfExactType<_CustomTheme>();
     return inherited!.data;
   }
 }
@@ -51,14 +52,14 @@ class CustomThemeState extends State<CustomTheme> {
 
   @override
   void initState() {
-    MyThemes myThemes = new MyThemes();
+    final MyThemes myThemes = MyThemes();
     _theme = myThemes.getThemeFromKey(widget.initialThemeKey);
     super.initState();
   }
 
   void changeTheme(MyThemeKeys themeKey) {
     setState(() {
-      MyThemes myThemes = new MyThemes();
+      final MyThemes myThemes = MyThemes();
       _theme = myThemes.getThemeFromKey(themeKey);
     });
   }
@@ -71,7 +72,7 @@ class CustomThemeState extends State<CustomTheme> {
 
   @override
   Widget build(BuildContext context) {
-    return new _CustomTheme(
+    return _CustomTheme(
       data: this,
       child: widget.child,
     );

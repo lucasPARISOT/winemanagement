@@ -7,7 +7,7 @@ import 'app.dart';
 import 'custom_themes.dart';
 import 'my_themes.dart';
 
-void main() async{
+Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
 
   await SystemChrome.setPreferredOrientations([
@@ -19,12 +19,12 @@ void main() async{
 
   MyThemeKeys theme = MyThemeKeys.DARK;
 
-  SharedPreferences prefs = await SharedPreferences.getInstance();
+  final SharedPreferences prefs = await SharedPreferences.getInstance();
   if(!prefs.containsKey('theme')){
     prefs.setString('theme', 'MyThemeKeys.DARK');
   }
   else {
-    String? code = prefs.getString('theme');
+    final String? code = prefs.getString('theme');
     switch(code) {
       case 'MyThemeKeys.DARK':
         theme = MyThemeKeys.DARK;
@@ -42,7 +42,7 @@ void main() async{
     CustomTheme(
       initialThemeKey: theme,
       child: EasyLocalization(
-        supportedLocales: [
+        supportedLocales: const [
           Locale('en', 'US'),
           Locale('fr', 'FR'),
           Locale('es', 'ES'),
@@ -51,8 +51,8 @@ void main() async{
           Locale('el', 'GR')
         ],
         path: 'assets/translations',
-        fallbackLocale: Locale('en', 'US'),
-        child:  MyApp(),
+        fallbackLocale: const Locale('en', 'US'),
+        child:  const MyApp(),
       ),
     )
   );

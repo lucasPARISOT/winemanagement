@@ -8,6 +8,9 @@ import 'my_home_page.dart';
 import 'splash.dart';
 
 class MyApp extends StatelessWidget {
+
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -15,18 +18,18 @@ class MyApp extends StatelessWidget {
       builder: (context, AsyncSnapshot snapshot) {
         // Show splash screen while waiting for app resources to load:
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return MaterialApp(home: Splash());
+          return const MaterialApp(home: Splash());
         } else {
           // Loading is done, return the app:
           return MaterialApp(
             localizationsDelegates: context.localizationDelegates,
-            supportedLocales: [
-              const Locale('en', 'US'),
-              const Locale('fr', 'FR'),
-              const Locale('es', 'ES'),
-              const Locale('pt', 'PT'),
-              const Locale('el', 'GR'),
-              const Locale('it', 'IT')
+            supportedLocales: const [
+              Locale('en', 'US'),
+              Locale('fr', 'FR'),
+              Locale('es', 'ES'),
+              Locale('pt', 'PT'),
+              Locale('el', 'GR'),
+              Locale('it', 'IT')
             ],
             locale: context.locale,
             title: tr('wine_management'),

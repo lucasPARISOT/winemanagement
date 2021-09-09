@@ -7,10 +7,9 @@ import 'dao.dart';
 import 'parameters_page.dart';
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key, required this.theme}) : super(key: key);
 
   final ThemeData theme;
-
-  MyHomePage({Key? key, required this.theme}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -23,29 +22,29 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    new Future.delayed(Duration.zero,() {
+    Future.delayed(Duration.zero,() {
       showDialog(
         context: context, builder: (context) {
           setCustomTheme(context);
           return Container();
         }
       );
-      new Future.delayed(Duration(microseconds: 1),() {
+      Future.delayed(const Duration(microseconds: 1),() {
         Navigator.pop(context);
       });
     });
   }
 
-  void setCustomTheme(BuildContext buildContext) async {
+  Future<void> setCustomTheme(BuildContext buildContext) async {
 
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     if(prefs.containsKey('theme')) {
       if(prefs.getString('theme') == 'MyThemeKeys.CUSTOM'){
-        int? bgColor = prefs.getInt('backgroundColor');
+        final int? bgColor = prefs.getInt('backgroundColor');
 
         Color? accentColor;
         if(prefs.containsKey('accentColor')){
-          int ?accentColorCode = prefs.getInt('accentColor');
+          final int ?accentColorCode = prefs.getInt('accentColor');
           accentColor = Color(accentColorCode!);
         }
         else {
@@ -75,9 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  void _getWine() async {
+  Future<void> _getWine() async {
     final response = await DAO().getAllWines();
-    print(response.toString());
+    // TODO(user): do something with response
   }
 
   void _setWine() {
@@ -96,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return AppBar(
       centerTitle: true,
       title: Text(tr('wine_management')),
-      bottom: TabBar(
+      bottom: const TabBar(
         tabs: <Widget>[
           Tab(
             icon: Icon(Icons.home),
@@ -113,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget body(BuildContext context) {
-    return new TabBarView(
+    return TabBarView(
       children: <Widget>[
         Center(
           child: mainPage(context),
@@ -121,8 +120,8 @@ class _MyHomePageState extends State<MyHomePage> {
         Center(
           child: listPage(context),
         ),
-        Center(
-          child: new Text("Photo"),
+        const Center(
+          child: Text('Photo'),
         ),
       ],
     );
@@ -132,21 +131,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Stack(
       children: <Widget> [
         Align(
-          alignment: Alignment(1.0, -0.5),
+          alignment: const Alignment(1.0, -0.5),
           child: FloatingActionButton(
-            heroTag: "btn1",
+            heroTag: 'btn1',
             onPressed: _navigateParameters,
             tooltip: tr('parameters'),
-            child: Icon(Icons.settings),
+            child: const Icon(Icons.settings),
           ),
         ),
         Align(
           alignment: Alignment.bottomRight,
           child: FloatingActionButton(
-            heroTag: "btn2",
+            heroTag: 'btn2',
             onPressed: _getWine,
             tooltip: tr('new_bottle'),
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
           ),
         ),
       ],
@@ -154,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget mainPage(BuildContext context) {
-    return new Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(tr('wine_management')),
@@ -169,11 +168,11 @@ class _MyHomePageState extends State<MyHomePage> {
       future: DAO().getAllWines(),
       builder: (context, AsyncSnapshot snapshot) {
         if(snapshot.connectionState == ConnectionState.waiting){
-          return SizedBox.shrink();
+          return const SizedBox.shrink();
         }
         else {
           if (snapshot.error != null) {
-            return Center(
+            return const Center(
                 child: Text('An error occured')
             );
           }

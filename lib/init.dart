@@ -4,7 +4,7 @@ class Init {
 
   Future initialize() async {
 
-    //TODO: await dataBase();
-    await Future.delayed(Duration(seconds: 2));
+    // TODO(user): await dataBase();
+    await Future.delayed(const Duration(seconds: 2));
   }
 }
