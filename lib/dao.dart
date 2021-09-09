@@ -1,6 +1,7 @@
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 
+/// This the class for all incoming and outgoing data
 class DAO {
 
   Future<void> addWine() async {

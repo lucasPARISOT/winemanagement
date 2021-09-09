@@ -7,6 +7,8 @@ import 'package:winemanagement/app.dart';
 import 'package:winemanagement/custom_themes.dart';
 import 'package:winemanagement/my_themes.dart';
 
+/// Entry point of this application
+/// Widget, Localization and ThemeData initializations
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -37,7 +39,6 @@ Future<void> main() async{
         break;
     }
   }
-
   runApp(
     CustomTheme(
       initialThemeKey: theme,

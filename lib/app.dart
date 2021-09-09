@@ -7,8 +7,11 @@ import 'package:winemanagement/init.dart';
 import 'package:winemanagement/my_home_page.dart';
 import 'package:winemanagement/splash.dart';
 
+/// First StatelessWidget class of this application
+/// Load splash screen, Theme and Localization
 class MyApp extends StatelessWidget {
 
+  /// Empty constructor
   const MyApp({Key? key}) : super(key: key);
 
   @override

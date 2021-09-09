@@ -19,7 +19,9 @@ class _CustomTheme extends InheritedWidget {
   }
 }
 
+/// This class contains custom themes
 class CustomTheme extends StatefulWidget {
+  /// Constructor
   const CustomTheme({
     required this.initialThemeKey,
     required this.child,
@@ -45,6 +47,8 @@ class CustomTheme extends StatefulWidget {
   }
 }
 
+/// This class is used to init Themes
+/// Change between predefined Themes or custom ones
 class CustomThemeState extends State<CustomTheme> {
   late ThemeData _theme;
 

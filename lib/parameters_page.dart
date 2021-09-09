@@ -16,6 +16,7 @@ class ParametersPage extends StatefulWidget {
   _ParametersPage createState() => _ParametersPage();
 }
 
+/// This class is for the parameter page of this application
 class _ParametersPage extends State<ParametersPage> {
   _ParametersPage() {
     getCurrentColor().then((value) => setState(() {

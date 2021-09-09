@@ -15,6 +15,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+/// This class is for the home page of this application
 class _MyHomePageState extends State<MyHomePage> {
 
   String imageWine = 'assets/images/wine_bottle.png';
