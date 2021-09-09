@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'custom_themes.dart';
-import 'dao.dart';
-import 'parameters_page.dart';
+import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/dao.dart';
+import 'package:winemanagement/parameters_page.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.theme}) : super(key: key);
+  const MyHomePage({required this.theme, Key? key}) : super(key: key);
 
   final ThemeData theme;
 
@@ -42,13 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
       if(prefs.getString('theme') == 'MyThemeKeys.CUSTOM'){
         final int? bgColor = prefs.getInt('backgroundColor');
 
-        Color? accentColor;
-        if(prefs.containsKey('accentColor')){
-          final int ?accentColorCode = prefs.getInt('accentColor');
-          accentColor = Color(accentColorCode!);
+        Color? secondaryColor;
+        if(prefs.containsKey('secondaryColor')){
+          final int ?secondaryColorCode = prefs.getInt('secondaryColor');
+          secondaryColor = Color(secondaryColorCode!);
         }
         else {
-          accentColor = Colors.teal;
+          secondaryColor = Colors.teal;
         }
 
         Color? primaryColor = Colors.black;
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
         CustomTheme.instanceOf(buildContext).newCustomTheme(
           ThemeData(
             scaffoldBackgroundColor: Color(bgColor!),
-            accentColor: accentColor,
+            accentColor: secondaryColor,
             primaryColor: primaryColor,
             brightness: brightness,
             backgroundColor: primaryColor,
@@ -87,7 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void _navigateParameters() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ParametersPage(theme: widget.theme)),
+      MaterialPageRoute(
+          builder: (context) => ParametersPage(theme: widget.theme)
+      ),
     );
   }
 
@@ -173,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
         else {
           if (snapshot.error != null) {
             return const Center(
-                child: Text('An error occured')
+                child: Text('An error occurred')
             );
           }
           else {

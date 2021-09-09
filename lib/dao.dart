@@ -39,7 +39,11 @@ class DAO {
         .get(uri);
 
     if (response.statusCode == 200) {
-      final List<dynamic> jsonResponse = convert.jsonDecode(convert.utf8.decode(response.bodyBytes));
+      final List<dynamic> jsonResponse = convert.jsonDecode(
+          convert.utf8.decode(
+              response.bodyBytes
+          )
+      );
       final desc = jsonResponse;
       return desc;
     } else {

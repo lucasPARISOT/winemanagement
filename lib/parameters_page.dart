@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'custom_themes.dart';
-import 'my_home_page.dart';
-import 'my_themes.dart';
+import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/my_home_page.dart';
+import 'package:winemanagement/my_themes.dart';
 
 class ParametersPage extends StatefulWidget {
-  const ParametersPage({Key? key, required this.theme}) : super(key: key);
+  const ParametersPage({required this.theme, Key? key}) : super(key: key);
 
   final ThemeData theme;
 
@@ -25,7 +25,7 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   Color currentBackgroundColor = Colors.limeAccent;
-  Color currentAccentColor = Colors.white;
+  Color currentSecondaryColor = Colors.white;
   List<Color> currentColors = [Colors.limeAccent, Colors.green];
 
   Padding? body;
@@ -62,7 +62,6 @@ class _ParametersPage extends State<ParametersPage> {
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
     setState(() {
-      //buildContext.setLocale(locale);
       EasyLocalization.of(buildContext)!.setLocale(locale);
     });
   }
@@ -76,16 +75,17 @@ class _ParametersPage extends State<ParametersPage> {
     });
   }
 
-  Future<void> changeAccentColor(Color color) async {
+  Future<void> changeSecondaryColor(Color color) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setInt('accentColor', color.value);
+    prefs.setInt('secondaryColor', color.value);
 
     setState(() {
-      currentAccentColor = color;
+      currentSecondaryColor = color;
     });
   }
 
-  void changeColors(List<Color> colors) => setState(() => currentColors = colors);
+  void changeColors(List<Color> colors)
+    => setState(() => currentColors = colors);
 
   void _navigateHomePage() {
     Navigator.push(
@@ -115,24 +115,23 @@ class _ParametersPage extends State<ParametersPage> {
       backgroundColor = Colors.teal;
     }
 
-    Color? accentColor;
-    if(prefs.containsKey('accentColor')){
-      final int ?accentColorCode = prefs.getInt('accentColor');
-      accentColor = Color(accentColorCode!);
+    Color? secondaryColor;
+    if(prefs.containsKey('secondaryColor')){
+      final int ?secondaryColorCode = prefs.getInt('secondaryColor');
+      secondaryColor = Color(secondaryColorCode!);
     }
     else {
-      accentColor = Colors.teal;
+      secondaryColor = Colors.teal;
     }
 
     final ThemeData oldTheme = CustomTheme.of(context);
 
     final ThemeData theme = ThemeData(
       scaffoldBackgroundColor: backgroundColor,
-      accentColor: accentColor,
+      accentColor: secondaryColor,
       primaryColor: oldTheme.primaryColor,
       brightness: oldTheme.brightness,
     );
-
     CustomTheme.instanceOf(buildContext).newCustomTheme(theme);
   }
 
@@ -394,8 +393,8 @@ class _ParametersPage extends State<ParametersPage> {
                       contentPadding: EdgeInsets.zero,
                       content: SingleChildScrollView(
                         child: ColorPicker(
-                          pickerColor: currentAccentColor,
-                          onColorChanged: changeAccentColor,
+                          pickerColor: currentSecondaryColor,
+                          onColorChanged: changeSecondaryColor,
                           colorPickerWidth: 300.0,
                           pickerAreaHeightPercent: 0.7,
                           enableAlpha: true,

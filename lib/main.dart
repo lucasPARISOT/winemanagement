@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'app.dart';
-import 'custom_themes.dart';
-import 'my_themes.dart';
+import 'package:winemanagement/app.dart';
+import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/my_themes.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();

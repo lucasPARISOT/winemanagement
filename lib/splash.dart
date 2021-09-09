@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_themes.dart';
+import 'package:winemanagement/custom_themes.dart';
 
 class Splash extends StatelessWidget {
   const Splash({Key? key}) : super(key: key);
