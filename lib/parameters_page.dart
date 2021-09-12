@@ -60,6 +60,9 @@ class _ParametersPage extends State<ParametersPage> {
       case 'GR':
         supportedLocaleIndex = 5;
         break;
+      case 'DE':
+        supportedLocaleIndex = 6;
+        break;
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
     setState(() {
@@ -325,6 +328,18 @@ class _ParametersPage extends State<ParametersPage> {
                         changeLocale('GR', buildContext);
                       },
                       child: const Image(image: AssetImage('assets/images/flags/Greek.png'))
+                  )
+              ),
+            ),
+            SizedBox(
+              height: 35,
+              child: Tooltip(
+                  message: 'German',
+                  child: TextButton(
+                      onPressed: () {
+                        changeLocale('DE', buildContext);
+                      },
+                      child: const Image(image: AssetImage('assets/images/flags/German.png'))
                   )
               ),
             ),

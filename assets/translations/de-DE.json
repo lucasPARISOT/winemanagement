@@ -1,0 +1,14 @@
+{
+  "wine_management": "Wine Management!",
+  "parameters": "Parameter",
+  "new_bottle": "Neue Flasche hinzufügen",
+  "back": "Zurück",
+  "light_mode": "Modus Licht",
+  "dark_mode": "Dunkler Modus",
+  "select_bg_color": "Hintergrundfarbe auswählen",
+  "apply_theme": "Thema anwenden!",
+  "select_second_color": "Sekundärfarbe auswählen",
+  "display": "Anzeige",
+  "advanced": "Erweiterte Einstellungen",
+  "open_navigation_menu": "Navigationsmenü öffnen"
+}

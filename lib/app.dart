@@ -31,8 +31,9 @@ class MyApp extends StatelessWidget {
               Locale('fr', 'FR'),
               Locale('es', 'ES'),
               Locale('pt', 'PT'),
+              Locale('it', 'IT'),
               Locale('el', 'GR'),
-              Locale('it', 'IT')
+              Locale('de', 'DE')
             ],
             locale: context.locale,
             title: tr('wine_management'),
