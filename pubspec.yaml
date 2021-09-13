@@ -41,6 +41,8 @@ dev_dependencies:
   # ^0.5.0 is not stable
   flutter_colorpicker: ^0.4.0
 
+  flutter_typeahead: ^3.2.1
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
