@@ -10,7 +10,6 @@ import 'package:winemanagement/language_flag.dart';
 import 'package:winemanagement/my_home_page.dart';
 import 'package:winemanagement/my_themes.dart';
 
-
 class ParametersPage extends StatefulWidget {
   const ParametersPage({required this.theme, Key? key}) : super(key: key);
 
@@ -46,6 +45,34 @@ class _ParametersPage extends State<ParametersPage> {
     }
   }
 
+  String getLanguage(String? localeCountryCode){
+    switch(localeCountryCode) {
+      case 'FR':
+        return 'French';
+      case 'ES':
+        return 'Spanish';
+      case 'PT':
+        return 'Portuguese';
+      case 'IT':
+        return 'Italian';
+      case 'GR':
+        return 'Greek';
+      case 'DE':
+        return 'German';
+    }
+    return 'English';
+  }
+
+  InputDecoration decoration() {
+
+    final String language = getLanguage(context.locale.countryCode);
+    final String flagPath = 'assets/images/flags/$language.png';
+    return InputDecoration(
+        border: const OutlineInputBorder(),
+        prefixIcon: Image(image: AssetImage(flagPath), height: 60),
+        hintText: language);
+  }
+
   void changeLocale(String localeString, BuildContext buildContext) {
     int supportedLocaleIndex = 0;
     switch(localeString) {
@@ -77,7 +104,6 @@ class _ParametersPage extends State<ParametersPage> {
   Future<void> changeBackgroundColor(Color color) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('backgroundColor', color.value);
-
     setState(() {
       currentBackgroundColor = color;
     });
@@ -86,7 +112,6 @@ class _ParametersPage extends State<ParametersPage> {
   Future<void> changeSecondaryColor(Color color) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('secondaryColor', color.value);
-
     setState(() {
       currentSecondaryColor = color;
     });
@@ -255,51 +280,54 @@ class _ParametersPage extends State<ParametersPage> {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            TypeAheadField(
-              textFieldConfiguration: const TextFieldConfiguration(
-                autofocus: true,
-                decoration: InputDecoration(
-                  prefixIcon: Image(image: AssetImage('assets/images/wine_bottle.png')),
-                  border: OutlineInputBorder(),
-                  hintText: 'Select application language'),
-              ),
-              suggestionsCallback: (pattern) async {
-                final LanguageData languageData = LanguageData();
-                return languageData.getSuggestions(pattern);
-              },
-              itemBuilder: (context, LanguageFlag? suggestion) {
-                final languageFlag = suggestion!;
-                return ListTile(
-                  title: Text(languageFlag.language),
-                  leading: SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: Image(
-                    image: AssetImage(
-                      'assets/images/flags/${languageFlag.language}.png')
+        child: SizedBox(
+          width: 500,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              TypeAheadField(
+                textFieldConfiguration: TextFieldConfiguration(
+                  autofocus: true,
+                  textAlign: TextAlign.center,
+                  decoration: decoration(),
+                ),
+                suggestionsCallback: (pattern) async {
+                  final LanguageData languageData = LanguageData();
+                  return languageData.getSuggestions(pattern);
+                },
+                itemBuilder: (context, LanguageFlag? suggestion) {
+                  final languageFlag = suggestion!;
+                  return ListTile(
+                    title: Text(languageFlag.language),
+                    leading: SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: Image(
+                      image: AssetImage(
+                        'assets/images/flags/${languageFlag.language}.png')
+                      ),
+                    )
+                  );
+                },
+                noItemsFoundBuilder: (context) => const SizedBox(
+                  height: 100,
+                  child: Center(
+                    child: Text(
+                      'No language Found.',
+                      style: TextStyle(fontSize: 24),
                     ),
-                  )
-                );
-              },
-              noItemsFoundBuilder: (context) => const SizedBox(
-                height: 100,
-                child: Center(
-                  child: Text(
-                    'No Users Found.',
-                    style: TextStyle(fontSize: 24),
                   ),
                 ),
+                onSuggestionSelected: (LanguageFlag? suggestion) {
+                  final languageFlag = suggestion!;
+                  setState(() {
+                  });
+                  changeLocale(languageFlag.locale, buildContext);
+                },
               ),
-              onSuggestionSelected: (LanguageFlag? suggestion) {
-                final languageFlag = suggestion!;
-                changeLocale(languageFlag.locale, buildContext);
-              },
-            ),
-          ]
+            ]
+          )
         )
       ),
     );
