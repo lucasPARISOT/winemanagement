@@ -5,10 +5,11 @@ import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/language_data.dart';
+import 'package:winemanagement/language_flag.dart';
 import 'package:winemanagement/my_home_page.dart';
 import 'package:winemanagement/my_themes.dart';
 
-import 'language_data.dart';
 
 class ParametersPage extends StatefulWidget {
   const ParametersPage({required this.theme, Key? key}) : super(key: key);
@@ -268,16 +269,34 @@ class _ParametersPage extends State<ParametersPage> {
               ),
               suggestionsCallback: (pattern) async {
                 final LanguageData languageData = LanguageData();
-                return languageData.getLanguage(pattern);
+                return languageData.getSuggestions(pattern);
               },
-              itemBuilder: (context, Map<String, String> suggestion) {
+              itemBuilder: (context, LanguageFlag? suggestion) {
+                final languageFlag = suggestion!;
                 return ListTile(
-                  title: Text(suggestion['language']!),
-                  leading: Image(image: AssetImage('assets/images/flags/${suggestion['language']}.png')),
+                  title: Text(languageFlag.language),
+                  leading: SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: Image(
+                    image: AssetImage(
+                      'assets/images/flags/${languageFlag.language}.png')
+                    ),
+                  )
                 );
               },
-              onSuggestionSelected: (Map<String, String> suggestion) {
-                changeLocale(suggestion['locale']!, buildContext);
+              noItemsFoundBuilder: (context) => const SizedBox(
+                height: 100,
+                child: Center(
+                  child: Text(
+                    'No Users Found.',
+                    style: TextStyle(fontSize: 24),
+                  ),
+                ),
+              ),
+              onSuggestionSelected: (LanguageFlag? suggestion) {
+                final languageFlag = suggestion!;
+                changeLocale(languageFlag.locale, buildContext);
               },
             ),
           ]
