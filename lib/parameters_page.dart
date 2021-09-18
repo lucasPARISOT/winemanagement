@@ -64,12 +64,12 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   InputDecoration decoration() {
-    final String language = getLanguage(context.locale.countryCode);
+    final language = getLanguage(context.locale.countryCode);
     final String flagPath = 'assets/images/flags/$language.png';
     return InputDecoration(
         border: const OutlineInputBorder(),
         prefixIcon: Image(image: AssetImage(flagPath), height: 60),
-        hintText: language);
+        hintText: tr(language));
   }
 
   void changeLocale(String localeString, BuildContext buildContext) {
@@ -224,7 +224,7 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
-            title: const Text('Language'),
+            title: Text(tr('language')),
             onTap: () {
               setState(() {
                 body = bodyLanguage(buildContext);
@@ -298,7 +298,7 @@ class _ParametersPage extends State<ParametersPage> {
                 itemBuilder: (context, LanguageFlag? suggestion) {
                   final languageFlag = suggestion!;
                   return ListTile(
-                    title: Text(languageFlag.language),
+                    title: Text(tr(languageFlag.language)),
                     leading: SizedBox(
                     width: 60,
                     height: 60,
@@ -309,12 +309,12 @@ class _ParametersPage extends State<ParametersPage> {
                     )
                   );
                 },
-                noItemsFoundBuilder: (context) => const SizedBox(
+                noItemsFoundBuilder: (context) => SizedBox(
                   height: 100,
                   child: Center(
                     child: Text(
-                      'No language Found.',
-                      style: TextStyle(fontSize: 24),
+                      tr('no_language_found'),
+                      style: const TextStyle(fontSize: 24),
                     ),
                   ),
                 ),

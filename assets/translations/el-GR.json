@@ -10,5 +10,15 @@
   "select_second_color": "Επιλέξτε το δευτερεύον χρώμα",
   "display": "Εμφάνιση",
   "advanced": "Προηγμένες ρυθμίσεις",
-  "open_navigation_menu": "Ανοίξτε το μενού πλοήγησης"
+  "open_navigation_menu": "Ανοίξτε το μενού πλοήγησης",
+  "English": "Αγγλικά",
+  "French": "Γαλλικά",
+  "German": "Γερμανικά",
+  "Greek": "Ελληνική",
+  "Italian": "Ιταλικά",
+  "Portuguese": "Πορτογαλικά",
+  "Spanish": "Ισπανικά",
+  "language": "γλώσσα",
+  "error": "Εμφανίστηκε σφάλμα.",
+  "no_language_found": "Δεν βρέθηκε καμία γλώσσα!"
 }

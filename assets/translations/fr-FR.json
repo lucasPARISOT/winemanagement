@@ -10,5 +10,15 @@
   "select_second_color": "Choisir la couleur secondaire",
   "display": "Affichage",
   "advanced": "Paramètres avancés",
-  "open_navigation_menu": "Ouvrir le menu de navigation"
+  "open_navigation_menu": "Ouvrir le menu de navigation",
+  "English": "Anglais",
+  "French": "Français",
+  "German": "Allemand",
+  "Greek": "Grec",
+  "Italian": "Italien",
+  "Portuguese": "Portugais",
+  "Spanish": "Espagnol",
+  "language": "Langage",
+  "error": "Une erreur s'est produite.",
+  "no_language_found": "Aucune langue trouvée !"
 }

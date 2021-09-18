@@ -175,8 +175,8 @@ class _MyHomePageState extends State<MyHomePage> {
         }
         else {
           if (snapshot.error != null) {
-            return const Center(
-                child: Text('An error occurred')
+            return Center(
+                child: Text(tr('error'))
             );
           }
           else {
