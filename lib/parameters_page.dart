@@ -64,7 +64,6 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   InputDecoration decoration() {
-
     final String language = getLanguage(context.locale.countryCode);
     final String flagPath = 'assets/images/flags/$language.png';
     return InputDecoration(
@@ -321,9 +320,10 @@ class _ParametersPage extends State<ParametersPage> {
                 ),
                 onSuggestionSelected: (LanguageFlag? suggestion) {
                   final languageFlag = suggestion!;
-                  setState(() {
-                  });
                   changeLocale(languageFlag.locale, buildContext);
+                  setState(() {
+                    body = bodyLanguage(buildContext);
+                  });
                 },
               ),
             ]
