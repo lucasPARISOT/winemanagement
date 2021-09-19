@@ -9,7 +9,8 @@ class LanguageData {
     'Portuguese',
     'Italian',
     'Greek',
-    'German'
+    'German',
+    'Russian'
   ];
 
   static final List<String> locale = [
@@ -19,7 +20,8 @@ class LanguageData {
     'PT',
     'IT',
     'GR',
-    'DE'
+    'DE',
+    'RU'
   ];
 
   static final List<LanguageFlag> languageFlag =
