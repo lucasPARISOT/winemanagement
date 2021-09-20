@@ -20,5 +20,6 @@
   "Spanish": "Español",
   "language": "Idioma",
   "error": "Se ha producido un error.",
-  "no_language_found": "No se ha encontrado ningún idioma."
+  "no_language_found": "No se ha encontrado ningún idioma.",
+  "photo": "Foto"
 }

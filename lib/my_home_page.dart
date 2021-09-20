@@ -123,8 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
         Center(
           child: listPage(context),
         ),
-        const Center(
-          child: Text('Photo'),
+        Center(
+          child: Text(tr('photo')),
         ),
       ],
     );
