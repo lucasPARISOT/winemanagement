@@ -34,7 +34,10 @@ class LanguageData {
 
   List<LanguageFlag> getSuggestions(String query) {
     return List.of(languageFlag).where((languageFlagElement) {
+
+      // English language string
       final language = languageFlagElement.language.toLowerCase();
+
       final queryLower = query.toLowerCase();
 
       return language.contains(queryLower);
