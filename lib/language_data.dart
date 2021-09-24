@@ -18,7 +18,8 @@ class LanguageData {
     'assets/translations/it-IT.json',
     'assets/translations/el-GR.json',
     'assets/translations/de-DE.json',
-    'assets/translations/ru-RU.json'
+    'assets/translations/ru-RU.json',
+    'assets/translations/nl-NL.json'
   ];
 
   static final List<String> countries = [
@@ -29,7 +30,8 @@ class LanguageData {
     'Italian',
     'Greek',
     'German',
-    'Russian'
+    'Russian',
+    'Netherlands'
   ];
 
   static final List<String> locale = [
@@ -40,7 +42,8 @@ class LanguageData {
     'IT',
     'GR',
     'DE',
-    'RU'
+    'RU',
+    'NL'
   ];
 
   Future<List<LanguageFlag>> getSuggestions(String query) async {
@@ -73,6 +76,7 @@ class LanguageData {
       listLanguagesTranslations.add(listJson[i]['Greek']);
       listLanguagesTranslations.add(listJson[i]['German']);
       listLanguagesTranslations.add(listJson[i]['Russian']);
+      listLanguagesTranslations.add(listJson[i]['Netherlands']);
 
     }
 
