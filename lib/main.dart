@@ -52,7 +52,8 @@ Future<void> main() async{
           Locale('el', 'GR'),
           Locale('de', 'DE'),
           Locale('ru', 'RU'),
-          Locale('nl', 'NL')
+          Locale('nl', 'NL'),
+          Locale('bg', 'BG')
         ],
         path: 'assets/translations',
         fallbackLocale: const Locale('en', 'US'),

@@ -63,6 +63,8 @@ class _ParametersPage extends State<ParametersPage> {
         return 'Russian';
       case 'NL':
         return 'Netherlands';
+      case 'BG':
+        return 'Bulgarian';
     }
     return 'English';
   }
@@ -102,6 +104,9 @@ class _ParametersPage extends State<ParametersPage> {
         break;
       case 'NL':
         supportedLocaleIndex = 8;
+        break;
+      case 'BG':
+        supportedLocaleIndex = 9;
         break;
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
