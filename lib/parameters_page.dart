@@ -67,6 +67,8 @@ class _ParametersPage extends State<ParametersPage> {
         return 'Bulgarian';
       case 'SE':
         return 'Swedish';
+      case 'DK':
+        return 'Danish';
     }
     return 'English';
   }
@@ -112,6 +114,9 @@ class _ParametersPage extends State<ParametersPage> {
         break;
       case 'SE':
         supportedLocaleIndex = 10;
+        break;
+      case 'DK':
+        supportedLocaleIndex = 11;
         break;
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
@@ -307,7 +312,7 @@ class _ParametersPage extends State<ParametersPage> {
             children: [
               TypeAheadField(
                 textFieldConfiguration: TextFieldConfiguration(
-                  autofocus: true,
+                  autofocus: false,
                   textAlign: TextAlign.center,
                   decoration: decoration(),
                 ),
