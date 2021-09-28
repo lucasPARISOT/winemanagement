@@ -69,11 +69,13 @@ class _ParametersPage extends State<ParametersPage> {
         return 'Swedish';
       case 'DK':
         return 'Danish';
+      case 'CN':
+        return 'Chinese';
     }
     return 'English';
   }
 
-  InputDecoration decoration() {
+  InputDecoration decoration(BuildContext buildContext) {
     final language = getLanguage(context.locale.countryCode);
     final String flagPath = 'assets/images/flags/$language.png';
     return InputDecoration(
@@ -117,6 +119,9 @@ class _ParametersPage extends State<ParametersPage> {
         break;
       case 'DK':
         supportedLocaleIndex = 11;
+        break;
+      case 'CN':
+        supportedLocaleIndex = 12;
         break;
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];
@@ -314,7 +319,7 @@ class _ParametersPage extends State<ParametersPage> {
                 textFieldConfiguration: TextFieldConfiguration(
                   autofocus: false,
                   textAlign: TextAlign.center,
-                  decoration: decoration(),
+                  decoration: decoration(context),
                 ),
                 suggestionsCallback: (pattern) async {
                   final LanguageData languageData = LanguageData();
