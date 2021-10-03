@@ -1,0 +1,49 @@
+{
+  "advanced_settings": "Setări avansate",
+  "apply_theme": "Aplicați tema!",
+
+  "back": "Înapoi",
+
+  "dark_mode": "Modul întunecat",
+  "display": "Afișare",
+
+  "error": "S-a produs o eroare.",
+
+  "language": "Limba",
+  "light_mode": "Modul de lumină",
+
+  "new_bottle": "Adăugați o nouă sticlă",
+  "no_language_found": "Nu s-a găsit nicio limbă!",
+
+  "open_navigation_menu": "Deschideți meniul de navigare",
+
+  "parameters": "Parametrii",
+  "photo": "Fotografie",
+
+  "select_bg_color": "Selectați culoarea de fundal",
+  "select_second_color": "Selectați culoarea secundară",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Engleză",
+  "French": "Franceză",
+  "German": "Germană",
+  "Greek": "Greacă",
+  "Italian": "Italiană",
+  "Portuguese": "Portugheză",
+  "Spanish": "Spaniolă",
+  "Russian": "Rusă",
+  "Dutch": "Olandeză",
+  "Bulgarian": "Bulgară",
+  "Swedish": "Suedeză",
+  "Danish": "Daneză",
+  "Chinese": "Chineză",
+  "Estonian": "Estoniană",
+  "Finnish": "Finlandeză",
+  "Hungarian": "Maghiară",
+  "Japanese": "Japoneză",
+  "Latvian": "Letonă",
+  "Lithuanian": "Lituanian",
+  "Polish": "Poloneză",
+  "Romanian": "Românesc"
+}

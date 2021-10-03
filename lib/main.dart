@@ -61,6 +61,7 @@ Future<void> main() async{
           Locale('lt', 'LT'),
           Locale('pl', 'PL'),
           Locale('pt', 'PT'),
+          Locale('ro', 'RO'),
           Locale('ru', 'RU'),
           Locale('es', 'ES'),
           Locale('sv', 'SE'),
