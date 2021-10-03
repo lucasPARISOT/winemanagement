@@ -11,51 +11,51 @@ class LanguageData {
   };
 
   static final List<String> jsonList = [
+    'assets/translations/bg-BG.json',
+    'assets/translations/zh-CN.json',
+    'assets/translations/da-DK.json',
     'assets/translations/en-US.json',
     'assets/translations/fr-FR.json',
-    'assets/translations/es-ES.json',
-    'assets/translations/pt-PT.json',
-    'assets/translations/it-IT.json',
-    'assets/translations/el-GR.json',
     'assets/translations/de-DE.json',
-    'assets/translations/ru-RU.json',
+    'assets/translations/el-GR.json',
+    'assets/translations/it-IT.json',
     'assets/translations/nl-NL.json',
-    'assets/translations/bg-BG.json',
+    'assets/translations/pt-PT.json',
+    'assets/translations/ru-RU.json',
+    'assets/translations/es-ES.json',
     'assets/translations/sv-SE.json',
-    'assets/translations/da-DK.json',
-    'assets/translations/zh-CN.json'
   ];
 
   static final List<String> countries = [
+    'Bulgarian',
+    'Chinese',
+    'Danish',
     'English',
     'French',
-    'Spanish',
-    'Portuguese',
-    'Italian',
-    'Greek',
     'German',
-    'Russian',
+    'Greek',
+    'Italian',
     'Netherlands',
-    'Bulgarian',
+    'Portuguese',
+    'Russian',
+    'Spanish',
     'Swedish',
-    'Danish',
-    'Chinese'
   ];
 
   static final List<String> locale = [
+    'BG',
+    'CN',
+    'DK',
     'EN',
     'FR',
-    'ES',
-    'PT',
-    'IT',
-    'GR',
     'DE',
-    'RU',
+    'GR',
+    'IT',
     'NL',
-    'BG',
+    'PT',
+    'RU',
+    'ES',
     'SE',
-    'DK',
-    'CN'
   ];
 
   Future<List<LanguageFlag>> getSuggestions(String query) async {
@@ -80,19 +80,19 @@ class LanguageData {
 
     for(int i=0; i < listJson.length; i++){
 
+      listLanguagesTranslations.add(listJson[i]['Bulgarian']);
+      listLanguagesTranslations.add(listJson[i]['Chinese']);
+      listLanguagesTranslations.add(listJson[i]['Danish']);
       listLanguagesTranslations.add(listJson[i]['English']);
       listLanguagesTranslations.add(listJson[i]['French']);
-      listLanguagesTranslations.add(listJson[i]['Spanish']);
-      listLanguagesTranslations.add(listJson[i]['Portuguese']);
-      listLanguagesTranslations.add(listJson[i]['Italian']);
-      listLanguagesTranslations.add(listJson[i]['Greek']);
       listLanguagesTranslations.add(listJson[i]['German']);
-      listLanguagesTranslations.add(listJson[i]['Russian']);
+      listLanguagesTranslations.add(listJson[i]['Greek']);
+      listLanguagesTranslations.add(listJson[i]['Italian']);
       listLanguagesTranslations.add(listJson[i]['Netherlands']);
-      listLanguagesTranslations.add(listJson[i]['Bulgarian']);
+      listLanguagesTranslations.add(listJson[i]['Portuguese']);
+      listLanguagesTranslations.add(listJson[i]['Russian']);
+      listLanguagesTranslations.add(listJson[i]['Spanish']);
       listLanguagesTranslations.add(listJson[i]['Swedish']);
-      listLanguagesTranslations.add(listJson[i]['Danish']);
-      listLanguagesTranslations.add(listJson[i]['Chinese']);
 
     }
 

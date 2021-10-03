@@ -85,42 +85,46 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   void changeLocale(String localeString, BuildContext buildContext) {
-    int supportedLocaleIndex = 0;
+    /// English en-US index is 3.
+    int supportedLocaleIndex = 3;
     switch(localeString) {
-      case 'FR':
+      case 'BG':
+        supportedLocaleIndex = 0;
+        break;
+      case 'CN':
         supportedLocaleIndex = 1;
         break;
-      case 'ES':
+      case 'DK':
         supportedLocaleIndex = 2;
         break;
-      case 'PT':
+      case 'US':
         supportedLocaleIndex = 3;
         break;
-      case 'IT':
+      case 'FR':
         supportedLocaleIndex = 4;
         break;
-      case 'GR':
+      case 'DE':
         supportedLocaleIndex = 5;
         break;
-      case 'DE':
+      case 'GR':
         supportedLocaleIndex = 6;
         break;
-      case 'RU':
+      case 'IT':
         supportedLocaleIndex = 7;
         break;
       case 'NL':
         supportedLocaleIndex = 8;
         break;
-      case 'BG':
+      case 'PT':
         supportedLocaleIndex = 9;
         break;
-      case 'SE':
+      case 'RU':
         supportedLocaleIndex = 10;
         break;
-      case 'DK':
+      case 'ES':
         supportedLocaleIndex = 11;
         break;
-      case 'CN':
+      case 'SE':
         supportedLocaleIndex = 12;
         break;
     }
