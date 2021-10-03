@@ -31,6 +31,7 @@ class LanguageData {
     'assets/translations/ro-RO.json',
     'assets/translations/ru-RU.json',
     'assets/translations/sk-SK.json',
+    'assets/translations/sl-SI.json',
     'assets/translations/es-ES.json',
     'assets/translations/sv-SE.json',
   ];
@@ -56,6 +57,7 @@ class LanguageData {
     'Romanian',
     'Russian',
     'Slovak',
+    'Slovenian',
     'Spanish',
     'Swedish',
   ];
@@ -81,6 +83,7 @@ class LanguageData {
     'RO',
     'RU',
     'SK',
+    'SI',
     'ES',
     'SE',
   ];
@@ -127,6 +130,7 @@ class LanguageData {
       listLanguagesTranslations.add(listJson[i]['Romanian']);
       listLanguagesTranslations.add(listJson[i]['Russian']);
       listLanguagesTranslations.add(listJson[i]['Slovak']);
+      listLanguagesTranslations.add(listJson[i]['Slovenian']);
       listLanguagesTranslations.add(listJson[i]['Spanish']);
       listLanguagesTranslations.add(listJson[i]['Swedish']);
 

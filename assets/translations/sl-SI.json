@@ -1,0 +1,51 @@
+{
+  "advanced_settings": "Napredne nastavitve",
+  "apply_theme": "Uporabite temo!",
+
+  "back": "Nazaj",
+
+  "dark_mode": "Temni način",
+  "display": "Prikaz",
+
+  "error": "Zgodila se je napaka.",
+
+  "language": "Jezik",
+  "light_mode": "Način osvetlitve",
+
+  "new_bottle": "Dodajte novo steklenico",
+  "no_language_found": "Ni bil najden noben jezik!",
+
+  "open_navigation_menu": "Odprite navigacijski meni",
+
+  "parameters": "Parametri",
+  "photo": "Fotografija",
+
+  "select_bg_color": "Izberite barvo ozadja",
+  "select_second_color": "Izberite sekundarno barvo",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Angleški",
+  "French": "Francoski",
+  "German": "Nemški",
+  "Greek": "Grški",
+  "Italian": "Italijanski",
+  "Portuguese": "Italijanski",
+  "Spanish": "Španščina",
+  "Russian": "Ruski",
+  "Dutch": "Nizozemski",
+  "Bulgarian": "Bolgarski",
+  "Swedish": "Švedski",
+  "Danish": "Danski",
+  "Chinese": "Kitajski",
+  "Estonian": "Estonski",
+  "Finnish": "Finski",
+  "Hungarian": "Madžarski",
+  "Japanese": "Japonski",
+  "Latvian": "Latvijski",
+  "Lithuanian": "Litvanski",
+  "Polish": "Poljski",
+  "Romanian": "Romunski",
+  "Slovak": "Slovaški",
+  "Slovenian": "Slovenski"
+}
