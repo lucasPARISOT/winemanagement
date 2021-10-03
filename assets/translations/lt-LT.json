@@ -1,0 +1,47 @@
+{
+  "advanced_settings": "Išplėstiniai nustatymai",
+  "apply_theme": "Taikyti temą!",
+
+  "back": "Atgal",
+
+  "dark_mode": "Tamsusis režimas",
+  "display": "Ekranas",
+
+  "error": "Įvyko klaida.",
+
+  "language": "Kalba",
+  "light_mode": "Šviesos režimas",
+
+  "new_bottle": "Pridėti naują butelį",
+  "no_language_found": "Kalba nerasta!",
+
+  "open_navigation_menu": "Atidaryti navigacijos meniu",
+
+  "parameters": "Parametrai",
+  "photo": "Parametrai",
+
+  "select_bg_color": "Pasirinkite fono spalvą",
+  "select_second_color": "Pasirinkite antrinę spalvą",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Anglų",
+  "French": "Prancūzų",
+  "German": "Vokiečių",
+  "Greek": "Graikų",
+  "Italian": "Italų",
+  "Portuguese": "Portugalų",
+  "Spanish": "Ispanų",
+  "Russian": "Rusų",
+  "Dutch": "Olandų",
+  "Bulgarian": "Bulgarų",
+  "Swedish": "Švedų",
+  "Danish": "Danų",
+  "Chinese": "Kinų",
+  "Estonian": "Estų",
+  "Finnish": "Suomių",
+  "Hungarian": "Vengrų",
+  "Japanese": "Japonų",
+  "Latvian": "Latvių",
+  "Lithuanian": "Lietuvių"
+}
