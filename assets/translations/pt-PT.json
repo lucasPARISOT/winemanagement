@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parâmetros",
-  "new_bottle": "Adicionar novo frasco",
-  "back": "Voltar",
-  "light_mode": "Modo de luz",
-  "dark_mode": "Modo escuro",
-  "select_bg_color": "Seleccionar cor de fundo",
+  "advanced_settings": "Configurações avançadas",
   "apply_theme": "Aplicar tema!",
-  "select_second_color": "Seleccionar cor secundária",
+
+  "back": "Voltar",
+
+  "dark_mode": "Modo escuro",
   "display": "Mostrar",
-  "advanced": "Configurações avançadas",
+
+  "error": "Ocorreu um erro.",
+
+  "language": "Língua",
+  "light_mode": "Modo de luz",
+
+  "new_bottle": "Adicionar novo frasco",
+  "no_language_found": "Nenhuma língua encontrada!",
+
   "open_navigation_menu": "Abrir menu de navegação",
+
+  "parameters": "Parâmetros",
+  "photo": "Foto",
+
+  "select_bg_color": "Seleccionar cor de fundo",
+  "select_second_color": "Seleccionar cor secundária",
+
+  "wine_management": "Wine Management!",
+
   "English": "Inglês",
   "French": "Francês",
   "German": "Alemão",
@@ -25,9 +39,5 @@
   "Danish": "Dinamarquês",
   "Chinese": "Chinês",
   "Estonian": "Estónio",
-  "Finnish": "Finlandês",
-  "language": "Língua",
-  "error": "Ocorreu um erro.",
-  "no_language_found": "Nenhuma língua encontrada!",
-  "photo": "Foto"
+  "Finnish": "Finlandês"
 }

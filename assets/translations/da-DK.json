@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parametrar",
-  "new_bottle": "Lägg till en ny flaska",
-  "back": "Tillbaka",
-  "light_mode": "Ljusläge",
-  "dark_mode": "Mörkt läge",
-  "select_bg_color": "Välj bakgrundsfärg",
+  "advanced_settings": "Avancerade inställningar",
   "apply_theme": "Ansök om tema!",
-  "select_second_color": "Välj sekundär färg",
+
+  "back": "Tillbaka",
+
+  "dark_mode": "Mörkt läge",
   "display": "Visa",
-  "advanced": "Avancerade inställningar",
+
+  "error": "Ett fel inträffade.",
+
+  "language": "Språk",
+  "light_mode": "Ljusläge",
+
+  "new_bottle": "Lägg till en ny flaska",
+  "no_language_found": "Inget språk hittades!",
+
   "open_navigation_menu": "Öppna navigeringsmenyn",
+
+  "parameters": "Parametrar",
+  "photo": "Foto",
+
+  "select_bg_color": "Välj bakgrundsfärg",
+  "select_second_color": "Välj sekundär färg",
+
+  "wine_management": "Wine Management!",
+
   "English": "Engelska",
   "French": "Franska",
   "German": "Tyska",
@@ -25,9 +39,5 @@
   "Danish": "Danska",
   "Chinese": "Kinesisk",
   "Estonian": "Estisk",
-  "Finnish": "Finsk",
-  "language": "Språk",
-  "error": "Ett fel inträffade.",
-  "no_language_found": "Inget språk hittades!",
-  "photo": "Foto"
+  "Finnish": "Finsk"
 }

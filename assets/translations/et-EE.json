@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parameetrid",
-  "new_bottle": "Lisa uus pudel",
-  "back": "Tagasi",
-  "light_mode": "Valgusrežiim",
-  "dark_mode": "Tume režiim",
-  "select_bg_color": "Valige taustavärv",
+  "advanced_settings": "Täiustatud seaded",
   "apply_theme": "Rakenda teema!",
-  "select_second_color": "Valige sekundaarne värv",
+
+  "back": "Tagasi",
+
+  "dark_mode": "Tume režiim",
   "display": "Näita",
-  "advanced": "Täiustatud seaded",
+
+  "error": "Tekkis viga.",
+
+  "language": "Keel",
+  "light_mode": "Valgusrežiim",
+
+  "new_bottle": "Lisa uus pudel",
+  "no_language_found": "Keelt ei leitud!",
+
   "open_navigation_menu": "Avatud navigatsioonimenüü",
+
+  "parameters": "Parameetrid",
+  "photo": "kuva",
+
+  "select_bg_color": "Valige taustavärv",
+  "select_second_color": "Valige sekundaarne värv",
+
+  "wine_management": "Wine Management!",
+
   "English": "Inglise keeles",
   "French": "Prantsuse",
   "German": "Saksa",
@@ -25,9 +39,5 @@
   "Danish": "Taani",
   "Chinese": "Hiina",
   "Estonian": "Eesti",
-  "Finnish": "Soome",
-  "language": "Keel",
-  "error": "Tekkis viga.",
-  "no_language_found": "Keelt ei leitud!",
-  "photo": "kuva"
+  "Finnish": "Soome"
 }

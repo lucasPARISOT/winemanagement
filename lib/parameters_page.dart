@@ -276,7 +276,7 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
-            title: Text(tr('advanced')),
+            title: Text(tr('advanced_settings')),
             onTap: () {
               setState(() {
                 body = bodyAdvanced();

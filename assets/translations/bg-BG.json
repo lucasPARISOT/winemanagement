@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Параметри",
-  "new_bottle": "Добавяне на нова бутилка",
-  "back": "Обратно",
-  "light_mode": "Светлинен режим",
-  "dark_mode": "Тъмният режим",
-  "select_bg_color": "Изберете цвят на фона",
+  "advanced_settings": "Разширени настройки",
   "apply_theme": "Приложете темата!",
-  "select_second_color": "Изберете вторичен цвят",
+
+  "back": "Обратно",
+
+  "dark_mode": "Тъмният режим",
   "display": "Дисплей",
-  "advanced": "Разширени настройки",
+
+  "error": "Възникна грешка.",
+
+  "language": "Език",
+  "light_mode": "Светлинен режим",
+
+  "new_bottle": "Добавяне на нова бутилка",
+  "no_language_found": "Не е намерен език!",
+
   "open_navigation_menu": "Отваряне на навигационното меню",
+
+  "parameters": "Параметри",
+  "photo": "Снимка",
+
+  "select_bg_color": "Изберете цвят на фона",
+  "select_second_color": "Изберете вторичен цвят",
+
+  "wine_management": "Wine Management!",
+
   "English": "Английски език",
   "French": "Френски",
   "German": "Немски",
@@ -25,9 +39,5 @@
   "Danish": "Датски",
   "Chinese": "Китайски",
   "Estonian": "Естонски",
-  "Finnish": "Финландски",
-  "language": "Език",
-  "error": "Възникна грешка.",
-  "no_language_found": "Не е намерен език!",
-  "photo": "Снимка"
+  "Finnish": "Финландски"
 }

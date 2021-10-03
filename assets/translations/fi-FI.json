@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parametrit",
-  "new_bottle": "Lisää uusi pullo",
-  "back": "Takaisin",
-  "light_mode": "Valotila",
-  "dark_mode": "Tumma tila",
-  "select_bg_color": "Valitse taustaväri",
+  "advanced_settings": "Lisäasetukset",
   "apply_theme": "Käytä teemaa!",
-  "select_second_color": "Valitse toissijainen väri",
+
+  "back": "Takaisin",
+
+  "dark_mode": "Tumma tila",
   "display": "Näyttö",
-  "advanced": "Lisäasetukset",
+
+  "error": "Tapahtui virhe.",
+
+  "language": "Kieli",
+  "light_mode": "Valotila",
+
+  "new_bottle": "Lisää uusi pullo",
+  "no_language_found": "Kieltä ei löytynyt!",
+
   "open_navigation_menu": "Avaa navigointivalikko",
+
+  "parameters": "Parametrit",
+  "photo": "Kuva",
+
+  "select_bg_color": "Valitse taustaväri",
+  "select_second_color": "Valitse toissijainen väri",
+
+  "wine_management": "Wine Management!",
+
   "English": "Englanti",
   "French": "Ranskan",
   "German": "Saksan",
@@ -25,9 +39,5 @@
   "Danish": "Tanskalainen",
   "Chinese": "Kiinalainen",
   "Estonian": "Viron",
-  "Finnish": "Suomalainen",
-  "language": "Kieli",
-  "error": "Tapahtui virhe.",
-  "no_language_found": "Kieltä ei löytynyt!",
-  "photo": "Kuva"
+  "Finnish": "Suomalainen"
 }

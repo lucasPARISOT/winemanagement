@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parameters",
-  "new_bottle": "Nieuwe fles toevoegen",
-  "back": "Terug",
-  "light_mode": "Lichtstand",
-  "dark_mode": "Donkere modus",
-  "select_bg_color": "Selecteer achtergrondkleur",
+  "advanced_settings": "Geavanceerde instellingen",
   "apply_theme": "Breng thema aan!",
-  "select_second_color": "Selecteer secundaire kleur",
+
+  "back": "Terug",
+
+  "dark_mode": "Donkere modus",
   "display": "Weergave",
-  "advanced": "Geavanceerde instellingen",
+
+  "error": "Er is een fout opgetreden.",
+
+  "language": "Taal",
+  "light_mode": "Lichtstand",
+
+  "new_bottle": "Nieuwe fles toevoegen",
+  "no_language_found": "Geen taal gevonden!",
+
   "open_navigation_menu": "Open navigatiemenu",
+
+  "parameters": "Parameters",
+  "photo": "Foto",
+
+  "select_bg_color": "Selecteer achtergrondkleur",
+  "select_second_color": "Selecteer secundaire kleur",
+
+  "wine_management": "Wine Management!",
+
   "English": "Engels",
   "French": "Frans",
   "German": "Duits",
@@ -25,9 +39,5 @@
   "Danish": "Deens",
   "Chinese": "Chinees",
   "Estonian": "Estlands",
-  "Finnish": "Fins",
-  "language": "Taal",
-  "error": "Er is een fout opgetreden.",
-  "no_language_found": "Geen taal gevonden!",
-  "photo": "Foto"
+  "Finnish": "Fins"
 }

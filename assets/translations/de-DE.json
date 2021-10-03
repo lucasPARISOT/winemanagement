@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Parameter",
-  "new_bottle": "Neue Flasche hinzufügen",
-  "back": "Zurück",
-  "light_mode": "Modus Licht",
-  "dark_mode": "Dunkler Modus",
-  "select_bg_color": "Hintergrundfarbe auswählen",
+  "advanced_settings": "Erweiterte Einstellungen",
   "apply_theme": "Thema anwenden!",
-  "select_second_color": "Sekundärfarbe auswählen",
+
+  "back": "Zurück",
+
+  "dark_mode": "Dunkler Modus",
   "display": "Anzeige",
-  "advanced": "Erweiterte Einstellungen",
+
+  "error": "Es ist ein Fehler aufgetreten.",
+
+  "language": "Sprache",
+  "light_mode": "Modus Licht",
+
+  "new_bottle": "Neue Flasche hinzufügen",
+  "no_language_found": "Keine Sprache gefunden!",
+
   "open_navigation_menu": "Navigationsmenü öffnen",
+
+  "parameters": "Parameter",
+  "photo": "Foto",
+
+  "select_bg_color": "Hintergrundfarbe auswählen",
+  "select_second_color": "Sekundärfarbe auswählen",
+
+  "wine_management": "Wine Management!",
+
   "English": "Englisch",
   "French": "Französisch",
   "German": "Deutsch",
@@ -25,9 +39,5 @@
   "Danish": "Dänisch",
   "Chinese": "Chinesisch",
   "Estonian": "Estnisch",
-  "Finnish": "Finnisch",
-  "language": "Sprache",
-  "error": "Es ist ein Fehler aufgetreten.",
-  "no_language_found": "Keine Sprache gefunden!",
-  "photo": "Foto"
+  "Finnish": "Finnisch"
 }

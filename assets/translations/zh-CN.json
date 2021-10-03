@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "参数",
-  "new_bottle": "添加新瓶",
-  "back": "溯源",
-  "light_mode": "灯光模式",
-  "dark_mode": "黑暗模式",
-  "select_bg_color": "选择背景颜色",
+  "advanced_settings": "高级设置",
   "apply_theme": "应用主题!",
-  "select_second_color": "选择第二种颜色",
+
+  "back": "溯源",
+
+  "dark_mode": "黑暗模式",
   "display": "显示",
-  "advanced": "高级设置",
+
+  "error": "发生了一个错误。",
+
+  "language": "语言",
+  "light_mode": "灯光模式",
+
+  "new_bottle": "添加新瓶",
+  "no_language_found": "没有发现语言!",
+
   "open_navigation_menu": "打开导航菜单",
+
+  "parameters": "参数",
+  "photo": "照片",
+
+  "select_bg_color": "选择背景颜色",
+  "select_second_color": "选择第二种颜色",
+
+  "wine_management": "Wine Management!",
+
   "English": "英语",
   "French": "法国",
   "German": "德国",
@@ -25,9 +39,5 @@
   "Danish": "丹麦",
   "Chinese": "中国",
   "Estonian": "爱沙尼亚语",
-  "Finnish": "芬兰语",
-  "language": "语言",
-  "error": "发生了一个错误。",
-  "no_language_found": "没有发现语言!",
-  "photo": "照片"
+  "Finnish": "芬兰语"
 }

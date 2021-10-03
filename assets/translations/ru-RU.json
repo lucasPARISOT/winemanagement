@@ -1,16 +1,30 @@
 {
-  "wine_management": "Wine Management!",
-  "parameters": "Параметры",
-  "new_bottle": "Добавить новую бутылку",
-  "back": "Назад",
-  "light_mode": "Режим освещения",
-  "dark_mode": "Темный режим",
-  "select_bg_color": "Выберите цвет фона",
+  "advanced_settings": "Дополнительные настройки",
   "apply_theme": "Примените тему!",
-  "select_second_color": "Выберите дополнительный цвет",
+
+  "back": "Назад",
+
+  "dark_mode": "Темный режим",
   "display": "Дисплей",
-  "advanced": "Дополнительные настройки",
+
+  "error": "Произошла ошибка.",
+
+  "language": "Язык",
+  "light_mode": "Режим освещения",
+
+  "new_bottle": "Добавить новую бутылку",
+  "no_language_found": "Язык не найден!",
+
   "open_navigation_menu": "Открыть навигационное меню",
+
+  "parameters": "Параметры",
+  "photo": "Фото",
+
+  "select_bg_color": "Выберите цвет фона",
+  "select_second_color": "Выберите дополнительный цвет",
+
+  "wine_management": "Wine Management!",
+
   "English": "Английский язык",
   "French": "Французский",
   "German": "Немецкий",
@@ -25,9 +39,5 @@
   "Danish": "Датский",
   "Chinese": "Китайский",
   "Estonian": "Эстония",
-  "Finnish": "Финский",
-  "language": "Язык",
-  "error": "Произошла ошибка.",
-  "no_language_found": "Язык не найден!",
-  "photo": "Фото"
+  "Finnish": "Финский"
 }
