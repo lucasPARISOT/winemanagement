@@ -1,0 +1,44 @@
+{
+  "advanced_settings": "Speciális beállítások",
+  "apply_theme": "Alkalmazza a témát!",
+
+  "back": "Vissza",
+
+  "dark_mode": "Sötét üzemmód",
+  "display": "Megjelenítés",
+
+  "error": "Hiba történt.",
+
+  "language": "Nyelv",
+  "light_mode": "Fény üzemmód",
+
+  "new_bottle": "Új palack hozzáadása",
+  "no_language_found": "Nem találtunk nyelvet!",
+
+  "open_navigation_menu": "Navigációs menü megnyitása",
+
+  "parameters": "Paraméterek",
+  "photo": "Fotó",
+
+  "select_bg_color": "Háttérszín kiválasztása",
+  "select_second_color": "Másodlagos szín kiválasztása",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Angol",
+  "French": "Francia",
+  "German": "Német",
+  "Greek": "Görög",
+  "Italian": "Olasz",
+  "Portuguese": "Portugál",
+  "Spanish": "Spanyol",
+  "Russian": "Orosz",
+  "Netherlands": "Hollandia",
+  "Bulgarian": "Bolgár",
+  "Swedish": "Svéd",
+  "Danish": "Dán",
+  "Chinese": "Kínai",
+  "Estonian": "Észt",
+  "Finnish": "Finn",
+  "Hungarian": "Magyar"
+}
