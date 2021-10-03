@@ -24,8 +24,9 @@ class LanguageData {
     'assets/translations/hu-HU.json',
     'assets/translations/it-IT.json',
     'assets/translations/ja-JP.json',
-    'assets/translations/lt-LT.json',
     'assets/translations/lv-LV.json',
+    'assets/translations/lt-LT.json',
+    'assets/translations/pl-PL.json',
     'assets/translations/pt-PT.json',
     'assets/translations/ru-RU.json',
     'assets/translations/es-ES.json',
@@ -46,8 +47,9 @@ class LanguageData {
     'Hungarian',
     'Italian',
     'Japanese',
-    'Lithuanian',
     'Latvian',
+    'Lithuanian',
+    'Polish',
     'Portuguese',
     'Russian',
     'Spanish',
@@ -68,8 +70,9 @@ class LanguageData {
     'HU',
     'IT',
     'JP',
-    'LT',
     'LV',
+    'LT',
+    'PL',
     'PT',
     'RU',
     'ES',
@@ -111,8 +114,9 @@ class LanguageData {
       listLanguagesTranslations.add(listJson[i]['Hungarian']);
       listLanguagesTranslations.add(listJson[i]['Italian']);
       listLanguagesTranslations.add(listJson[i]['Japanese']);
-      listLanguagesTranslations.add(listJson[i]['Lithuanian']);
       listLanguagesTranslations.add(listJson[i]['Latvian']);
+      listLanguagesTranslations.add(listJson[i]['Lithuanian']);
+      listLanguagesTranslations.add(listJson[i]['Polish']);
       listLanguagesTranslations.add(listJson[i]['Portuguese']);
       listLanguagesTranslations.add(listJson[i]['Russian']);
       listLanguagesTranslations.add(listJson[i]['Spanish']);

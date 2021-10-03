@@ -1,0 +1,48 @@
+{
+  "advanced_settings": "Ustawienia zaawansowane",
+  "apply_theme": "Zastosuj temat!",
+
+  "back": "Powrót",
+
+  "dark_mode": "Tryb ciemny",
+  "display": "Wyświetlacz",
+
+  "error": "Wystąpił błąd.",
+
+  "language": "Język",
+  "light_mode": "Tryb światła",
+
+  "new_bottle": "Dodaj nową butelkę",
+  "no_language_found": "Nie znaleziono języka!",
+
+  "open_navigation_menu": "Otwórz menu nawigacyjne",
+
+  "parameters": "Parametry",
+  "photo": "Zdjęcie",
+
+  "select_bg_color": "Wybierz kolor tła",
+  "select_second_color": "Wybierz kolor dodatkowy",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Angielski",
+  "French": "Francuski",
+  "German": "Niemiecki",
+  "Greek": "Grecki",
+  "Italian": "Włoski",
+  "Portuguese": "Portugalski",
+  "Spanish": "Hiszpański",
+  "Russian": "Rosyjski",
+  "Dutch": "Niderlandzki",
+  "Bulgarian": "Bułgarski",
+  "Swedish": "Szwedzki",
+  "Danish": "Duński",
+  "Chinese": "Chiński",
+  "Estonian": "Estoński",
+  "Finnish": "Fiński",
+  "Hungarian": "Węgierski",
+  "Japanese": "Japoński",
+  "Latvian": "Łotewski",
+  "Lithuanian": "Litewski",
+  "Polish": "Polski"
+}
