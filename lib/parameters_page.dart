@@ -62,7 +62,7 @@ class _ParametersPage extends State<ParametersPage> {
       case 'RU':
         return 'Russian';
       case 'NL':
-        return 'Netherlands';
+        return 'Dutch';
       case 'BG':
         return 'Bulgarian';
       case 'SE':
@@ -79,6 +79,8 @@ class _ParametersPage extends State<ParametersPage> {
         return 'Hungarian';
       case 'JP':
         return 'Japanese';
+      case 'LV':
+        return 'Latvian';
     }
     return 'English';
   }
@@ -93,8 +95,8 @@ class _ParametersPage extends State<ParametersPage> {
   }
 
   void changeLocale(String localeString, BuildContext buildContext) {
-    /// English en-US index is 3.
-    int supportedLocaleIndex = 3;
+    /// English en-US index is 4.
+    int supportedLocaleIndex = 4;
     switch(localeString) {
       case 'BG':
         supportedLocaleIndex = 0;
@@ -105,47 +107,50 @@ class _ParametersPage extends State<ParametersPage> {
       case 'DK':
         supportedLocaleIndex = 2;
         break;
-      case 'US':
+      case 'NL':
         supportedLocaleIndex = 3;
         break;
-      case 'EE':
+      case 'US':
         supportedLocaleIndex = 4;
         break;
-      case 'FI':
+      case 'EE':
         supportedLocaleIndex = 5;
         break;
-      case 'FR':
+      case 'FI':
         supportedLocaleIndex = 6;
         break;
-      case 'DE':
+      case 'FR':
         supportedLocaleIndex = 7;
         break;
-      case 'GR':
+      case 'DE':
         supportedLocaleIndex = 8;
         break;
-      case 'HU':
+      case 'GR':
         supportedLocaleIndex = 9;
         break;
-      case 'IT':
+      case 'HU':
         supportedLocaleIndex = 10;
         break;
-      case 'JP':
+      case 'IT':
         supportedLocaleIndex = 11;
         break;
-      case 'NL':
+      case 'JP':
         supportedLocaleIndex = 12;
         break;
-      case 'PT':
+      case 'LV':
         supportedLocaleIndex = 13;
         break;
-      case 'RU':
+      case 'PT':
         supportedLocaleIndex = 14;
         break;
-      case 'ES':
+      case 'RU':
         supportedLocaleIndex = 15;
         break;
-      case 'SE':
+      case 'ES':
         supportedLocaleIndex = 16;
+        break;
+      case 'SE':
+        supportedLocaleIndex = 17;
         break;
     }
     final Locale locale = buildContext.supportedLocales[supportedLocaleIndex];

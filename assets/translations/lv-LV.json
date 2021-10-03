@@ -1,0 +1,46 @@
+{
+  "advanced_settings": "Uzlabotie iestatījumi",
+  "apply_theme": "Piesakies tēmu!",
+
+  "back": "Atpakaļ",
+
+  "dark_mode": "Tumšais režīms",
+  "display": "Displejs",
+
+  "error": "Kļūda ir notikusi.",
+
+  "language": "Valoda",
+  "light_mode": "Gaismas režīms",
+
+  "new_bottle": "Pievienot jaunu pudeli",
+  "no_language_found": "Nav atrasta valoda!",
+
+  "open_navigation_menu": "Atvērt navigācijas izvēlni",
+
+  "parameters": "Parametri",
+  "photo": "Foto",
+
+  "select_bg_color": "Izvēlieties fona krāsu",
+  "select_second_color": "Izvēlieties sekundāro krāsu",
+
+  "wine_management": "Vīna pārvaldība!",
+
+  "English": "Angļu valodā",
+  "French": "Franču",
+  "German": "Vācu",
+  "Greek": "Grieķu",
+  "Italian": "Itāļu",
+  "Portuguese": "Portugāļu",
+  "Spanish": "Spāņu",
+  "Russian": "Krievu",
+  "Dutch": "Holandiešu",
+  "Bulgarian": "Bulgāru",
+  "Swedish": "Zviedru",
+  "Danish": "Zviedru",
+  "Chinese": "Zviedru",
+  "Estonian": "Igauņu",
+  "Finnish": "Somu",
+  "Hungarian": "Ungāru",
+  "Japanese": "Japāņu",
+  "Latvian": "Latviešu"
+}

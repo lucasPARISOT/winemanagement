@@ -14,6 +14,7 @@ class LanguageData {
     'assets/translations/bg-BG.json',
     'assets/translations/zh-CN.json',
     'assets/translations/da-DK.json',
+    'assets/translations/nl-NL.json',
     'assets/translations/en-US.json',
     'assets/translations/et-EE.json',
     'assets/translations/fi-FI.json',
@@ -23,7 +24,7 @@ class LanguageData {
     'assets/translations/hu-HU.json',
     'assets/translations/it-IT.json',
     'assets/translations/ja-JP.json',
-    'assets/translations/nl-NL.json',
+    'assets/translations/lv-LV.json',
     'assets/translations/pt-PT.json',
     'assets/translations/ru-RU.json',
     'assets/translations/es-ES.json',
@@ -34,6 +35,7 @@ class LanguageData {
     'Bulgarian',
     'Chinese',
     'Danish',
+    'Dutch',
     'English',
     'Estonian',
     'Finnish',
@@ -43,7 +45,7 @@ class LanguageData {
     'Hungarian',
     'Italian',
     'Japanese',
-    'Netherlands',
+    'Latvian',
     'Portuguese',
     'Russian',
     'Spanish',
@@ -54,6 +56,7 @@ class LanguageData {
     'BG',
     'CN',
     'DK',
+    'NL',
     'EN',
     'EE',
     'FI',
@@ -63,7 +66,7 @@ class LanguageData {
     'HU',
     'IT',
     'JP',
-    'NL',
+    'LV',
     'PT',
     'RU',
     'ES',
@@ -95,6 +98,7 @@ class LanguageData {
       listLanguagesTranslations.add(listJson[i]['Bulgarian']);
       listLanguagesTranslations.add(listJson[i]['Chinese']);
       listLanguagesTranslations.add(listJson[i]['Danish']);
+      listLanguagesTranslations.add(listJson[i]['Dutch']);
       listLanguagesTranslations.add(listJson[i]['English']);
       listLanguagesTranslations.add(listJson[i]['Estonian']);
       listLanguagesTranslations.add(listJson[i]['Finnish']);
@@ -104,7 +108,7 @@ class LanguageData {
       listLanguagesTranslations.add(listJson[i]['Hungarian']);
       listLanguagesTranslations.add(listJson[i]['Italian']);
       listLanguagesTranslations.add(listJson[i]['Japanese']);
-      listLanguagesTranslations.add(listJson[i]['Netherlands']);
+      listLanguagesTranslations.add(listJson[i]['Latvian']);
       listLanguagesTranslations.add(listJson[i]['Portuguese']);
       listLanguagesTranslations.add(listJson[i]['Russian']);
       listLanguagesTranslations.add(listJson[i]['Spanish']);

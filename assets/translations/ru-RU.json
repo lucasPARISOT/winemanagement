@@ -33,7 +33,7 @@
   "Portuguese": "Португальский язык",
   "Spanish": "Испанский",
   "Russian": "Русский",
-  "Netherlands": "Нидерланды",
+  "Dutch": "Голландский",
   "Bulgarian": "Болгарский",
   "Swedish": "Шведский",
   "Danish": "Датский",
@@ -41,5 +41,6 @@
   "Estonian": "Эстония",
   "Finnish": "Финский",
   "Hungarian": "Венгерский",
-  "Japanese": "Японский"
+  "Japanese": "Японский",
+  "Latvian": "Латвия"
 }
