@@ -1,0 +1,50 @@
+{
+  "advanced_settings": "Rozšírené nastavenia",
+  "apply_theme": "Aplikujte tému!",
+
+  "back": "Späť",
+
+  "dark_mode": "Tmavý režim",
+  "display": "Zobrazenie",
+
+  "error": "Vyskytla sa chyba.",
+
+  "language": "Jazyk",
+  "light_mode": "Svetelný režim",
+
+  "new_bottle": "Pridať novú fľašu",
+  "no_language_found": "Nenašiel sa žiadny jazyk!",
+
+  "open_navigation_menu": "Otvorenie navigačného menu",
+
+  "parameters": "Parametre",
+  "photo": "Foto",
+
+  "select_bg_color": "Výber farby pozadia",
+  "select_second_color": "Vyberte sekundárnu farbu",
+
+  "wine_management": "Wine Management!",
+
+  "English": "Anglický",
+  "French": "Francúzsky",
+  "German": "Nemecký",
+  "Greek": "Grécky",
+  "Italian": "Taliansky",
+  "Portuguese": "Portugalský",
+  "Spanish": "Španielsky",
+  "Russian": "Ruský",
+  "Dutch": "Holandský",
+  "Bulgarian": "Bulharský",
+  "Swedish": "Švédsky",
+  "Danish": "Dánsky",
+  "Chinese": "Čínsky",
+  "Estonian": "Estónsky",
+  "Finnish": "Fínsky",
+  "Hungarian": "Maďarský",
+  "Japanese": "Japonský",
+  "Latvian": "Lotyšský",
+  "Lithuanian": "Litovský",
+  "Polish": "Poľský",
+  "Romanian": "Rumunský",
+  "Slovak": "Slovensky"
+}
