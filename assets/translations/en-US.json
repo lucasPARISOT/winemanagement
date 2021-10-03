@@ -3,14 +3,37 @@
   "apply_theme": "Apply theme!",
 
   "back": "Back",
+  "Bulgarian": "Bulgarian",
+
+  "Chinese": "Chinese",
+  "Czech": "Czech",
 
   "dark_mode": "Dark mode",
   "display": "Display",
+  "Danish": "Danish",
+  "Dutch": "Dutch",
 
   "error": "An error occurred.",
 
+  "English": "English",
+  "Estonian": "Estonian",
+
+  "Finnish": "Finnish",
+  "French": "French",
+
+  "German": "German",
+  "Greek": "Greek",
+
+  "Hungarian": "Hungarian",
+
+  "Italian": "Italian",
+
+  "Japanese": "Japanese",
+
   "language": "Language",
   "light_mode": "Light mode",
+  "Latvian": "Latvian",
+  "Lithuanian": "Lithuanian",
 
   "new_bottle": "Add new bottle",
   "no_language_found": "No language found!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parameters",
   "photo": "Photo",
+  "Polish": "Polish",
+  "Portuguese": "Portuguese",
+
+  "Romanian": "Romanian",
+  "Russian": "Russian",
 
   "select_bg_color": "Select background color",
   "select_second_color": "Select secondary color",
-
-  "wine_management": "Wine Management!",
-
-  "English": "English",
-  "French": "French",
-  "German": "German",
-  "Greek": "Greek",
-  "Italian": "Italian",
-  "Portuguese": "Portuguese",
-  "Spanish": "Spanish",
-  "Russian": "Russian",
-  "Dutch": "Dutch",
-  "Bulgarian": "Bulgarian",
-  "Swedish": "Swedish",
-  "Danish": "Danish",
-  "Chinese": "Chinese",
-  "Estonian": "Estonian",
-  "Finnish": "Finnish",
-  "Hungarian": "Hungarian",
-  "Japanese": "Japanese",
-  "Latvian": "Latvian",
-  "Lithuanian": "Lithuanian",
-  "Polish": "Polish",
-  "Romanian": "Romanian",
   "Slovak": "Slovak",
-  "Slovenian": "Slovenian"
+  "Slovenian": "Slovenian",
+  "Spanish": "Spanish",
+  "Swedish": "Swedish",
+
+  "wine_management": "Wine Management!"
 }

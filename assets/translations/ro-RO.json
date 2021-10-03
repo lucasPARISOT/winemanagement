@@ -3,14 +3,37 @@
   "apply_theme": "Aplicați tema!",
 
   "back": "Înapoi",
+  "Bulgarian": "Bulgară",
+
+  "Chinese": "Chineză",
+  "Czech": "Cehă",
 
   "dark_mode": "Modul întunecat",
   "display": "Afișare",
+  "Danish": "Daneză",
+  "Dutch": "Olandeză",
 
   "error": "S-a produs o eroare.",
 
+  "English": "Engleză",
+  "Estonian": "Estoniană",
+
+  "Finnish": "Finlandeză",
+  "French": "Franceză",
+
+  "German": "Germană",
+  "Greek": "Greacă",
+
+  "Hungarian": "Maghiară",
+
+  "Italian": "Italiană",
+
+  "Japanese": "Japoneză",
+
   "language": "Limba",
   "light_mode": "Modul de lumină",
+  "Latvian": "Letonă",
+  "Lithuanian": "Lituanian",
 
   "new_bottle": "Adăugați o nouă sticlă",
   "no_language_found": "Nu s-a găsit nicio limbă!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parametrii",
   "photo": "Fotografie",
+  "Polish": "Poloneză",
+  "Portuguese": "Portugheză",
+
+  "Romanian": "Românesc",
+  "Russian": "Rusă",
 
   "select_bg_color": "Selectați culoarea de fundal",
   "select_second_color": "Selectați culoarea secundară",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Engleză",
-  "French": "Franceză",
-  "German": "Germană",
-  "Greek": "Greacă",
-  "Italian": "Italiană",
-  "Portuguese": "Portugheză",
-  "Spanish": "Spaniolă",
-  "Russian": "Rusă",
-  "Dutch": "Olandeză",
-  "Bulgarian": "Bulgară",
-  "Swedish": "Suedeză",
-  "Danish": "Daneză",
-  "Chinese": "Chineză",
-  "Estonian": "Estoniană",
-  "Finnish": "Finlandeză",
-  "Hungarian": "Maghiară",
-  "Japanese": "Japoneză",
-  "Latvian": "Letonă",
-  "Lithuanian": "Lituanian",
-  "Polish": "Poloneză",
-  "Romanian": "Românesc",
   "Slovak": "Slovacă",
-  "Slovenian": "Slovenă"
+  "Slovenian": "Slovenă",
+  "Spanish": "Spaniolă",
+  "Swedish": "Suedeză",
+
+  "wine_management": "Wine Management!"
 }

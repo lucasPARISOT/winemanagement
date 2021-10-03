@@ -3,14 +3,37 @@
   "apply_theme": "テーマを適用しよう",
 
   "back": "バック",
+  "Bulgarian": "ブルガリア語",
+
+  "Chinese": "中国語",
+  "Czech": "チェコ",
 
   "dark_mode": "ダークモード",
   "display": "ディスプレイ",
+  "Danish": "デンマーク",
+  "Dutch": "オランダ語",
 
   "error": "エラーが発生しました。",
 
+  "English": "英語",
+  "Estonian": "エストニア語",
+
+  "Finnish": "フィンランド語",
+  "French": "フランス語",
+
+  "German": "ドイツ語",
+  "Greek": "ギリシャ語",
+
+  "Hungarian": "ハンガリー語",
+
+  "Italian": "イタリア語",
+
+  "Japanese": "日本語",
+
   "language": "言語",
   "light_mode": "ライトモード",
+  "Latvian": "ラトビア語",
+  "Lithuanian": "リトアニア語",
 
   "new_bottle": "新しいボトルの追加",
   "no_language_found": "言語が見つかりません。",
@@ -19,33 +42,18 @@
 
   "parameters": "パラメータ",
   "photo": "写真",
+  "Polish": "ポーランド語",
+  "Portuguese": "ポルトガル語",
+
+  "Romanian": "ルーマニア語",
+  "Russian": "ロシア語",
 
   "select_bg_color": "背景色の選択",
   "select_second_color": "2次色の選択",
-
-  "wine_management": "Wine Management!",
-
-  "English": "英語",
-  "French": "フランス語",
-  "German": "ドイツ語",
-  "Greek": "ギリシャ語",
-  "Italian": "イタリア語",
-  "Portuguese": "ポルトガル語",
-  "Spanish": "スペイン語",
-  "Russian": "ロシア語",
-  "Dutch": "オランダ語",
-  "Bulgarian": "ブルガリア語",
-  "Swedish": "スウェーデン語",
-  "Danish": "デンマーク",
-  "Chinese": "中国語",
-  "Estonian": "エストニア語",
-  "Finnish": "フィンランド語",
-  "Hungarian": "ハンガリー語",
-  "Japanese": "日本語",
-  "Latvian": "ラトビア語",
-  "Lithuanian": "リトアニア語",
-  "Polish": "ポーランド語",
-  "Romanian": "ルーマニア語",
   "Slovak": "スロバキア語",
-  "Slovenian": "スロベニア語"
+  "Slovenian": "スロベニア語",
+  "Spanish": "スペイン語",
+  "Swedish": "スウェーデン語",
+
+  "wine_management": "Wine Management!"
 }

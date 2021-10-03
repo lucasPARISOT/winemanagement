@@ -3,14 +3,37 @@
   "apply_theme": "Käytä teemaa!",
 
   "back": "Takaisin",
+  "Bulgarian": "Bulgarian",
+
+  "Chinese": "Kiinalainen",
+  "Czech": "Tšekki",
 
   "dark_mode": "Tumma tila",
   "display": "Näyttö",
+  "Danish": "Tanskalainen",
+  "Dutch": "Hollantilainen",
 
   "error": "Tapahtui virhe.",
 
+  "English": "Englanti",
+  "Estonian": "Viron",
+
+  "Finnish": "Suomalainen",
+  "French": "Ranskan",
+
+  "German": "Saksan",
+  "Greek": "Kreikkalainen",
+
+  "Hungarian": "Unkarilainen",
+
+  "Italian": "Italian",
+
+  "Japanese": "Japanilainen",
+
   "language": "Kieli",
   "light_mode": "Valotila",
+  "Latvian": "Latvian",
+  "Lithuanian": "Liettuan",
 
   "new_bottle": "Lisää uusi pullo",
   "no_language_found": "Kieltä ei löytynyt!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parametrit",
   "photo": "Kuva",
+  "Polish": "Puolan",
+  "Portuguese": "Portugalin",
+
+  "Romanian": "Romanian",
+  "Russian": "Venäläinen",
 
   "select_bg_color": "Valitse taustaväri",
   "select_second_color": "Valitse toissijainen väri",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Englanti",
-  "French": "Ranskan",
-  "German": "Saksan",
-  "Greek": "Kreikkalainen",
-  "Italian": "Italian",
-  "Portuguese": "Portugalin",
-  "Spanish": "Espanjan",
-  "Russian": "Venäläinen",
-  "Dutch": "Hollantilainen",
-  "Bulgarian": "Bulgarian",
-  "Swedish": "Ruotsalainen",
-  "Danish": "Tanskalainen",
-  "Chinese": "Kiinalainen",
-  "Estonian": "Viron",
-  "Finnish": "Suomalainen",
-  "Hungarian": "Unkarilainen",
-  "Japanese": "Japanilainen",
-  "Latvian": "Latvian",
-  "Lithuanian": "Liettuan",
-  "Polish": "Puolan",
-  "Romanian": "Romanian",
   "Slovak": "Slovakian",
-  "Slovenian": "Slovenian"
+  "Slovenian": "Slovenian",
+  "Spanish": "Espanjan",
+  "Swedish": "Ruotsalainen",
+
+  "wine_management": "Wine Management!"
 }

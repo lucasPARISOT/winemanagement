@@ -3,14 +3,38 @@
   "apply_theme": "Εφαρμόστε το θέμα!",
 
   "back": "Πίσω",
+  "Bulgarian": "Βουλγαρική",
+
+  "Chinese": "Κινέζικα",
+  "Czech": "Τσέχικα",
 
   "dark_mode": "Σκοτεινή λειτουργία",
   "display": "Εμφάνιση",
+  "Danish": "Δανικά",
+  "Dutch": "Ολλανδικά",
 
   "error": "Εμφανίστηκε σφάλμα.",
 
+  "English": "Αγγλικά",
+  "Estonian": "Εσθονικά",
+
+  "Finnish": "Φινλανδική",
+  "French": "Γαλλικά",
+
+  "German": "Γερμανικά",
+  "Greek": "Ελληνική",
+
+  "Hungarian": "Ουγγρικό",
+
+  "Italian": "Ιταλικά",
+
+  "Japanese": "Ιαπωνικά",
+
   "language": "γλώσσα",
   "light_mode": "Λειτουργία φωτός",
+
+  "Latvian": "Λετονία",
+  "Lithuanian": "Λιθουανικά",
 
   "new_bottle": "Προσθέστε ένα νέο μπουκάλι",
   "no_language_found": "Δεν βρέθηκε καμία γλώσσα!",
@@ -20,32 +44,19 @@
   "parameters": "Παράμετροι",
   "photo": "Φωτογραφία",
 
+  "Polish": "Πολωνικά",
+  "Portuguese": "Πορτογαλικά",
+
+  "Romanian": "Ρουμανικά",
+  "Russian": "Ρωσική",
+
   "select_bg_color": "Επιλέξτε το χρώμα φόντου",
   "select_second_color": "Επιλέξτε το δευτερεύον χρώμα",
 
-  "wine_management": "Wine Management!",
-
-  "English": "Αγγλικά",
-  "French": "Γαλλικά",
-  "German": "Γερμανικά",
-  "Greek": "Ελληνική",
-  "Italian": "Ιταλικά",
-  "Portuguese": "Πορτογαλικά",
-  "Spanish": "Ισπανικά",
-  "Russian": "Ρωσική",
-  "Dutch": "Ολλανδικά",
-  "Bulgarian": "Βουλγαρική",
-  "Swedish": "Σουηδικά",
-  "Danish": "Δανικά",
-  "Chinese": "Κινέζικα",
-  "Estonian": "Εσθονικά",
-  "Finnish": "Φινλανδική",
-  "Hungarian": "Ουγγρικό",
-  "Japanese": "Ιαπωνικά",
-  "Latvian": "Λετονία",
-  "Lithuanian": "Λιθουανικά",
-  "Polish": "Πολωνικά",
-  "Romanian": "Ρουμανικά",
   "Slovak": "Σλοβακία",
-  "Slovenian": "Σλοβενική"
+  "Slovenian": "Σλοβένικα",
+  "Spanish": "Ισπανικά",
+  "Swedish": "Σουηδικά",
+
+  "wine_management": "Wine Management!"
 }

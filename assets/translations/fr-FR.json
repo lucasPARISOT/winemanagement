@@ -3,14 +3,37 @@
   "apply_theme": "Appliquer le thème!",
 
   "back": "Retour",
+  "Bulgarian": "Bulgare",
+
+  "Chinese": "Chinois",
+  "Czech": "Tchèque",
 
   "dark_mode": "Mode sombre",
   "display": "Affichage",
+  "Danish": "Danois",
+  "Dutch": "Néerlandais",
 
   "error": "Une erreur s'est produite.",
 
+  "English": "Anglais",
+  "Estonian": "Estonien",
+
+  "Finnish": "Finnois",
+  "French": "Français",
+
+  "German": "Allemand",
+  "Greek": "Grec",
+
+  "Hungarian": "Hongrois",
+
+  "Italian": "Italien",
+
+  "Japanese": "Japonais",
+
   "language": "Langage",
   "light_mode": "Mode lumineux",
+  "Latvian": "Letton",
+  "Lithuanian": "Lituanien",
 
   "new_bottle": "Ajouter une nouvelle bouteille",
   "no_language_found": "Aucune langue trouvée !",
@@ -19,33 +42,18 @@
 
   "parameters": "Paramètres",
   "photo": "Photo",
+  "Polish": "Polonais",
+  "Portuguese": "Portugais",
+
+  "Romanian": "Roumain",
+  "Russian": "Russe",
 
   "select_bg_color": "Choisir la couleur de fond",
   "select_second_color": "Choisir la couleur secondaire",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Anglais",
-  "French": "Français",
-  "German": "Allemand",
-  "Greek": "Grec",
-  "Italian": "Italien",
-  "Portuguese": "Portugais",
-  "Spanish": "Espagnol",
-  "Russian": "Russe",
-  "Dutch": "Néerlandais",
-  "Bulgarian": "Bulgare",
-  "Swedish": "Suédois",
-  "Danish": "Danois",
-  "Chinese": "Chinois",
-  "Estonian": "Estonien",
-  "Finnish": "Finnois",
-  "Hungarian": "Hongrois",
-  "Japanese": "Japonais",
-  "Latvian": "Letton",
-  "Lithuanian": "Lituanien",
-  "Polish": "Polonais",
-  "Romanian": "Roumain",
   "Slovak": "Slovaque",
-  "Slovenian": "Slovène"
+  "Slovenian": "Slovène",
+  "Spanish": "Espagnol",
+  "Swedish": "Suédois",
+
+  "wine_management": "Wine Management!"
 }

@@ -3,14 +3,37 @@
   "apply_theme": "Примените тему!",
 
   "back": "Назад",
+  "Bulgarian": "Болгарский",
+
+  "Chinese": "Китайский",
+  "Czech": "Чешский",
 
   "dark_mode": "Темный режим",
   "display": "Дисплей",
+  "Danish": "Датский",
+  "Dutch": "Голландский",
 
   "error": "Произошла ошибка.",
 
+  "English": "Английский",
+  "Estonian": "Эстония",
+
+  "Finnish": "Финский",
+  "French": "Французский",
+
+  "German": "Немецкий",
+  "Greek": "Греция",
+
+  "Hungarian": "Венгерский",
+
+  "Italian": "Итальянский",
+
+  "Japanese": "Японский",
+
   "language": "Язык",
   "light_mode": "Режим освещения",
+  "Latvian": "Латвийский",
+  "Lithuanian": "Литовский",
 
   "new_bottle": "Добавить новую бутылку",
   "no_language_found": "Язык не найден!",
@@ -19,33 +42,18 @@
 
   "parameters": "Параметры",
   "photo": "Фото",
+  "Polish": "Польский",
+  "Portuguese": "Португальский",
+
+  "Romanian": "Румынский",
+  "Russian": "Русский",
 
   "select_bg_color": "Выберите цвет фона",
   "select_second_color": "Выберите дополнительный цвет",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Английский язык",
-  "French": "Французский",
-  "German": "Немецкий",
-  "Greek": "Греция",
-  "Italian": "Итальянский",
-  "Portuguese": "Португальский язык",
-  "Spanish": "Испанский",
-  "Russian": "Русский",
-  "Dutch": "Голландский",
-  "Bulgarian": "Болгарский",
-  "Swedish": "Шведский",
-  "Danish": "Датский",
-  "Chinese": "Китайский",
-  "Estonian": "Эстония",
-  "Finnish": "Финский",
-  "Hungarian": "Венгерский",
-  "Japanese": "Японский",
-  "Latvian": "Латвия",
-  "Lithuanian": "Литовский",
-  "Polish": "Польский",
-  "Romanian": "Румынский",
   "Slovak": "Словацкий",
-  "Slovenian": "Словенский"
+  "Slovenian": "Словенский",
+  "Spanish": "Испанский",
+  "Swedish": "Шведский",
+
+  "wine_management": "Wine Management!"
 }

@@ -3,14 +3,37 @@
   "apply_theme": "应用主题!",
 
   "back": "溯源",
+  "Bulgarian": "保加利亚语",
+
+  "Chinese": "中国",
+  "Czech": "捷克",
 
   "dark_mode": "黑暗模式",
   "display": "显示",
+  "Danish": "丹麦",
+  "Dutch": "荷兰语",
 
   "error": "发生了一个错误。",
 
+  "English": "英语",
+  "Estonian": "爱沙尼亚语",
+
+  "Finnish": "芬兰语",
+  "French": "法国",
+
+  "German": "德国",
+  "Greek": "希腊语",
+
+  "Hungarian": "匈牙利语",
+
+  "Italian": "意大利语",
+
+  "Japanese": "日本人",
+
   "language": "语言",
   "light_mode": "灯光模式",
+  "Latvian": "拉脱维亚语",
+  "Lithuanian": "立陶宛语",
 
   "new_bottle": "添加新瓶",
   "no_language_found": "没有发现语言!",
@@ -19,33 +42,18 @@
 
   "parameters": "参数",
   "photo": "照片",
+  "Polish": "波兰语",
+  "Portuguese": "葡萄牙语",
+
+  "Romanian": "罗马尼亚语",
+  "Russian": "俄罗斯",
 
   "select_bg_color": "选择背景颜色",
   "select_second_color": "选择第二种颜色",
-
-  "wine_management": "Wine Management!",
-
-  "English": "英语",
-  "French": "法国",
-  "German": "德国",
-  "Greek": "希腊语",
-  "Italian": "意大利语",
-  "Portuguese": "葡萄牙语",
-  "Spanish": "西班牙",
-  "Russian": "俄罗斯",
-  "Dutch": "荷兰语",
-  "Bulgarian": "保加利亚语",
-  "Swedish": "瑞典语",
-  "Danish": "丹麦",
-  "Chinese": "中国",
-  "Estonian": "爱沙尼亚语",
-  "Finnish": "芬兰语",
-  "Hungarian": "匈牙利语",
-  "Japanese": "日本人",
-  "Latvian": "拉脱维亚语",
-  "Lithuanian": "立陶宛语",
-  "Polish": "波兰语",
-  "Romanian": "罗马尼亚语",
   "Slovak": "斯洛伐克语",
-  "Slovenian": "斯洛文尼亚语"
+  "Slovenian": "斯洛文尼亚语",
+  "Spanish": "西班牙",
+  "Swedish": "瑞典语",
+
+  "wine_management": "Wine Management!"
 }

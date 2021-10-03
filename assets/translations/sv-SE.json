@@ -3,14 +3,37 @@
   "apply_theme": "Ansök om tema!",
 
   "back": "Tillbaka",
+  "Bulgarian": "Bulgariska",
+
+  "Chinese": "Kinesiska",
+  "Czech": "Tjeckiska",
 
   "dark_mode": "Mörkt läge",
   "display": "Visa",
+  "Danish": "Danska",
+  "Dutch": "Nederländska",
 
   "error": "Ett fel inträffade.",
 
+  "English": "Engelska",
+  "Estonian": "Estniska",
+
+  "Finnish": "Finska",
+  "French": "Franska",
+
+  "German": "Tyska",
+  "Greek": "Grekiska",
+
+  "Hungarian": "Ungerska",
+
+  "Italian": "Italienska",
+
+  "Japanese": "Japanska",
+
   "language": "Språk",
   "light_mode": "Ljusläge",
+  "Latvian": "Lettiska",
+  "Lithuanian": "Litauiska",
 
   "new_bottle": "Lägg till en ny flaska",
   "no_language_found": "Inget språk hittades!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parametrar",
   "photo": "Foto",
+  "Polish": "Polska",
+  "Portuguese": "Portugisiska",
+
+  "Romanian": "Rumänska",
+  "Russian": "Ryska",
 
   "select_bg_color": "Välj bakgrundsfärg",
   "select_second_color": "Välj sekundär färg",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Engelska",
-  "French": "Franska",
-  "German": "Tyska",
-  "Greek": "Grekiska",
-  "Italian": "Italienska",
-  "Portuguese": "Portugisiska",
-  "Spanish": "Spanska",
-  "Russian": "Ryska",
-  "Dutch": "Nederländska",
-  "Bulgarian": "Bulgariska",
-  "Swedish": "Svenska",
-  "Danish": "Danska",
-  "Chinese": "Kinesiska",
-  "Estonian": "Estniska",
-  "Finnish": "Finska",
-  "Hungarian": "Ungerska",
-  "Japanese": "Japanska",
-  "Latvian": "Lettiska",
-  "Lithuanian": "Litauiska",
-  "Polish": "Polska",
-  "Romanian": "Rumänska",
   "Slovak": "Slovakiska",
-  "Slovenian": "Slovenska"
+  "Slovenian": "Slovenska",
+  "Spanish": "Spanska",
+  "Swedish": "Svenska",
+
+  "wine_management": "Wine Management!"
 }

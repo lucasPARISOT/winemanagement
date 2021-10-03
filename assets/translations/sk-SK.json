@@ -3,14 +3,37 @@
   "apply_theme": "Aplikujte tému!",
 
   "back": "Späť",
+  "Bulgarian": "Bulharský",
+
+  "Chinese": "Čínsky",
+  "Czech": "Český",
 
   "dark_mode": "Tmavý režim",
   "display": "Zobrazenie",
+  "Danish": "Dánsky",
+  "Dutch": "Holandský",
 
   "error": "Vyskytla sa chyba.",
 
+  "English": "Anglický",
+  "Estonian": "Estónsky",
+
+  "Finnish": "Fínsky",
+  "French": "Francúzsky",
+
+  "German": "Nemecký",
+  "Greek": "Grécky",
+
+  "Hungarian": "Maďarský",
+
+  "Italian": "Taliansky",
+
+  "Japanese": "Japonský",
+
   "language": "Jazyk",
   "light_mode": "Svetelný režim",
+  "Latvian": "Lotyšský",
+  "Lithuanian": "Litovský",
 
   "new_bottle": "Pridať novú fľašu",
   "no_language_found": "Nenašiel sa žiadny jazyk!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parametre",
   "photo": "Foto",
+  "Polish": "Poľský",
+  "Portuguese": "Portugalský",
+
+  "Romanian": "Rumunský",
+  "Russian": "Ruský",
 
   "select_bg_color": "Výber farby pozadia",
   "select_second_color": "Vyberte sekundárnu farbu",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Anglický",
-  "French": "Francúzsky",
-  "German": "Nemecký",
-  "Greek": "Grécky",
-  "Italian": "Taliansky",
-  "Portuguese": "Portugalský",
-  "Spanish": "Španielsky",
-  "Russian": "Ruský",
-  "Dutch": "Holandský",
-  "Bulgarian": "Bulharský",
-  "Swedish": "Švédsky",
-  "Danish": "Dánsky",
-  "Chinese": "Čínsky",
-  "Estonian": "Estónsky",
-  "Finnish": "Fínsky",
-  "Hungarian": "Maďarský",
-  "Japanese": "Japonský",
-  "Latvian": "Lotyšský",
-  "Lithuanian": "Litovský",
-  "Polish": "Poľský",
-  "Romanian": "Rumunský",
   "Slovak": "Slovensky",
-  "Slovenian": "Slovinský"
+  "Slovenian": "Slovinský",
+  "Spanish": "Španielsky",
+  "Swedish": "Švédsky",
+
+  "wine_management": "Wine Management!"
 }

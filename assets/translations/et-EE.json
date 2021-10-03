@@ -4,13 +4,39 @@
 
   "back": "Tagasi",
 
+  "Bulgarian": "Bulgaaria",
+
+  "Chinese": "Hiina",
+  "Czech": "Tšehhi",
+
   "dark_mode": "Tume režiim",
   "display": "Näita",
 
+  "Danish": "Taani",
+  "Dutch": "Hollandi",
+
   "error": "Tekkis viga.",
+
+  "English": "Inglise keeles",
+  "Estonian": "Eesti",
+
+  "Finnish": "Soome",
+  "French": "Prantsuse",
+
+  "German": "Saksa",
+  "Greek": "Kreeka",
+
+  "Hungarian": "Ungari",
+
+  "Italian": "Itaalia",
+
+  "Japanese": "Jaapani",
 
   "language": "Keel",
   "light_mode": "Valgusrežiim",
+
+  "Latvian": "Läti",
+  "Lithuanian": "Leedu",
 
   "new_bottle": "Lisa uus pudel",
   "no_language_found": "Keelt ei leitud!",
@@ -20,32 +46,19 @@
   "parameters": "Parameetrid",
   "photo": "kuva",
 
+  "Polish": "Poola",
+  "Portuguese": "Portugali",
+
+  "Romanian": "Rumeenia",
+  "Russian": "Vene",
+
   "select_bg_color": "Valige taustavärv",
   "select_second_color": "Valige sekundaarne värv",
 
-  "wine_management": "Wine Management!",
-
-  "English": "Inglise keeles",
-  "French": "Prantsuse",
-  "German": "Saksa",
-  "Greek": "Kreeka",
-  "Italian": "Itaalia",
-  "Portuguese": "Portugali",
-  "Spanish": "Hispaania",
-  "Russian": "Vene",
-  "Dutch": "Hollandi",
-  "Bulgarian": "Bulgaaria",
-  "Swedish": "Rootsi",
-  "Danish": "Taani",
-  "Chinese": "Hiina",
-  "Estonian": "Eesti",
-  "Finnish": "Soome",
-  "Hungarian": "Ungari",
-  "Japanese": "Jaapani",
-  "Latvian": "Läti",
-  "Lithuanian": "Leedu",
-  "Polish": "Poola",
-  "Romanian": "Rumeenia",
   "Slovak": "Slovakkia",
-  "Slovenian": "Sloveenia"
+  "Slovenian": "Sloveenia",
+  "Spanish": "Hispaania",
+  "Swedish": "Rootsi",
+
+  "wine_management": "Wine Management!"
 }

@@ -13,6 +13,7 @@ class LanguageData {
   static final List<String> jsonList = [
     'assets/translations/bg-BG.json',
     'assets/translations/zh-CN.json',
+    'assets/translations/cs-CZ.json',
     'assets/translations/da-DK.json',
     'assets/translations/nl-NL.json',
     'assets/translations/en-US.json',
@@ -39,6 +40,7 @@ class LanguageData {
   static final List<String> countries = [
     'Bulgarian',
     'Chinese',
+    'Czech',
     'Danish',
     'Dutch',
     'English',
@@ -65,6 +67,7 @@ class LanguageData {
   static final List<String> locale = [
     'BG',
     'CN',
+    'CZ',
     'DK',
     'NL',
     'EN',
@@ -112,6 +115,7 @@ class LanguageData {
 
       listLanguagesTranslations.add(listJson[i]['Bulgarian']);
       listLanguagesTranslations.add(listJson[i]['Chinese']);
+      listLanguagesTranslations.add(listJson[i]['Czech']);
       listLanguagesTranslations.add(listJson[i]['Danish']);
       listLanguagesTranslations.add(listJson[i]['Dutch']);
       listLanguagesTranslations.add(listJson[i]['English']);

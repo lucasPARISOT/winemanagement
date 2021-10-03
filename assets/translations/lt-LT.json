@@ -3,14 +3,37 @@
   "apply_theme": "Taikyti temą!",
 
   "back": "Atgal",
+  "Bulgarian": "Bulgarų",
+
+  "Chinese": "Kinų",
+  "Czech": "Čekijos",
 
   "dark_mode": "Tamsusis režimas",
   "display": "Ekranas",
+  "Danish": "Danų",
+  "Dutch": "Olandų",
 
   "error": "Įvyko klaida.",
 
+  "English": "Anglų",
+  "Estonian": "Estų",
+
+  "Finnish": "Suomių",
+  "French": "Prancūzų",
+
+  "German": "Vokiečių",
+  "Greek": "Graikų",
+
+  "Hungarian": "Vengrų",
+
+  "Italian": "Italų",
+
+  "Japanese": "Japonų",
+
   "language": "Kalba",
   "light_mode": "Šviesos režimas",
+  "Latvian": "Latvių",
+  "Lithuanian": "Lietuvių",
 
   "new_bottle": "Pridėti naują butelį",
   "no_language_found": "Kalba nerasta!",
@@ -19,33 +42,18 @@
 
   "parameters": "Parametrai",
   "photo": "Parametrai",
+  "Polish": "Lenkų",
+  "Portuguese": "Portugalų",
+
+  "Romanian": "Rumunų",
+  "Russian": "Rusų",
 
   "select_bg_color": "Pasirinkite fono spalvą",
   "select_second_color": "Pasirinkite antrinę spalvą",
-
-  "wine_management": "Wine Management!",
-
-  "English": "Anglų",
-  "French": "Prancūzų",
-  "German": "Vokiečių",
-  "Greek": "Graikų",
-  "Italian": "Italų",
-  "Portuguese": "Portugalų",
-  "Spanish": "Ispanų",
-  "Russian": "Rusų",
-  "Dutch": "Olandų",
-  "Bulgarian": "Bulgarų",
-  "Swedish": "Švedų",
-  "Danish": "Danų",
-  "Chinese": "Kinų",
-  "Estonian": "Estų",
-  "Finnish": "Suomių",
-  "Hungarian": "Vengrų",
-  "Japanese": "Japonų",
-  "Latvian": "Latvių",
-  "Lithuanian": "Lietuvių",
-  "Polish": "Lenkų",
-  "Romanian": "Rumunų",
   "Slovak": "Slovakų",
-  "Slovenian": "Slovėnijos"
+  "Slovenian": "Slovėnijos",
+  "Spanish": "Ispanų",
+  "Swedish": "Švedų",
+
+  "wine_management": "Wine Management!"
 }
