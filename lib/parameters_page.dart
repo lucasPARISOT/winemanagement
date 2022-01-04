@@ -321,6 +321,14 @@ class _ParametersPage extends State<ParametersPage> {
             },
           ),
           ListTile(
+            title: Text(tr('legal')),
+            onTap: () {
+              setState(() {
+                body = bodyLegal();
+              });
+            },
+          ),
+          ListTile(
             title: Text(tr('advanced_settings')),
             onTap: () {
               setState(() {
@@ -418,6 +426,40 @@ class _ParametersPage extends State<ParametersPage> {
             ]
           )
         )
+      ),
+    );
+  }
+
+  Padding bodyLegal() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+              },
+              child: Text('RGPD'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+              },
+              child: Text('CGU'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+              },
+              child: Text('Licence'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+              },
+              child: Text('Trademark'),
+            ),
+          ],
+        ),
       ),
     );
   }
