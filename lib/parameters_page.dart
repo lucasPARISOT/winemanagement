@@ -103,7 +103,7 @@ class _ParametersPage extends State<ParametersPage> {
     return InputDecoration(
         border: const OutlineInputBorder(),
         prefixIcon: Image(image: AssetImage(flagPath), height: 60),
-        hintText: tr(language));
+        hintText: '............................');
   }
 
   void changeLocale(String localeString, BuildContext buildContext) {
