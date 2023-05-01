@@ -249,7 +249,6 @@ class _ParametersPage extends State<ParametersPage> {
 
     final ThemeData theme = ThemeData(
       scaffoldBackgroundColor: backgroundColor,
-      accentColor: secondaryColor,
       primaryColor: oldTheme.primaryColor,
       brightness: oldTheme.brightness,
     );
@@ -350,7 +349,6 @@ class _ParametersPage extends State<ParametersPage> {
           mainAxisSize: MainAxisSize.max,
           children: const <Widget>[
             Text('Changelog: Nothing yet'),
-            Text('Twitter integration ?'),
           ],
         ),
       ),

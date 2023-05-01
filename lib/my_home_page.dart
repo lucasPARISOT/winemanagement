@@ -65,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
         CustomTheme.instanceOf(buildContext).newCustomTheme(
           ThemeData(
             scaffoldBackgroundColor: Color(bgColor!),
-            accentColor: secondaryColor,
             primaryColor: primaryColor,
             brightness: brightness,
             backgroundColor: primaryColor,
