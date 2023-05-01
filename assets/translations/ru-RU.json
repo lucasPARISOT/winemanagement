@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Болгарский",
+    "Chinese": "Китайский",
+    "Czech": "Чешский",
+    "Danish": "Датский",
+    "Dutch": "Голландский",
+    "English": "Английский",
+    "Estonian": "Эстония",
+    "Finnish": "Финский",
+    "French": "Французский",
+    "German": "Немецкий",
+    "Greek": "Греция",
+    "Hungarian": "Венгерский",
+    "Italian": "Итальянский",
+    "Japanese": "Японский",
+    "Latvian": "Латвийский",
+    "Lithuanian": "Литовский",
+    "Polish": "Польский",
+    "Portuguese": "Португальский",
+    "Romanian": "Румынский",
+    "Russian": "Русский",
+    "Slovak": "Словацкий",
+    "Slovenian": "Словенский",
+    "Spanish": "Испанский",
+    "Swedish": "Шведский"
+  },
+
   "advanced_settings": "Дополнительные настройки",
   "apply_theme": "Примените тему!",
 
   "back": "Назад",
-  "Bulgarian": "Болгарский",
-
-  "Chinese": "Китайский",
-  "Czech": "Чешский",
 
   "dark_mode": "Темный режим",
   "display": "Дисплей",
-  "Danish": "Датский",
-  "Dutch": "Голландский",
 
   "error": "Произошла ошибка.",
 
-  "English": "Английский",
-  "Estonian": "Эстония",
-
-  "Finnish": "Финский",
-  "French": "Французский",
-
-  "German": "Немецкий",
-  "Greek": "Греция",
-
-  "Hungarian": "Венгерский",
-
-  "Italian": "Итальянский",
-
-  "Japanese": "Японский",
-
   "language": "Язык",
   "light_mode": "Режим освещения",
-  "Latvian": "Латвийский",
-  "Lithuanian": "Литовский",
 
   "new_bottle": "Добавить новую бутылку",
   "no_language_found": "Язык не найден!",
@@ -42,18 +46,9 @@
 
   "parameters": "Параметры",
   "photo": "Фото",
-  "Polish": "Польский",
-  "Portuguese": "Португальский",
-
-  "Romanian": "Румынский",
-  "Russian": "Русский",
 
   "select_bg_color": "Выберите цвет фона",
   "select_second_color": "Выберите дополнительный цвет",
-  "Slovak": "Словацкий",
-  "Slovenian": "Словенский",
-  "Spanish": "Испанский",
-  "Swedish": "Шведский",
 
   "wine_management": "Wine Management!"
 }

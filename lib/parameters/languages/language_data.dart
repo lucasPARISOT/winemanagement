@@ -106,7 +106,11 @@ class LanguageData {
     final List<dynamic> listJson = [];
 
     for(int i=0; i < listData.length; i++){
-      listJson.add(jsonDecode(listData[i]));
+      var toAdd = jsonDecode(listData[i]);
+      if (toAdd['languages'].length > 0) {
+        toAdd = toAdd['languages'];
+      }
+      listJson.add(toAdd);
     }
 
     final List<dynamic> listLanguagesTranslations = [];

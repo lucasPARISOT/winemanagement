@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bułgarski",
+    "Chinese": "Chiński",
+    "Czech": "Czeski",
+    "Danish": "Duński",
+    "Dutch": "Niderlandzki",
+    "English": "Angielski",
+    "Estonian": "Estoński",
+    "Finnish": "Fiński",
+    "French": "Francuski",
+    "German": "Niemiecki",
+    "Greek": "Grecki",
+    "Hungarian": "Węgierski",
+    "Italian": "Włoski",
+    "Japanese": "Japoński",
+    "Latvian": "Łotewski",
+    "Lithuanian": "Litewski",
+    "Polish": "Polski",
+    "Portuguese": "Portugalski",
+    "Romanian": "Rumuński",
+    "Russian": "Rosyjski",
+    "Slovak": "Słowacki",
+    "Slovenian": "Słoweński",
+    "Spanish": "Hiszpański",
+    "Swedish": "Szwedzki"
+  },
+
   "advanced_settings": "Ustawienia zaawansowane",
   "apply_theme": "Zastosuj temat!",
 
   "back": "Powrót",
-  "Bulgarian": "Bułgarski",
-
-  "Chinese": "Chiński",
-  "Czech": "Czeski",
 
   "dark_mode": "Tryb ciemny",
   "display": "Wyświetlacz",
-  "Danish": "Duński",
-  "Dutch": "Niderlandzki",
 
   "error": "Wystąpił błąd.",
 
-  "English": "Angielski",
-  "Estonian": "Estoński",
-
-  "Finnish": "Fiński",
-  "French": "Francuski",
-
-  "German": "Niemiecki",
-  "Greek": "Grecki",
-
-  "Hungarian": "Węgierski",
-
-  "Italian": "Włoski",
-
-  "Japanese": "Japoński",
-
   "language": "Język",
   "light_mode": "Tryb światła",
-  "Latvian": "Łotewski",
-  "Lithuanian": "Litewski",
 
   "new_bottle": "Dodaj nową butelkę",
   "no_language_found": "Nie znaleziono języka!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parametry",
   "photo": "Zdjęcie",
-  "Polish": "Polski",
-  "Portuguese": "Portugalski",
-
-  "Romanian": "Rumuński",
-  "Russian": "Rosyjski",
 
   "select_bg_color": "Wybierz kolor tła",
   "select_second_color": "Wybierz kolor dodatkowy",
-  "Slovak": "Słowacki",
-  "Slovenian": "Słoweński",
-  "Spanish": "Hiszpański",
-  "Swedish": "Szwedzki",
 
   "wine_management": "Wine Management!"
 }

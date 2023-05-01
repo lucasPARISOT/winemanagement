@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgară",
+    "Chinese": "Chineză",
+    "Czech": "Cehă",
+    "Danish": "Daneză",
+    "Dutch": "Olandeză",
+    "English": "Engleză",
+    "Estonian": "Estoniană",
+    "Finnish": "Finlandeză",
+    "French": "Franceză",
+    "German": "Germană",
+    "Greek": "Greacă",
+    "Hungarian": "Maghiară",
+    "Italian": "Italiană",
+    "Japanese": "Japoneză",
+    "Latvian": "Letonă",
+    "Lithuanian": "Lituanian",
+    "Polish": "Poloneză",
+    "Portuguese": "Portugheză",
+    "Romanian": "Românesc",
+    "Russian": "Rusă",
+    "Slovak": "Slovacă",
+    "Slovenian": "Slovenă",
+    "Spanish": "Spaniolă",
+    "Swedish": "Suedeză"
+  },
+
   "advanced_settings": "Setări avansate",
   "apply_theme": "Aplicați tema!",
 
   "back": "Înapoi",
-  "Bulgarian": "Bulgară",
-
-  "Chinese": "Chineză",
-  "Czech": "Cehă",
 
   "dark_mode": "Modul întunecat",
   "display": "Afișare",
-  "Danish": "Daneză",
-  "Dutch": "Olandeză",
 
   "error": "S-a produs o eroare.",
 
-  "English": "Engleză",
-  "Estonian": "Estoniană",
-
-  "Finnish": "Finlandeză",
-  "French": "Franceză",
-
-  "German": "Germană",
-  "Greek": "Greacă",
-
-  "Hungarian": "Maghiară",
-
-  "Italian": "Italiană",
-
-  "Japanese": "Japoneză",
-
   "language": "Limba",
   "light_mode": "Modul de lumină",
-  "Latvian": "Letonă",
-  "Lithuanian": "Lituanian",
 
   "new_bottle": "Adăugați o nouă sticlă",
   "no_language_found": "Nu s-a găsit nicio limbă!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parametrii",
   "photo": "Fotografie",
-  "Polish": "Poloneză",
-  "Portuguese": "Portugheză",
-
-  "Romanian": "Românesc",
-  "Russian": "Rusă",
 
   "select_bg_color": "Selectați culoarea de fundal",
   "select_second_color": "Selectați culoarea secundară",
-  "Slovak": "Slovacă",
-  "Slovenian": "Slovenă",
-  "Spanish": "Spaniolă",
-  "Swedish": "Suedeză",
 
   "wine_management": "Wine Management!"
 }

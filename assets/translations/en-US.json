@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgarian",
+    "Chinese": "Chinese",
+    "Czech": "Czech",
+    "Danish": "Danish",
+    "Dutch": "Dutch",
+    "English": "English",
+    "Estonian": "Estonian",
+    "Finnish": "Finnish",
+    "French": "French",
+    "German": "German",
+    "Greek": "Greek",
+    "Hungarian": "Hungarian",
+    "Italian": "Italian",
+    "Japanese": "Japanese",
+    "Latvian": "Latvian",
+    "Lithuanian": "Lithuanian",
+    "Polish": "Polish",
+    "Portuguese": "Portuguese",
+    "Romanian": "Romanian",
+    "Russian": "Russian",
+    "Slovak": "Slovak",
+    "Slovenian": "Slovenian",
+    "Spanish": "Spanish",
+    "Swedish": "Swedish"
+  },
+
   "advanced_settings": "Advanced settings",
   "apply_theme": "Apply theme!",
 
   "back": "Back",
-  "Bulgarian": "Bulgarian",
-
-  "Chinese": "Chinese",
-  "Czech": "Czech",
 
   "dark_mode": "Dark mode",
   "display": "Display",
-  "Danish": "Danish",
-  "Dutch": "Dutch",
 
   "error": "An error occurred.",
 
-  "English": "English",
-  "Estonian": "Estonian",
-
-  "Finnish": "Finnish",
-  "French": "French",
-
-  "German": "German",
-  "Greek": "Greek",
-
-  "Hungarian": "Hungarian",
-
-  "Italian": "Italian",
-
-  "Japanese": "Japanese",
-
   "language": "Language",
   "light_mode": "Light mode",
-  "Latvian": "Latvian",
-  "Lithuanian": "Lithuanian",
 
   "new_bottle": "Add new bottle",
   "no_language_found": "No language found!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parameters",
   "photo": "Photo",
-  "Polish": "Polish",
-  "Portuguese": "Portuguese",
-
-  "Romanian": "Romanian",
-  "Russian": "Russian",
 
   "select_bg_color": "Select background color",
   "select_second_color": "Select secondary color",
-  "Slovak": "Slovak",
-  "Slovenian": "Slovenian",
-  "Spanish": "Spanish",
-  "Swedish": "Swedish",
 
   "wine_management": "Wine Management!"
 }

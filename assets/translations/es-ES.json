@@ -1,38 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Búlgaro",
+    "Chinese": "Chino",
+    "Czech": "Checa",
+    "Danish": "Danés",
+    "Dutch": "Holandés",
+    "English": "Inglés",
+    "Estonian": "Estonio",
+    "Finnish": "Finlandés",
+    "French": "Francés",
+    "German": "Alemán",
+    "Greek": "Griego",
+    "Hungarian": "Húngaro",
+    "Italian": "Italiano",
+    "Japanese": "Japán",
+    "Latvian": "Letón",
+    "Lithuanian": "Lituania",
+    "Polish": "Polaco",
+    "Portuguese": "Portugués",
+    "Romanian": "Rumano",
+    "Russian": "Ruso",
+    "Slovak": "Eslovaquia",
+    "Slovenian": "Eslovenia",
+    "Spanish": "Español",
+    "Swedish": "Sueco"
+  },
+
   "advanced_settings": "Configuración avanzada",
   "apply_theme": "¡Aplicar el tema!",
 
   "back": "Volver",
-  "Bulgarian": "Búlgaro",
-
-  "Chinese": "Chino",
-  "Czech": "Checa",
 
   "dark_mode": "Modo oscuro",
   "display": "Pantalla",
-  "Danish": "Danés",
-  "Dutch": "Holandés",
 
   "error": "Se ha producido un error.",
-  "English": "Inglés",
-  "Estonian": "Estonio",
-
-  "Finnish": "Finlandés",
-  "French": "Francés",
-
-  "German": "Alemán",
-  "Greek": "Griego",
-
-  "Hungarian": "Húngaro",
-
-  "Italian": "Italiano",
-
-  "Japanese": "Japán",
 
   "language": "Idioma",
   "light_mode": "Modo de luz",
-  "Latvian": "Letón",
-  "Lithuanian": "Lituania",
 
   "new_bottle": "Añadir una nueva botella",
   "no_language_found": "No se ha encontrado ningún idioma.",
@@ -42,18 +47,8 @@
   "parameters": "Parámetros",
   "photo": "Foto",
 
-  "Polish": "Polaco",
-  "Portuguese": "Portugués",
-
-  "Romanian": "Rumano",
-  "Russian": "Ruso",
-
   "select_bg_color": "Seleccionar el color de fondo",
   "select_second_color": "Seleccionar el color secundario",
-  "Slovak": "Eslovaquia",
-  "Slovenian": "Eslovenia",
-  "Spanish": "Español",
-  "Swedish": "Sueco",
 
   "wine_management": "¡Wine Management!"
 }

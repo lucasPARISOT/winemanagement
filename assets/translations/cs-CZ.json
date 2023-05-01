@@ -1,38 +1,42 @@
 {
+  "languages": {
+    "Bulgarian": "Bulharština",
+    "Chinese": "Čínština",
+    "Czech": "Čeština",
+    "Danish": "Dánština",
+    "Dutch": "Holandský",
+    "English": "Angličtina",
+    "Estonian": "Estonština",
+    "Finnish": "Finština",
+    "French": "Francouzština",
+    "German": "Němčina",
+    "Greek": "Řecký",
+    "Hungarian": "Maďarština",
+    "Italian": "Italština",
+    "Japanese": "Japonský",
+    "Latvian": "Lotyšština",
+    "Lithuanian": "Litevština",
+    "Polish": "Polština",
+    "Portuguese": "Portugalština",
+    "Romanian": "Rumunština",
+    "Russian": "Ruský",
+    "Slovak": "Slovenština",
+    "Slovenian": "Slovinština",
+    "Spanish": "Španělština",
+    "Swedish": "Švédština"
+  },
+
   "advanced_settings": "Rozšířená nastavení",
   "apply_theme": "Použít téma!",
 
   "back": "Zpět",
-  "Bulgarian": "Bulharština",
-
-  "Chinese": "Čínština",
-  "Czech": "Čeština",
 
   "dark_mode": "Tmavý režim",
   "display": "Zobrazit",
-  "Danish": "Dánština",
-  "Dutch": "Holandský",
-
   "error": "Došlo k chybě.",
-  "English": "Angličtina",
-  "Estonian": "Estonština",
-
-  "Finnish": "Finština",
-  "French": "Francouzština",
-
-  "German": "Němčina",
-  "Greek": "Řecký",
-
-  "Hungarian": "Maďarština",
-
-  "Italian": "Italština",
-
-  "Japanese": "Japonský",
 
   "language": "Jazyk",
   "light_mode": "Světelný režim",
-  "Latvian": "Lotyšština",
-  "Lithuanian": "Litevština",
 
   "new_bottle": "Přidat novou láhev",
   "no_language_found": "Nebyl nalezen žádný jazyk!",
@@ -41,18 +45,9 @@
 
   "parameters": "Parametry",
   "photo": "Foto",
-  "Polish": "Polština",
-  "Portuguese": "Portugalština",
-
-  "Romanian": "Rumunština",
-  "Russian": "Ruský",
 
   "select_bg_color": "Výběr barvy pozadí",
   "select_second_color": "Výběr sekundární barvy",
-  "Slovak": "Slovenština",
-  "Slovenian": "Slovinština",
-  "Spanish": "Španělština",
-  "Swedish": "Švédština",
 
   "wine_management": "Wine Management!"
 }

@@ -34,9 +34,6 @@ Future<void> main() async{
       case 'MyThemeKeys.LIGHT':
         theme = MyThemeKeys.LIGHT;
         break;
-      case 'MyThemeKeys.CUSTOM':
-        theme = MyThemeKeys.CUSTOM;
-        break;
     }
   }
   runApp(

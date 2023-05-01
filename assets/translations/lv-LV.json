@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgāru",
+    "Chinese": "Zviedru",
+    "Czech": "Čehu",
+    "Danish": "Zviedru",
+    "Dutch": "Holandiešu",
+    "English": "Angļu valodā",
+    "Estonian": "Igauņu",
+    "Finnish": "Somu",
+    "French": "Franču",
+    "German": "Vācu",
+    "Greek": "Grieķu",
+    "Hungarian": "Ungāru",
+    "Italian": "Itāļu",
+    "Japanese": "Japāņu",
+    "Latvian": "Latviešu",
+    "Lithuanian": "Lietuviešu",
+    "Polish": "Poļu",
+    "Portuguese": "Portugāļu",
+    "Romanian": "Rumāņu",
+    "Russian": "Krievu",
+    "Slovak": "Slovāku",
+    "Slovenian": "Slovēņu",
+    "Spanish": "Spāņu",
+    "Swedish": "Zviedru"
+  },
+
   "advanced_settings": "Uzlabotie iestatījumi",
   "apply_theme": "Piesakies tēmu!",
 
   "back": "Atpakaļ",
-  "Bulgarian": "Bulgāru",
-
-  "Chinese": "Zviedru",
-  "Czech": "Čehu",
 
   "dark_mode": "Tumšais režīms",
   "display": "Displejs",
-  "Danish": "Zviedru",
-  "Dutch": "Holandiešu",
 
   "error": "Kļūda ir notikusi.",
 
-  "English": "Angļu valodā",
-  "Estonian": "Igauņu",
-
-  "Finnish": "Somu",
-  "French": "Franču",
-
-  "German": "Vācu",
-  "Greek": "Grieķu",
-
-  "Hungarian": "Ungāru",
-
-  "Italian": "Itāļu",
-
-  "Japanese": "Japāņu",
-
   "language": "Valoda",
   "light_mode": "Gaismas režīms",
-  "Latvian": "Latviešu",
-  "Lithuanian": "Lietuviešu",
 
   "new_bottle": "Pievienot jaunu pudeli",
   "no_language_found": "Nav atrasta valoda!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parametri",
   "photo": "Foto",
-  "Polish": "Poļu",
-  "Portuguese": "Portugāļu",
-
-  "Romanian": "Rumāņu",
-  "Russian": "Krievu",
 
   "select_bg_color": "Izvēlieties fona krāsu",
   "select_second_color": "Izvēlieties sekundāro krāsu",
-  "Slovak": "Slovāku",
-  "Slovenian": "Slovēņu",
-  "Spanish": "Spāņu",
-  "Swedish": "Zviedru",
 
   "wine_management": "Vīna pārvaldība!"
 }

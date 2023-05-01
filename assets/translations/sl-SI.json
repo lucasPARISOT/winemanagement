@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bolgarski",
+    "Chinese": "Kitajski",
+    "Czech": "Češki",
+    "Danish": "Danski",
+    "Dutch": "Nizozemski",
+    "English": "Angleški",
+    "Estonian": "Estonski",
+    "Finnish": "Finski",
+    "French": "Francoski",
+    "German": "Nemški",
+    "Greek": "Grški",
+    "Hungarian": "Madžarski",
+    "Italian": "Italijanski",
+    "Japanese": "Japonski",
+    "Latvian": "Latvijski",
+    "Lithuanian": "Litvanski",
+    "Polish": "Poljski",
+    "Portuguese": "Italijanski",
+    "Romanian": "Romunski",
+    "Russian": "Ruski",
+    "Slovak": "Slovaški",
+    "Slovenian": "Slovenski",
+    "Spanish": "Španščina",
+    "Swedish": "Švedski"
+  },
+
   "advanced_settings": "Napredne nastavitve",
   "apply_theme": "Uporabite temo!",
 
   "back": "Nazaj",
-  "Bulgarian": "Bolgarski",
-
-  "Chinese": "Kitajski",
-  "Czech": "Češki",
 
   "dark_mode": "Temni način",
   "display": "Prikaz",
-  "Danish": "Danski",
-  "Dutch": "Nizozemski",
 
   "error": "Zgodila se je napaka.",
 
-  "English": "Angleški",
-  "Estonian": "Estonski",
-
-  "Finnish": "Finski",
-  "French": "Francoski",
-
-  "German": "Nemški",
-  "Greek": "Grški",
-
-  "Hungarian": "Madžarski",
-
-  "Italian": "Italijanski",
-
-  "Japanese": "Japonski",
-
   "language": "Jezik",
   "light_mode": "Način osvetlitve",
-  "Latvian": "Latvijski",
-  "Lithuanian": "Litvanski",
 
   "new_bottle": "Dodajte novo steklenico",
   "no_language_found": "Ni bil najden noben jezik!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parametri",
   "photo": "Fotografija",
-  "Polish": "Poljski",
-  "Portuguese": "Italijanski",
-
-  "Romanian": "Romunski",
-  "Russian": "Ruski",
 
   "select_bg_color": "Izberite barvo ozadja",
   "select_second_color": "Izberite sekundarno barvo",
-  "Slovak": "Slovaški",
-  "Slovenian": "Slovenski",
-  "Spanish": "Španščina",
-  "Swedish": "Švedski",
 
   "wine_management": "Wine Management!"
 }

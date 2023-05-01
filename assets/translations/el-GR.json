@@ -1,40 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Βουλγαρική",
+    "Chinese": "Κινέζικα",
+    "Czech": "Τσέχικα",
+    "Danish": "Δανικά",
+    "Dutch": "Ολλανδικά",
+    "English": "Αγγλικά",
+    "Estonian": "Εσθονικά",
+    "Finnish": "Φινλανδική",
+    "French": "Γαλλικά",
+    "German": "Γερμανικά",
+    "Greek": "Ελληνική",
+    "Hungarian": "Ουγγρικό",
+    "Italian": "Ιταλικά",
+    "Japanese": "Ιαπωνικά",
+    "Latvian": "Λετονία",
+    "Lithuanian": "Λιθουανικά",
+    "Polish": "Πολωνικά",
+    "Portuguese": "Πορτογαλικά",
+    "Romanian": "Ρουμανικά",
+    "Russian": "Ρωσική",
+    "Slovak": "Σλοβακία",
+    "Slovenian": "Σλοβένικα",
+    "Spanish": "Ισπανικά",
+    "Swedish": "Σουηδικά"
+  },
+
   "advanced_settings": "Προηγμένες ρυθμίσεις",
   "apply_theme": "Εφαρμόστε το θέμα!",
 
   "back": "Πίσω",
-  "Bulgarian": "Βουλγαρική",
-
-  "Chinese": "Κινέζικα",
-  "Czech": "Τσέχικα",
 
   "dark_mode": "Σκοτεινή λειτουργία",
   "display": "Εμφάνιση",
-  "Danish": "Δανικά",
-  "Dutch": "Ολλανδικά",
 
   "error": "Εμφανίστηκε σφάλμα.",
 
-  "English": "Αγγλικά",
-  "Estonian": "Εσθονικά",
-
-  "Finnish": "Φινλανδική",
-  "French": "Γαλλικά",
-
-  "German": "Γερμανικά",
-  "Greek": "Ελληνική",
-
-  "Hungarian": "Ουγγρικό",
-
-  "Italian": "Ιταλικά",
-
-  "Japanese": "Ιαπωνικά",
-
   "language": "γλώσσα",
   "light_mode": "Λειτουργία φωτός",
-
-  "Latvian": "Λετονία",
-  "Lithuanian": "Λιθουανικά",
 
   "new_bottle": "Προσθέστε ένα νέο μπουκάλι",
   "no_language_found": "Δεν βρέθηκε καμία γλώσσα!",
@@ -44,19 +47,8 @@
   "parameters": "Παράμετροι",
   "photo": "Φωτογραφία",
 
-  "Polish": "Πολωνικά",
-  "Portuguese": "Πορτογαλικά",
-
-  "Romanian": "Ρουμανικά",
-  "Russian": "Ρωσική",
-
   "select_bg_color": "Επιλέξτε το χρώμα φόντου",
   "select_second_color": "Επιλέξτε το δευτερεύον χρώμα",
-
-  "Slovak": "Σλοβακία",
-  "Slovenian": "Σλοβένικα",
-  "Spanish": "Ισπανικά",
-  "Swedish": "Σουηδικά",
 
   "wine_management": "Wine Management!"
 }

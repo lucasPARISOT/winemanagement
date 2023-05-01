@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Nederländerna",
+    "Chinese": "Kinesisk",
+    "Czech": "Tjekkisk",
+    "Danish": "Danska",
+    "Dutch": "Hollandsk",
+    "English": "Engelska",
+    "Estonian": "Estisk",
+    "Finnish": "Finsk",
+    "French": "Franska",
+    "German": "Tyska",
+    "Greek": "Grekiska",
+    "Hungarian": "Ungarsk",
+    "Italian": "Italienska",
+    "Japanese": "Japansk",
+    "Latvian": "Lettiske",
+    "Lithuanian": "Litauisk",
+    "Polish": "Polsk",
+    "Portuguese": "Portugisiska",
+    "Romanian": "Rumænsk",
+    "Russian": "Ryska",
+    "Slovak": "Slovakisk",
+    "Slovenian": "Slovensk",
+    "Spanish": "Spanska",
+    "Swedish": "Svenska"
+  },
+
   "advanced_settings": "Avancerade inställningar",
   "apply_theme": "Ansök om tema!",
 
   "back": "Tillbaka",
-  "Bulgarian": "Nederländerna",
-
-  "Chinese": "Kinesisk",
-  "Czech": "Tjekkisk",
 
   "dark_mode": "Mörkt läge",
   "display": "Visa",
-  "Danish": "Danska",
-  "Dutch": "Hollandsk",
 
   "error": "Ett fel inträffade.",
 
-  "English": "Engelska",
-  "Estonian": "Estisk",
-
-  "Finnish": "Finsk",
-  "French": "Franska",
-
-  "German": "Tyska",
-  "Greek": "Grekiska",
-
-  "Hungarian": "Ungarsk",
-
-  "Italian": "Italienska",
-
-  "Japanese": "Japansk",
-
   "language": "Språk",
   "light_mode": "Ljusläge",
-  "Latvian": "Lettiske",
-  "Lithuanian": "Litauisk",
 
   "new_bottle": "Lägg till en ny flaska",
   "no_language_found": "Inget språk hittades!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parametrar",
   "photo": "Foto",
-  "Polish": "Polsk",
-  "Portuguese": "Portugisiska",
-
-  "Romanian": "Rumænsk",
-  "Russian": "Ryska",
 
   "select_bg_color": "Välj bakgrundsfärg",
   "select_second_color": "Välj sekundär färg",
-  "Slovak": "Slovakisk",
-  "Slovenian": "Slovensk",
-  "Spanish": "Spanska",
-  "Swedish": "Svenska",
 
   "wine_management": "Wine Management!"
 }

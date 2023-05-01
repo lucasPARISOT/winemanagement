@@ -1,39 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgarisch",
+    "Chinese": "Chinesisch",
+    "Czech": "Tschechisch",
+    "Danish": "Dänisch",
+    "Dutch": "Niederländisch",
+    "English": "Englisch",
+    "Estonian": "Estnisch",
+    "Finnish": "Finnisch",
+    "French": "Französisch",
+    "German": "Deutsch",
+    "Greek": "Griechisch",
+    "Hungarian": "Ungarisch",
+    "Italian": "Italienisch",
+    "Japanese": "Japanisch",
+    "Latvian": "Lettisch",
+    "Lithuanian": "Litauisch",
+    "Polish": "Polnisch",
+    "Portuguese": "Portugiesisch",
+    "Romanian": "Rumänisch",
+    "Russian": "Russisch",
+    "Slovak": "Slowakisch",
+    "Slovenian": "Slowenisch",
+    "Spanish": "Spanisch",
+    "Swedish": "Schwedisch"
+  },
+
   "advanced_settings": "Erweiterte Einstellungen",
   "apply_theme": "Thema anwenden!",
 
   "back": "Zurück",
-  "Bulgarian": "Bulgarisch",
-
-  "Chinese": "Chinesisch",
-  "Czech": "Tschechisch",
 
   "dark_mode": "Dunkler Modus",
   "display": "Anzeige",
-  "Danish": "Dänisch",
-  "Dutch": "Niederländisch",
 
   "error": "Es ist ein Fehler aufgetreten.",
 
-  "English": "Englisch",
-  "Estonian": "Estnisch",
-
-  "Finnish": "Finnisch",
-  "French": "Französisch",
-
-  "German": "Deutsch",
-  "Greek": "Griechisch",
-
-  "Hungarian": "Ungarisch",
-
-  "Italian": "Italienisch",
-
-  "Japanese": "Japanisch",
-
   "language": "Sprache",
   "light_mode": "Modus Licht",
-  "Latvian": "Lettisch",
-  "Lithuanian": "Litauisch",
 
   "new_bottle": "Neue Flasche hinzufügen",
   "no_language_found": "Keine Sprache gefunden!",
@@ -42,18 +46,9 @@
 
   "parameters": "Parameter",
   "photo": "Foto",
-  "Polish": "Polnisch",
-  "Portuguese": "Portugiesisch",
-
-  "Romanian": "Rumänisch",
-  "Russian": "Russisch",
 
   "select_bg_color": "Hintergrundfarbe auswählen",
   "select_second_color": "Sekundärfarbe auswählen",
-  "Slovak": "Slowakisch",
-  "Slovenian": "Slowenisch",
-  "Spanish": "Spanisch",
-  "Swedish": "Schwedisch",
 
   "wine_management": "Wine Management!"
 }

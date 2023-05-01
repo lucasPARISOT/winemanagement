@@ -1,39 +1,42 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgaars",
+    "Chinese": "Chinees",
+    "Czech": "Tsjechisch",
+    "Danish": "Deens",
+    "Dutch": "Nederlands",
+    "English": "Engels",
+    "Estonian": "Estlands",
+    "Finnish": "Fins",
+    "French": "Frans",
+    "German": "Duits",
+    "Greek": "Grieks",
+    "Hungarian": "Hongaars",
+    "Italian": "Italiaans",
+    "Japanese": "Japans",
+    "Latvian": "Lets",
+    "Lithuanian": "Litouws",
+    "Polish": "Pools",
+    "Portuguese": "Portugees",
+    "Romanian": "Roemeens",
+    "Russian": "Russisch",
+    "Slovak": "Slowaaks",
+    "Slovenian": "Sloveens",
+    "Spanish": "Spaans",
+    "Swedish": "Zweeds"
+  },
+
   "advanced_settings": "Geavanceerde instellingen",
   "apply_theme": "Breng thema aan!",
 
   "back": "Terug",
-  "Bulgarian": "Bulgaars",
-
-  "Chinese": "Chinees",
-  "Czech": "Tsjechisch",
 
   "dark_mode": "Donkere modus",
   "display": "Weergave",
-  "Danish": "Deens",
-  "Dutch": "Nederlands",
-
   "error": "Er is een fout opgetreden.",
-
-  "English": "Engels",
-  "Estonian": "Estlands",
-
-  "Finnish": "Fins",
-  "French": "Frans",
-
-  "German": "Duits",
-  "Greek": "Grieks",
-
-  "Hungarian": "Hongaars",
-
-  "Italian": "Italiaans",
-
-  "Japanese": "Japans",
 
   "language": "Taal",
   "light_mode": "Lichtstand",
-  "Latvian": "Lets",
-  "Lithuanian": "Litouws",
 
   "new_bottle": "Nieuwe fles toevoegen",
   "no_language_found": "Geen taal gevonden!",
@@ -42,18 +45,9 @@
 
   "parameters": "Parameters",
   "photo": "Foto",
-  "Polish": "Pools",
-  "Portuguese": "Portugees",
-
-  "Romanian": "Roemeens",
-  "Russian": "Russisch",
 
   "select_bg_color": "Selecteer achtergrondkleur",
   "select_second_color": "Selecteer secundaire kleur",
-  "Slovak": "Slowaaks",
-  "Slovenian": "Sloveens",
-  "Spanish": "Spaans",
-  "Swedish": "Zweeds",
 
   "wine_management": "Wine Management!"
 }

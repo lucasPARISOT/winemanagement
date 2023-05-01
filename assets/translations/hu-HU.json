@@ -1,39 +1,42 @@
 {
+  "languages": {
+    "Bulgarian": "Bolgár",
+    "Chinese": "Kínai",
+    "Czech": "Cseh",
+    "Danish": "Dán",
+    "Dutch": "Holland",
+    "English": "Angol",
+    "Estonian": "Észt",
+    "Finnish": "Finn",
+    "French": "Francia",
+    "German": "Német",
+    "Greek": "Görög",
+    "Hungarian": "Magyar",
+    "Italian": "Olasz",
+    "Japanese": "Japán",
+    "Latvian": "Lett",
+    "Lithuanian": "Litvánia",
+    "Polish": "Lengyel",
+    "Portuguese": "Portugál",
+    "Romanian": "Román",
+    "Russian": "Orosz",
+    "Slovak": "Szlovák",
+    "Slovenian": "Szlovén",
+    "Spanish": "Spanyol",
+    "Swedish": "Svéd"
+  },
   "advanced_settings": "Speciális beállítások",
   "apply_theme": "Alkalmazza a témát!",
 
   "back": "Vissza",
-  "Bulgarian": "Bolgár",
-
-  "Chinese": "Kínai",
-  "Czech": "Cseh",
 
   "dark_mode": "Sötét üzemmód",
   "display": "Megjelenítés",
-  "Danish": "Dán",
-  "Dutch": "Holland",
 
   "error": "Hiba történt.",
 
-  "English": "Angol",
-  "Estonian": "Észt",
-
-  "Finnish": "Finn",
-  "French": "Francia",
-
-  "German": "Német",
-  "Greek": "Görög",
-
-  "Hungarian": "Magyar",
-
-  "Italian": "Olasz",
-
-  "Japanese": "Japán",
-
   "language": "Nyelv",
   "light_mode": "Fény üzemmód",
-  "Latvian": "Lett",
-  "Lithuanian": "Litvánia",
 
   "new_bottle": "Új palack hozzáadása",
   "no_language_found": "Nem találtunk nyelvet!",
@@ -42,18 +45,9 @@
 
   "parameters": "Paraméterek",
   "photo": "Fotó",
-  "Polish": "Lengyel",
-  "Portuguese": "Portugál",
-
-  "Romanian": "Román",
-  "Russian": "Orosz",
 
   "select_bg_color": "Háttérszín kiválasztása",
   "select_second_color": "Másodlagos szín kiválasztása",
-  "Slovak": "Szlovák",
-  "Slovenian": "Szlovén",
-  "Spanish": "Spanyol",
-  "Swedish": "Svéd",
 
   "wine_management": "Wine Management!"
 }

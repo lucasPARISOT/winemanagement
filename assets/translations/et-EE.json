@@ -1,42 +1,43 @@
 {
+  "languages": {
+    "Bulgarian": "Bulgaaria",
+    "Chinese": "Hiina",
+    "Czech": "Tšehhi",
+    "Danish": "Taani",
+    "Dutch": "Hollandi",
+    "English": "Inglise keeles",
+    "Estonian": "Eesti",
+    "Finnish": "Soome",
+    "French": "Prantsuse",
+    "German": "Saksa",
+    "Greek": "Kreeka",
+    "Hungarian": "Ungari",
+    "Italian": "Itaalia",
+    "Japanese": "Jaapani",
+    "Latvian": "Läti",
+    "Lithuanian": "Leedu",
+    "Polish": "Poola",
+    "Portuguese": "Portugali",
+    "Romanian": "Rumeenia",
+    "Russian": "Vene",
+    "Slovak": "Slovakkia",
+    "Slovenian": "Sloveenia",
+    "Spanish": "Hispaania",
+    "Swedish": "Rootsi"
+  },
+
   "advanced_settings": "Täiustatud seaded",
   "apply_theme": "Rakenda teema!",
 
   "back": "Tagasi",
 
-  "Bulgarian": "Bulgaaria",
-
-  "Chinese": "Hiina",
-  "Czech": "Tšehhi",
-
   "dark_mode": "Tume režiim",
   "display": "Näita",
 
-  "Danish": "Taani",
-  "Dutch": "Hollandi",
-
   "error": "Tekkis viga.",
-
-  "English": "Inglise keeles",
-  "Estonian": "Eesti",
-
-  "Finnish": "Soome",
-  "French": "Prantsuse",
-
-  "German": "Saksa",
-  "Greek": "Kreeka",
-
-  "Hungarian": "Ungari",
-
-  "Italian": "Itaalia",
-
-  "Japanese": "Jaapani",
 
   "language": "Keel",
   "light_mode": "Valgusrežiim",
-
-  "Latvian": "Läti",
-  "Lithuanian": "Leedu",
 
   "new_bottle": "Lisa uus pudel",
   "no_language_found": "Keelt ei leitud!",
@@ -46,19 +47,8 @@
   "parameters": "Parameetrid",
   "photo": "kuva",
 
-  "Polish": "Poola",
-  "Portuguese": "Portugali",
-
-  "Romanian": "Rumeenia",
-  "Russian": "Vene",
-
   "select_bg_color": "Valige taustavärv",
   "select_second_color": "Valige sekundaarne värv",
-
-  "Slovak": "Slovakkia",
-  "Slovenian": "Sloveenia",
-  "Spanish": "Hispaania",
-  "Swedish": "Rootsi",
 
   "wine_management": "Wine Management!"
 }
