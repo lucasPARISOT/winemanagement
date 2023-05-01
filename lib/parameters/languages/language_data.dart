@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:winemanagement/language_flag.dart';
+import 'package:winemanagement/parameters/languages/language_flag.dart';
 
 class LanguageData {
 

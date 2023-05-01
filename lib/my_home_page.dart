@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:winemanagement/custom_themes.dart';
 import 'package:winemanagement/dao.dart';
-import 'package:winemanagement/parameters_page.dart';
+import 'package:winemanagement/parameters/parameters_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({required this.theme, Key? key}) : super(key: key);
@@ -64,10 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
         CustomTheme.instanceOf(buildContext).newCustomTheme(
           ThemeData(
+            colorScheme: ColorScheme.fromSwatch().copyWith(
+              secondary: secondaryColor,
+              brightness: brightness,
+              background: primaryColor,
+              primary: primaryColor,
+            ),
             scaffoldBackgroundColor: Color(bgColor!),
-            primaryColor: primaryColor,
-            brightness: brightness,
-            backgroundColor: primaryColor,
           )
         );
       }

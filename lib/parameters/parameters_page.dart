@@ -1,14 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:winemanagement/custom_themes.dart';
-import 'package:winemanagement/language_data.dart';
-import 'package:winemanagement/language_flag.dart';
 import 'package:winemanagement/my_home_page.dart';
 import 'package:winemanagement/my_themes.dart';
+import 'package:winemanagement/parameters/languages/language_data.dart';
+import 'package:winemanagement/parameters/languages/language_flag.dart';
 
 class ParametersPage extends StatefulWidget {
   const ParametersPage({required this.theme, Key? key}) : super(key: key);
@@ -220,39 +219,6 @@ class _ParametersPage extends State<ParametersPage> {
     prefs.setString('theme', key.toString());
     prefs.setString('appBarTheme', key.toString());
     CustomTheme.instanceOf(buildContext).changeTheme(key);
-  }
-
-  Future<void> _applyTheme(BuildContext buildContext) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    prefs.setString('theme', 'MyThemeKeys.CUSTOM');
-
-    Color? backgroundColor;
-    if(prefs.containsKey('backgroundColor')){
-      final int ?backgroundColorCode = prefs.getInt('backgroundColor');
-      backgroundColor = Color(backgroundColorCode!);
-    }
-    else {
-      backgroundColor = Colors.teal;
-    }
-
-    Color? secondaryColor;
-    if(prefs.containsKey('secondaryColor')){
-      final int ?secondaryColorCode = prefs.getInt('secondaryColor');
-      secondaryColor = Color(secondaryColorCode!);
-    }
-    else {
-      secondaryColor = Colors.teal;
-    }
-
-    final ThemeData oldTheme = CustomTheme.of(context);
-
-    final ThemeData theme = ThemeData(
-      scaffoldBackgroundColor: backgroundColor,
-      primaryColor: oldTheme.primaryColor,
-      brightness: oldTheme.brightness,
-    );
-    CustomTheme.instanceOf(buildContext).newCustomTheme(theme);
   }
 
   Widget floatingButton() {
@@ -481,72 +447,6 @@ class _ParametersPage extends State<ParametersPage> {
                 _changeTheme(context, MyThemeKeys.DARK);
               },
               child: Text(tr('dark_mode')),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return AlertDialog(
-                      titlePadding: EdgeInsets.zero,
-                      contentPadding: EdgeInsets.zero,
-                      content: SingleChildScrollView(
-                        child: ColorPicker(
-                          pickerColor: currentBackgroundColor,
-                          onColorChanged: changeBackgroundColor,
-                          colorPickerWidth: 300.0,
-                          pickerAreaHeightPercent: 0.7,
-                          enableAlpha: true,
-                          displayThumbColor: true,
-                          showLabel: true,
-                          paletteType: PaletteType.hsv,
-                          pickerAreaBorderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(2.0),
-                            topRight: Radius.circular(2.0),
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                );
-              },
-              child: Text(tr('select_bg_color')),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return AlertDialog(
-                      titlePadding: EdgeInsets.zero,
-                      contentPadding: EdgeInsets.zero,
-                      content: SingleChildScrollView(
-                        child: ColorPicker(
-                          pickerColor: currentSecondaryColor,
-                          onColorChanged: changeSecondaryColor,
-                          colorPickerWidth: 300.0,
-                          pickerAreaHeightPercent: 0.7,
-                          enableAlpha: true,
-                          displayThumbColor: true,
-                          showLabel: true,
-                          paletteType: PaletteType.hsv,
-                          pickerAreaBorderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(2.0),
-                            topRight: Radius.circular(2.0),
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                );
-              },
-              child: Text(tr('select_second_color')),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                _applyTheme(context);
-              },
-              child: Text(tr('apply_theme')),
             ),
           ],
         ),
