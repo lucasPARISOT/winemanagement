@@ -11,7 +11,7 @@
 .svn/
 
 # Passwords and connections
-nodeAPI/connection.js
+/nodeAPI/connection.js
 
 # IntelliJ related
 *.iml
