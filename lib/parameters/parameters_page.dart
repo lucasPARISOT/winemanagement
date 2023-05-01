@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/themes/custom_themes.dart';
 import 'package:winemanagement/my_home_page.dart';
-import 'package:winemanagement/my_themes.dart';
+import 'package:winemanagement/themes/my_themes.dart';
 import 'package:winemanagement/parameters/languages/language_data.dart';
 import 'package:winemanagement/parameters/languages/language_flag.dart';
 

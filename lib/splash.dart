@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/themes/custom_themes.dart';
 
 /// This class is for the splash screen loading at first launch
 class Splash extends StatelessWidget {

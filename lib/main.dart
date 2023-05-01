@@ -4,8 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:winemanagement/app.dart';
-import 'package:winemanagement/custom_themes.dart';
-import 'package:winemanagement/my_themes.dart';
+import 'package:winemanagement/themes/custom_themes.dart';
+import 'package:winemanagement/themes/my_themes.dart';
 
 /// Entry point of this application
 /// Widget, Localization and ThemeData initializations

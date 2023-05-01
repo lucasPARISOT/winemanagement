@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import 'package:winemanagement/custom_themes.dart';
+import 'package:winemanagement/themes/custom_themes.dart';
 import 'package:winemanagement/init.dart';
 import 'package:winemanagement/my_home_page.dart';
 import 'package:winemanagement/splash.dart';
